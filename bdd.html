@@ -44,21 +44,24 @@
             </div>
         </section>
         
+        <!--
+            ************************************** "MISE EN ABYME" **************************************
+          -->
         <section>
             <section>
               <h2>Notre première “Story”</h2>
-              <h3 class="part hidden">Qui est concerné?</h3>
+              <h3 class="fragment kw">Qui est concerné?</h3>
               <p class="story narrative">
-                <span class="part hidden"><b>En tant que</b> participants à cette présentation</span>
+                <span class="fragment"><b>En tant que</b> participants à cette présentation</span>
               </p>
-              <h3 class="part hidden">Pourquoi êtes-vous venu?</h3>
-              <span class="part hidden extra">Pour manger des croissants!</span>
+              <h3 class="fragment kw">Pourquoi êtes-vous venu?</h3>
+              <span class="fragment extra">Pour manger des croissants!</span>
               <p class="story narrative">
-                <span class="part hidden"><b>Afin de</b> ressentir les bénéfices de l'approche <em>BDD</em></span><br/>
+                <span class="fragment"><b>Afin de</b> ressentir les bénéfices de l'approche <em>BDD</em></span><br/>
               </p>
-              <h3 class="part hidden">Quelles sont vos attentes?</h3>
+              <h3 class="fragment kw">Quelles sont vos attentes?</h3>
               <p class="story narrative">
-                <span class="part hidden"><b>Je veux</b> que des cas concrets soient présentés</span><br/>
+                <span class="fragment"><b>Je veux</b> que des cas concrets soient présentés</span><br/>
                 <!-- ça c'est une interpretation personnelle, c'est en tout cas ce que moi j'aurai souhaité,
                      et puis il fallait définir la trame de cette présentation -->            
               </p>
@@ -71,41 +74,43 @@
             <section>
               <h2>Quelles seraient les critères d'acceptances?</h2>
               <br/>
-              <h3 class="part hidden kw">Les scénarios</h3>
+              <h3 class="fragment kw">Les scénarios</h3>
             </section>
         </section>
 
-
+        <!--
+            ************************************** SCENARIO: RESULTATS **************************************
+          -->
         <section>
             <section>
               <h2>Notre premier “Scénario”</h2>
               <br/>
               <p class="story scenario">
-                <b class="title">Scenario:</b> Commençons par la fin et montrez-nous des résultat!<br/>
+                <b class="title">Scenario:</b> Commençons par la fin et montrez-nous des résultats!<br/>
               </p>
               <br/>
               <p class="story steps">
                 <span class="part hidden">
                   <b>Etant donné</b> un SI très complexe</span>
-                  <img width="20px" class="part hidden icon" order="5" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <img class="part hidden icon" order="5" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
                   <br/>
                 <!-- Je m'en suis chargé pour vous -->
 
                 <span class="part hidden">
                   <b>Et</b> une mise en application chez un client</span>
-                  <img width="20px" class="part hidden icon" order="6" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <img width="40px" class="part hidden icon" order="6" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
                   <br/>
                 <!-- Je m'en suis chargé pour vous -->
 
                 <span class="part hidden">
                   <b>Quand</b> on observe les résultats</span>
-                  <img width="20px" class="part hidden icon" order="7" src="2012-07-03-beforeWork-bdd/200px-Dialog-error-round.svg.png"/>
+                  <img width="40px" class="part hidden icon" order="7" src="2012-07-03-beforeWork-bdd/200px-Dialog-error-round.svg.png"/>
                   <br/>
                 <!-- Nous allons voir ça ensemble -->
 
                 <span class="part hidden">
                   <b>Alors</b> on se dit qu'en y allant petit à petit c'est possible</span>
-                  <img width="20px" class="part hidden icon" order="8" src="2012-07-03-beforeWork-bdd/200px-Dialog-error-round.svg.png"/>
+                  <img width="40px" class="part hidden icon" order="8" src="2012-07-03-beforeWork-bdd/200px-Dialog-error-round.svg.png"/>
                   <br/>
                 <!-- ça vous pourrez me le dire/confirmer après ;) -->
 
@@ -121,16 +126,22 @@
               <div class="part hidden" style="z-index: 30; position: relative; border-width:5px; border-color:red; width: 360px; height: 120px; top: -430px; left: 270px;border-style: solid;" />
             </section>
 
+            <!--  Il est très souvent illusoire de vouloir tenter cette approche sur l'ensemble du SI.
+                  Il faut se concentrer sur des domaines bien précis, les parties qui sont au coeur de votre métier.
+                  Nous allons donc faire un zoom et commencé notre approche sur la prise de pari
+              -->
             <section>
+              <h3 class="kw">La prise de pari</h3>
               <img width="800px" src="2012-07-03-beforeWork-bdd/PMU-SI-PriseDePari.png"/>
             </section>
 
-            <section>
-              <h3 class="kw">Un rapport de résultat!</h3>
-            </section>
+            <!--
+                  ************************************** LES RAPPORTS JBEHAVE **************************************
+              -->
 
             <section>
-                <img src="2012-07-03-beforeWork-bdd/PMU-rapport-jbehave-overview-sec.png">
+              <h3 class="kw">Le résultat!</h3>
+              <img class="part hidden" src="2012-07-03-beforeWork-bdd/PMU-rapport-jbehave-overview-sec.png">
             </section>
 
             <section>
@@ -141,88 +152,269 @@
 
             <section>
               <p class="story scenario">
-                <b class="title">Scenario:</b> Nous sommes impatients (Commençons par la fin et) montrez-nous des résultat!<br/>
+                  <b class="title">Scenario:</b> Commençons par la fin et montrez-nous des résultats!<br/>
               </p>
               
               <p class="story steps">
                   <b>Etant donné</b> un SI très complexe
-                  <img width="20px" class="part hidden icon" order="5" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <img class="icon" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
                   <br/>
 
                   <b>Et</b> une mise en application chez un client
-                  <img width="20px" class="part hidden icon" order="6" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <img class="icon" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
                   <br/>
 
                   <b>Quand</b> on observe les résultats
-                  <img width="20px" class="part hidden icon" order="7" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <img class="part hidden icon" order="7" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
                   <br/>
 
                   <b>Alors</b> on se dit qu'en y allant petit à petit c'est possible
-                  <img width="20px" class="part hidden icon" order="8" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <img class="part hidden icon" order="8" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
                   <br/>
               </p>
-            </section>
 
-        </section>
+              <br/>
 
-        <section>
-          <section>
-          </section>
-          ... A quoi ressemble les scénarios
+              <!-- Transition for next part: A quoi ressemble les scénarios -->
 
-
-            => permet de tester des cas nominaux
-
-            => permet de tester des cas d'erreurs
-
-            => permet de tester des cas d'erreurs multiples...
-
-
-
-            <section>
-              <p class="story scenario">
+              <p class="part hidden story scenario" order="20">
                 <b class="title">Scenario:</b> A quoi ressemble un scénario!<br/>
               </p>
               
               <p class="story steps">
-                  <b>Etant donné</b> un SI très complexe
-                  <img width="20px" class="part hidden icon" order="5" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <span class="part hidden" order="21">
+                    <b>Etant donné</b> un SI très complexe
+                    <img class="icon" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  </span>
                   <br/>
 
-                  <b>Et</b> une mise en application chez un client
-                  <img width="20px" class="part hidden icon" order="6" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <span class="part hidden" order="22">
+                    <b>Et</b> une mise en application chez un client
+                    <img class="icon" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  </span>
                   <br/>
 
-                  <b>Quand</b> on regarde les scénarios
-                  <img width="20px" class="part hidden icon" order="7" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <span class="part hidden" order="23">
+                    <b>Quand</b> on regarde les scénarios
+                    <img class="icon" src="2012-07-03-beforeWork-bdd/200px-Dialog-error-round.svg.png"/>
+                  </span>
                   <br/>
 
-                  <b>Alors</b> on voit qu'il est possible de tester des cas nominaux
-                  <img width="20px" class="part hidden icon" order="8" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
-                  <br/>
-
-                  <b>Et</b> on voit qu'il est possible de tester des cas d'erreurs
-                  <img width="20px" class="part hidden icon" order="8" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <span class="part hidden" order="24">
+                    <b>Alors</b> on voit qu'il est possible de tester des cas nominaux
+                    <img class="icon" src="2012-07-03-beforeWork-bdd/200px-Dialog-error-round.svg.png"/>
+                  </span>
                   <br/>
               </p>
             </section>
 
         </section>
 
+        <!--
+            **************************************  LES SCENARIOS ***********************************
+              -->
         <section>
-            1 story + 1 à 3 scénarios 
-            => jusqu'à 17 variantes souvent en collaboration avec le P.O.
+          <section>
+            <p class="story scenario">
+                <b class="title">Scenario:</b> A quoi ressemble un scénario!<br/>
+            </p>
+
+            <img class="" src="2012-07-03-beforeWork-bdd/PMU-Scenario-Quinte-OK1.png">
+          </section>
+
+          <section>
+            <p class="story scenario">
+                <b class="title">Scenario:</b> A quoi ressemble un scénario!<br/>
+            </p>
+
+            <img class="" src="2012-07-03-beforeWork-bdd/PMU-Scenario-Quinte-OK2.png">
+
+            <span class="part hidden">5 éléments dans tous les ordres</span><br/>
+            <span class="part hidden">5! = 120 combinaisons différentes</span>
+          </section>
+
+          <section>
+            <p class="story scenario">
+                <b class="title">Scenario:</b> A quoi ressemble un scénario!<br/>
+            </p>
+
+            <img class="" src="2012-07-03-beforeWork-bdd/PMU-Scenario-TierceSpOt-OK1.png">
+          </section>
+
+          <section>
+            <p class="story scenario">
+                <b class="title">Scenario:</b> A quoi ressemble un scénario!<br/>
+            </p>
+
+            <span class="kw">On peux même tester des cas d'erreurs</span>
+
+            <img class="" src="2012-07-03-beforeWork-bdd/PMU-Scenario-CouplePlace-KO1.png">
+          </section>
+
+          <section>
+            <p class="story scenario">
+                <b class="title">Scenario:</b> A quoi ressemble un scénario!<br/>
+            </p>
+
+            <span class="kw">On peux même tester des cas d'erreurs</span>
+
+            <img class="" src="2012-07-03-beforeWork-bdd/PMU-Scenario-Quinte-KO2.png">
+          </section>
+
+            <section>
+              <p class="story scenario">
+                <b class="title">Scenario:</b> A quoi ressemble un scénario!
+                <span class="part hidden extra" order="9"> (pour des cas nominaux)</span>
+                <br/>
+              </p>
+              
+              <p class="story steps">
+                  <b>Etant donné</b> un SI très complexe
+                  <img class="icon" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <br/>
+
+                  <b>Et</b> une mise en application chez un client
+                  <img class="icon" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <br/>
+
+                  <b>Quand</b> on regarde les scénarios
+                  <img class="part hidden icon" order="7" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <br/>
+
+                  <b>Alors</b> on voit qu'il est possible de tester des cas nominaux
+                  <img class="part hidden icon" order="8" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <br/>
+              </p>
+
+              <br/>
+
+              <!-- On peux constater qu'en faisant en sorte que ce scenario s'execute avec succès,
+                   que toutes les étapes soient vérifiées, on a implémenté un second scénario
+                   en réutilisant la plupart des étapes déjà implémentées.
+                   Renommons donc le premier pour qu'il soit plus précis: cas nominal
+                   ...> order 9
+                    -->
+
+              <p class="part hidden story scenario" order="20">
+                <b class="title">Scenario:</b> Il est aussi possible de tester des cas d'erreurs<br/>
+              </p>
+              
+              <p class="story steps">
+                <span class="part hidden" order="21">
+                  <b>Etant donné</b> un SI très complexe
+                  <img class="icon" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <br/>
+                </span>
+
+                <span class="part hidden" order="22">
+                  <b>Et</b> une mise en application chez un client
+                  <img class="icon" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <br/>
+                </span>
+
+                <span class="part hidden" order="23">
+                  <b>Quand</b> on regarde les scénarios
+                  <img class="icon" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <br/>
+                </span>
+
+                <span class="part hidden" order="24">
+                  <b>Alors</b> on voit qu'il est possible de tester des cas d'erreurs
+                  <img class="part hidden icon" order="25" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <br/>
+                </span>
+
+                <!-- pourrait même faire l'objet d'un troisième scénario! 
+                     même si là, c'est surtout dû à une demande métier du client.
+                  -->
+                <span class="part hidden" order="26">
+                  <b>Et</b> on voit qu'il est possible de tester des cas d'erreurs multiples
+                  <img class="part hidden icon" order="27" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <br/>
+                </span>
+              </p>
+            </section>
+
+        </section>
+
+
+        <section>
+          <!--  ça ne se prete pas à notre domaine, Vu la combinatoire possible listé tous les cas possible
+                n'est pas réalisable...
+                Et pourtant!
+                Nous avons mis en place une infrastructure, qui permet très simplement d'ajouter de nouveaux
+                cas rapidement à notre base de tests et documentaire.
+            -->
+
+          <section>
+            <h3 class="kw">Une idée des combinatoire possible de formulation</h3>
+
+              <img width="500px" order="1" class="part hidden raw" src="2012-07-03-beforeWork-bdd/PMU-Pictos-typeParis.png"/>
+              <img width="150px" order="4" class="part hidden raw" src="2012-07-03-beforeWork-bdd/PMU-Help-PourAllerPlusLoin.png"/>
+              <img width="500px" order="2" class="part hidden raw" src="2012-07-03-beforeWork-bdd/PMU-Pictos-typeParis-flexi.png"/>
+              <img width="100px" order="3" class="part hidden raw" src="2012-07-03-beforeWork-bdd/PMU-Picto-pariezSpot2.png"/>
+              
+            <div class="caption">
+            <i>
+              <small>
+                <a href="http://www.pmu.fr/turf/paris/tous-les-paris.html">www.pmu.fr/turf/paris/tous-les-paris.html</a>
+              </small>
+            </i>
+            </div>
+
+          </section>
+
+
+            <!--  Et pourtant!
+                Nous avons mis en place une infrastructure, qui permet très simplement d'ajouter de nouveaux
+                cas rapidement à notre base de tests et documentaire.
+            -->
+          <section>
+            <h3 class="kw">Travail collaboratif:</h3>
+
+            <span class="part hidden">50+ étapes définies</span>
+            <p>
+              <img width="250px" class="part hidden" src="2012-07-03-beforeWork-bdd/PMU-Steps-Catalogue1.png">
+              <img width="250px" class="part hidden" src="2012-07-03-beforeWork-bdd/PMU-Steps-Catalogue2.png">
+              <img width="400px" class="part hidden" style="position: fixed; z-index:5; left:250px; top:250px;" src="2012-07-03-beforeWork-bdd/PMU-Steps-Catalogue3.png">
+            </p>
+
+          </section>
+
+          <section>
+              <p>
+                Au départ: Deux à trois scénarios écrits par "Story"
+              </p>
+
+              <h3 class="part hidden kw">Rappellez-vous le résultat</h3>
+              
+              <div class="part hidden">
+                <img src="2012-07-03-beforeWork-bdd/PMU-rapport-jbehave-overview-top.png"/>
+                <img src="2012-07-03-beforeWork-bdd/PMU-rapport-jbehave-overview-bottom.png"/>
+              </div>
+
+              <p class="part hidden">
+                A la fin: jusqu'à 15 scénarios écrits pour une "Story"
+              </p>
+          </section>
+
         </section>
 
         <section>
-          Une infra qui permet de plus en plus de tester: "est-ce possible de..."
-          => une documentation vivante et enrichie très facilement
+          <h3>Une infrastructure réutilisable</h3>
+          <ul>
+            <li class="part hidden">Il est possible très simplement de tester n'importe quelle combinaison de pari</li>
+            <li class="part hidden">Une documentation vivante et enrichie très facilement</li>
+            <li class="part hidden">Permet aux nouveaux arrivants d'appréhender les différentes combinaisons possibles</li>
+          </ul>
         </section>
 
         <section>
-          Evolutif?
-
-            3j mise en place des étapes pour l'Arjel...
+          <h3>Une infrastructure évolutive</h3>
+          <p class="part hidden">
+            2j pour implémenter et mettre en place de nouvelles étapes pour l'Arjel
+          </p>
+          <img class="part hidden" src="2012-07-03-beforeWork-bdd/PMU-Scenario-Arjel.png">
         </section>
 
         <section>
@@ -238,212 +430,6 @@
           </p>
         </section>
 
-
-        <section>
-          <section>
-              <p class="story scenario">
-                      <span class="part hidden"><b class="title">Scenario:</b> Commençons par la fin, le résultat!</span><br/>
-              </p>
-              <p class="story steps">
-                      <span class="part hidden">
-                          <b>Etant donné</b> un cas concret</span>
-                          <img width="20px" class="part hidden icon" order="5" src="2012-07-03-beforeWork-bdd/200px-Dialog-error-round.svg.png"/>
-                          <br/>
-                      <span class="part hidden">
-                          <b>Et</b> avec plusieurs scénarios réels</span>
-                          <img width="20px" class="part hidden icon" order="6" src="2012-07-03-beforeWork-bdd/200px-Dialog-error-round.svg.png"/>
-                          <br/>
-                      <span class="part hidden">
-                          <b>Quand</b> je consulte le rapport</span>
-                        <img width="20px" class="part hidden icon" order="7" src="2012-07-03-beforeWork-bdd/200px-Dialog-error-round.svg.png"/>
-                          <br/>
-                      <span class="part hidden">
-                          <b>Alors</b> je peux voir le nombre de scénario actuellement en place</span>
-                          <img width="20px" class="part hidden icon" order="8" src="2012-07-03-beforeWork-bdd/200px-Dialog-error-round.svg.png"/>
-                          <br/>
-                      <span class="part hidden">
-                          <b>Et</b> consulter leur contenu</span>
-                          <img width="20px" class="part hidden icon" order="9" src="2012-07-03-beforeWork-bdd/200px-Dialog-error-round.svg.png"/>
-              </p>
-            </section>
-
-
-            <!-- Vertical slide parts -->
-            <section>
-                <img src="2012-07-03-beforeWork-bdd/PMU-rapport-jbehave-overview-sec.png">
-            </section>
-
-            <section>
-                <img src="2012-07-03-beforeWork-bdd/PMU-rapport-jbehave-overview-top.png"/>
-                <img class="part hidden" src="2012-07-03-beforeWork-bdd/PMU-rapport-jbehave-overview-bottom.png"/>
-                <img class="part hidden" style="position: fixed; z-index:5; left:300px; top:220px;" src="2012-07-03-beforeWork-bdd/PMU-rapport-jbehave-overview-date.png"/>
-            </section>
-
-        </section>
-        
-        <!-- Example of nested vertical slides -->
-        <section>
-          <section>
-            <h2>Vertical Slides</h2>
-            <p>
-              Slides can be nested inside of other slides,<br/>
-              try pressing <a href="#/2/1">down</a>.
-            </p>
-            <a href="#/2/1" class="image">
-              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-            </a>
-          </section>
-          <section>
-            <h2>Basement Level 1</h2>
-            <p>Press down or up to navigate.</p>
-          </section>
-          <section>
-            <h2>Basement Level 2</h2>
-            <p>Cornify</p>
-            <a class="test" href="http://cornify.com">
-              <img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif">
-            </a>
-          </section>
-          <section>
-            <h2>Basement Level 3</h2>
-            <p>That's it, time to go back up.</p>
-            <a href="#/2" class="image">
-              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" style="-webkit-transform: rotate(180deg);">
-            </a>
-          </section>
-        </section>
-
-        <section>
-          <h2>Holistic Overview</h2>
-          <p>
-            Press <strong>ESC</strong> to enter the slide overview!
-          </p>
-        </section>
-
-        <section>
-          <h2>Works in Mobile Safari</h2>
-          <p>
-            Try it out! You can swipe through the slides pinch your way to the overview.
-          </p>
-        </section>
-
-        <section>
-          <h2>Transition Styles</h2>
-          <p>
-            You can select from different transitions, like:
-          </p>
-          <ul>
-            <li><a href="http://lab.hakim.se/reveal-js/?transition=cube">Cube</a></li>
-            <li><a href="http://lab.hakim.se/reveal-js/?transition=page">Page</a></li>
-            <li><a href="http://lab.hakim.se/reveal-js/?transition=concave">Concave</a></li>
-            <li><a href="http://lab.hakim.se/reveal-js/?transition=linear">Linear</a></li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Marvelous Unordered List</h2>
-          <ul>
-            <li>No order here</li>
-            <li>Or here</li>
-            <li>Or here</li>
-            <li>Or here</li>
-          </ul>
-        </section>
-        
-        <section>
-          <h2>Fantastic Ordered List</h2>
-          <ol>
-            <li>One is smaller than...</li>
-            <li>Two is smaller than...</li>
-            <li>Three!</li>
-          </ol>
-        </section>
-
-        <section>
-          <section data-state="alert">
-            <h2>Global State</h2>
-            <p>
-              Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-              will be added as a class to the document element when the slide is open. This let's you
-              apply broader style changes, like switching the background.
-            </p>
-            <a href="#/7/1" class="image">
-              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-            </a>
-          </section>
-          <section data-state="blackout">
-            <h2>"blackout"</h2>
-            <a href="#/7/2" class="image">
-              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-            </a>
-          </section>
-          <section data-state="soothe">
-            <h2>"soothe"</h2>
-            <a href="#/7/0" class="image">
-              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" style="-webkit-transform: rotate(180deg);">
-            </a>
-          </section>
-        </section>
-
-        <section data-state="customevent">
-          <h2>Custom Events</h2>
-          <p>
-            Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-          </p>
-          <pre><code contenteditable style="font-size: 18px; margin-top: 20px;">Reveal.addEventListener( 'customevent', function() {
-  alert( '"customevent" has fired' );
-} );
-          </code></pre>
-        </section>
-
-        <section>
-          <h2>Clever Quotes</h2>
-          <p>
-            These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-            The nice thing about standards is that there are so many to choose from</q> and block:
-          </p>
-          <blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-            For years there has been a theory that millions of monkeys typing at random on millions of typewriters would 
-            reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
-          </blockquote>
-        </section>
-        
-        <section>
-          <h2>Pretty Code</h2>
-          <pre><code contenteditable>
-var supports3DTransforms =  document.body.style['webkitPerspective'] !== undefined || 
-        document.body.style['MozPerspective'] !== undefined ||
-        document.body.style['perspective'] !== undefined;
-
-function linkify( selector ) {
-    if( supports3DTransforms ) {
-        
-        var nodes = document.querySelectorAll( selector );
-
-        for( var i = 0, len = nodes.length; i < len; i++ ) {
-            var node = nodes[i];
-
-            if( !node.className || !node.className.match( /roll/g ) ) {
-                node.className += ' roll';
-                node.innerHTML = '<span data-title="'+ node.text +'">' + node.innerHTML + '</span>';
-            }
-        };
-    }
-}
-
-linkify( 'a' );
-          </code></pre>
-          <p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-        </section>
-        
-        <section>
-          <h2>Intergalactic Interconnections</h2>
-          <p>
-            You can link between slides internally,<br/>
-            <a href="#/2/3">like this</a>.
-          </p>
-        </section>
-
         <section>
           <h2>Fragmented Views</h2>
           <p>Hit the next arrow...</p>
@@ -453,22 +439,6 @@ linkify( 'a' );
             <li class="fragment"><em>of view</em></li>
             <li class="fragment"><strong>fragments</strong></li>
           </ol>
-        </section>
-        
-        <section>
-          <h2>Spectacular image!</h2>
-          <a class="image" href="http://hakim.se/experiments/html5/breakdom/" target="_blank">
-            <img width="320" height="412" src="https://s3.amazonaws.com/hakim-static/reveal-js/breakdom.png">
-          </a>
-        </section>
-        
-        <section>
-          <h2>Stellar Links</h2>
-          <ul>
-            <li><a href="https://github.com/hakimel/reveal.js">Source code on github</a></li>
-            <li><a href="http://hakim.se/projects/reveal-js">Read more on my site</a></li>
-            <li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
-          </ul>
         </section>
         
         <section>
