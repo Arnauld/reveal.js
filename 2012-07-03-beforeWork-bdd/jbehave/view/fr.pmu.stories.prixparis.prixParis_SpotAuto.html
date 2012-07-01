@@ -1,0 +1,153 @@
+<html><head><meta charset="utf-8">
+<title>Turf Pari Services</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+
+<html>
+<body>
+<div class="story"><h1></h1>
+<div class="path">fr/pmu/stories/prixparis/prixParis_SpotAuto.story</div>
+<div class="scenario"><h2>Scenario: CAS 1 Prise de 3 spOt en pari Couplé Unitaire</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "｟Couplé Placé｠" formule "<span class="step parameter">Unitaire"</span> : ｟? - ?｠  </div>
+
+<div class="step successful">And en spOt Automatique  </div>
+
+<div class="step successful">And son Cheval de Complément désigné, CC ?  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And pour 1 paris  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est OK  </div>
+
+<div class="step successful">And le montant d'enjeu est égal à ｟1,50｠€  </div>
+
+<div class="step successful">And le nombre de paris unitaires est ｟égal｠ à <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And le nombre de paris spOt est <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And le prix unitaire de chaque pari est de ｟1,50｠€  </div>
+
+<div class="step successful">And le 1er pari spOt Automatique en Couplé Placé Unitaire avec un Cheval de Complément est retourné par le SIC  </div>
+
+<div class="step successful">And le montant du compte est débité de ｟1,50｠€  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: CAS 2 Prise de 1 spOt en pari Couplé Ordre Unitaire Dans Tous Les Ordres</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "｟Couplé Ordre｠" formule "｟Combinaison Complète｠" : ｟? - ? - ?｠  </div>
+
+<div class="step successful">And en spOt Automatique  </div>
+
+<div class="step successful">And son Cheval de Complément désigné, CC ?  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And pour 1 paris  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: CAS 3 Prise de 3 spOt en pari Couplé Unitaire avec un solde enjeu parieur insuffisant pour l'ensemble des paris</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "｟Couplé Placé｠" formule "<span class="step parameter">Unitaire"</span> : ｟? - ?｠  </div>
+
+<div class="step successful">And en spOt Automatique  </div>
+
+<div class="step successful">And son Cheval de Complément désigné, CC ?  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And pour <span class="step parameter">1</span> mises de base  </div>
+
+<div class="step successful">And pour 3 paris  </div>
+
+<div class="step successful">And le solde jeu du parieur est ｟3,85｠€  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And je suis alerté que "｟la demande n'a pas abouti car son solde de jeu est insuffisant pour enregistrer l'ensemble des paris demandés｠"  </div>
+
+<div class="step successful">And le montant du compte n'est pas débité  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: CAS 4 Prise de 2 spOt en pari Couplé Unitaire</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "｟Couplé Placé｠" formule "<span class="step parameter">Unitaire"</span> : ｟? - ?｠  </div>
+
+<div class="step successful">And en spOt Automatique  </div>
+
+<div class="step successful">And son Cheval de Complément désigné, CC ?  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And un pari "｟Couplé Placé｠" formule "<span class="step parameter">Unitaire"</span> : ｟? - ?｠  </div>
+
+<div class="step successful">And en spOt Automatique  </div>
+
+<div class="step successful">And son Cheval de Complément désigné, CC ?  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est OK  </div>
+
+<div class="step successful">And le montant d'enjeu est égal à ｟3,00｠€  </div>
+
+<div class="step successful">And le nombre de paris unitaires est ｟égal｠ à <span class="step parameter">2</span>  </div>
+
+<div class="step successful">And le nombre de paris spOt est <span class="step parameter">2</span>  </div>
+
+<div class="step successful">And le prix unitaire de chaque pari est de ｟1,50｠€  </div>
+
+<div class="step successful">And le 1er pari spOt Automatique en Couplé Placé Unitaire avec un Cheval de Complément est retourné par le SIC  </div>
+
+<div class="step successful">And le 2nd pari spOt Automatique en Couplé Placé Unitaire avec un Cheval de Complément est retourné par le SIC  </div>
+
+<div class="step successful">And le montant du compte est débité de ｟3,00｠€  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cas 5 Prise de pari en spOt avec plusieurs erreurs en paramètres</h2>   
+ <!-- normal scenario steps -->
+</div> <!-- end scenario -->
+</div> <!-- end story -->
+</body>
+</html>
+
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

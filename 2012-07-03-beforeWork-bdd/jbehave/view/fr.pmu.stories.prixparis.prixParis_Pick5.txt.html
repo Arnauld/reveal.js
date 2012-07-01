@@ -1,0 +1,213 @@
+<html><head><meta charset="utf-8">
+<title>Turf Pari Services</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: txt"><![CDATA[
+
+(fr/pmu/stories/prixparis/prixParis_Pick5.story)
+Scenario: Cas 1 Prise d'un pari Pick5 avec une mise de base
+Given un pari "Pick 5" formule "Unitaire" :  1 - 2 - 3 - 5 - 6
+And sur la course 1 de la réunion 1
+And pour 1 mises de base
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 1€
+And le prix unitaire de chaque pari est de 1,00€
+And le nombre de paris unitaires est égal à 1
+And le montant du compte est débité de 1€
+
+Scenario: Cas 2 Prise d'un pari Pick5 avec une valeur
+Given un pari "Pick 5" formule "Unitaire" :  1 - 2 - 3 - 5 - 6
+And sur la course 1 de la réunion 1
+And la mise est d'une valeur de 5€
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 5€
+And le prix unitaire de chaque pari est de 5,00€
+And le nombre de paris unitaires est égal à 1
+And le montant du compte est débité de 5€
+
+Scenario: Cas 3 Prise d'un pari Pick5 avec un nombre de chevaux inférieur aux chevaux réglementaire
+Given un pari "Pick 5" formule "Unitaire"  :  1 - 2 - 3
+And sur la course 1 de la réunion 1
+And pour 1 mises de base
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_SELECTIONNES_INCOHERENT]
+
+Scenario: Cas 4 Prise d'un pari Pick5 avec une mise de base en combinaison simplifiée
+Given un pari "Pick 5" formule "combinaison simplifiee" de 7 chevaux :  1 - 2 - 3 - 5 - 6 - 8 - 9
+And sur la course 1 de la réunion 1
+And pour 1 mises de base
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 21€
+And le prix unitaire de chaque pari est de 1,00€
+And le nombre de paris unitaires est égal à 21
+And le montant du compte est débité de 21€
+
+Scenario: Cas 5 Prise d'un pari Pick5 avec une mise de base en combinaison complète
+Given un pari "Pick 5" formule "combinaison complète" de 7 chevaux :  1 - 2 - 3 - 5 - 6 - 8 - 9
+And sur la course 1 de la réunion 1
+And pour 1 mises de base
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_MODE_DTLO_NON_AUTORISE]
+
+Scenario: Cas 6 Prise d'un pari Pick5 avec une mise de base en champ reduit combinaison simplifiée
+Given un pari "Pick 5" formule "champ reduit combinaison simplifiée" :  1 - 2 - 3 - X - X / 4,8,9,6
+And sur la course 1 de la réunion 1
+And pour 1 mises de base
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 6€
+And le prix unitaire de chaque pari est de 1,00€
+And le nombre de paris unitaires est égal à 6
+And le montant du compte est débité de 6€
+
+Scenario: Cas 7 Prise d'un pari Pick5 avec une mise de base en champ reduit combinaison complète
+Given un pari "Pick 5" formule "champ reduit combinaison complète" :  1 - 2 - 3 - X - X / 4,8,9,6
+And sur la course 1 de la réunion 1
+And pour 1 mises de base
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_MODE_DTLO_NON_AUTORISE]
+
+Scenario: Cas 8 Prise d'un pari Pick5 avec une mise de base en champ reduit combinaison simplifiée et un cheval de complement déjà en désigné base.
+Given un pari "Pick 5" formule "champ reduit combinaison simplifiée" :  1 - 2 - 3 - X - X / 4,8,9,6
+And sur la course 1 de la réunion 1
+And le cheval de complément 3
+And pour 1 mises de base
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_CHEVAL_COMPLEMENT_INCORRECT]
+
+Scenario: Cas 9 Prise d'un pari Pick5 avec une mise de base en champ total combinaison simplifiée
+Given un pari "Pick 5" formule "champ total combinaison simplifiée" :  1 - 2 - 3 - X - X
+And sur la course 1 de la réunion 1
+And pour 1 mises de base
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 105€
+And le prix unitaire de chaque pari est de 1,00€
+And le nombre de paris unitaires est égal à 105
+And le montant du compte est débité de 105€
+
+Scenario: Cas 10 Prise d'un pari Pick5 en mode flexi 50% en champ total combinaison simplifiée
+Given un pari "Pick 5" formule "champ total combinaison simplifiée" :  1 - 2 - 3 - X - X
+And sur la course 1 de la réunion 1
+And en mode Flexi à 50%
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 52,50€
+And le prix unitaire de chaque pari est de 0,50€
+And le nombre de paris unitaires est égal à 105
+And le montant du compte est débité de 52,50€
+
+Scenario: Cas 11 Prise d'un pari Pick5 en mode flexi 25% en champ total combinaison simplifiée
+Given un pari "Pick 5" formule "champ total combinaison simplifiée" :  1 - 2 - 3 - X - X
+And sur la course 1 de la réunion 1
+And en mode Flexi à 25%
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 26,25€
+And le prix unitaire de chaque pari est de 0,25€
+And le nombre de paris unitaires est égal à 105
+And le montant du compte est débité de 26,25€
+
+Scenario: Cas 12 Prise d'un pari Pick5 en mode flexi 10% en champ total combinaison simplifiée
+Given un pari "Pick 5" formule "champ total combinaison simplifiée" :  1 - 2 - 3 - X - X
+And sur la course 1 de la réunion 1
+And en mode Flexi à 10%
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 10,50€
+And le prix unitaire de chaque pari est de 0,10€
+And le nombre de paris unitaires est égal à 105
+And le montant du compte est débité de 10,50€
+
+Scenario: Cas 13 Prise d'un pari Pick5 en mode flexi 10% inférieur à la mise de base
+Given un pari "Pick 5" formule "combinaison simplifiée" :  1 - 2 - 3 - 4 - 5 - 6
+And sur la course 1 de la réunion 1
+And en mode Flexi à 10%
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_ENJEU_INFERIEUR_MINIMUM_ENJEU]
+
+Scenario: Cas 14 Prise d'un pari Pick5 avec un cheval de complement
+Given un pari "Pick 5" formule "Unitaire" :  1 - 2 - 3 - 5 - 6
+And le cheval de complément 8
+And sur la course 1 de la réunion 1
+And pour 1 mises de base
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le cheval 8 est désigné comme Cheval de Complément
+And le montant d'enjeu est égal à 1€
+And le nombre de paris unitaires est égal à 1
+And le montant du compte est débité de 1€
+
+Scenario: Cas 15 Prise d'un pari Pick5 en mode spOt tout auto
+Given un pari "Pick 5" formule "Unitaire" :  ? - ? - ? - ? - ?
+And sur la course 1 de la réunion 1
+And en spOt Automatique
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 1€
+And le nombre de paris unitaires est égal à 1
+And le montant du compte est débité de 1€
+
+Scenario: Cas 16 Prise d'un pari Pick5 en mode spOt mixte
+Given un pari "Pick 5" formule "Unitaire" :  ? - ? - 8 - 7 - ?
+And sur la course 1 de la réunion 1
+And en spOt Mixte
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 1€
+And le nombre de paris unitaires est égal à 1
+And le montant du compte est débité de 1€
+
+Scenario: Cas 17 Prise d'un pari Pick5 avec 2 spOt
+Given un pari "Pick 5" formule "Unitaire" :  ? - ? - ? - ? - ?
+And sur la course 1 de la réunion 1
+And en spOt Automatique
+Given un pari "Pick 5" formule "Unitaire" :  7 - 2 - ? - ? - ?
+And sur la course 1 de la réunion 1
+And en spOt Mixte
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le nombre de paris spOt est 2
+And le prix unitaire de chaque pari est de 1,00€
+And le 1er pari spOt Automatique en Couplé Placé Unitaire avec un Cheval de Complément est retourné par le SIC
+And le 2nd pari spOt Automatique en Couplé Placé Unitaire avec un Cheval de Complément est retourné par le SIC
+And le montant du compte est débité de 2,00€
+
+
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

@@ -1,0 +1,170 @@
+
+<html>
+<body>
+<div class="story"><h1></h1>
+<div class="path">fr/pmu/stories/validation/validationPari_usecase1.story</div>
+<div class="scenario"><h2>Scenario: Couplé placé avec un X et un seul associé en champs réduit</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "｟Couplé Placé｠" formule "｟Champ réduit combinaison simplifiée｠" : ｟1-X/3｠  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Trio avec un X et un seul associé en champs réduit</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Trio"</span> formule "｟Champ réduit combinaison simplifiée｠" : ｟3-5-X/1｠  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Trio sans X en champs réduit</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Trio"</span> formule "｟Champ réduit combinaison simplifiée｠" : <span class="step parameter">3-5-1</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Trio Ordre avec un X et un seul associé en champs réduit</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Trio Ordre"</span> formule "｟Champ réduit combinaison complète｠" : ｟3-5-X/1｠  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Trio Ordre avec un X et un deux associés en champs réduit</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Trio Ordre"</span> formule "｟Champ réduit combinaison complète｠" : ｟3-5-X/1,2｠  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est OK  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Quinté+ avec trois X et un seulemenent 2 associés en champs réduit</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "｟Quinté Plus｠" formule "｟Champ réduit combinaison complète｠" : ｟3-5-X-X-X/1,2｠  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Quinté+ avec trois X et un seulemenent 3 associés en champs réduit</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "｟Quinté Plus｠" formule "｟Champ réduit combinaison complète｠" : ｟3-5-X-X-X/1,2,3｠  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Pick5 avec trois X et un seulemenent 3 associés en champs réduit</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Pick 5"</span> formule "｟Champ réduit combinaison simplifiée｠" : ｟3-5-X-X-X/1,2,4｠  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Pick5 avec trois X et un 4 associés en champs réduit</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Pick 5"</span> formule "｟Champ réduit combinaison simplifiée｠" : ｟3-5-X-X-X/1,2,4,7｠  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est OK  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Quinté+ avec trois X et un associé X en champs réduit et en Spot et mise en valeur</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "｟Quinté Plus｠" formule "｟Combinaison simplifiée｠" : ｟?-2-?-4-?-?｠  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">And en spOt Automatique  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Quinté+ en spOt mixte avec plus de chevaux de base que de chevaux réglementaires en combinaison simplifiée</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "｟Quinté Plus｠" formule "｟Combinaison simplifiée｠" : ｟?-2-?-4-?-?｠  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And en spOt Mixte  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est OK  </div>
+
+</div> <!-- end scenario -->
+</div> <!-- end story -->
+</body>
+</html>
+

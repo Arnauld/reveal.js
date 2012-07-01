@@ -1,0 +1,134 @@
+
+<story path="fr/pmu/stories/prixparis/prixParis_Multi_Combine.story" title="">
+<scenario keyword="Scenario:" title="CAS 1 : Prise d'un pari Multi Combiné en 5 chevaux">   
+<step outcome="successful">
+Given un pari "<parameter>Multi"</parameter> formule "｟Combinaison simplifiée｠" : <parameter>3-6-9-8-1-2-10</parameter> 
+</step>
+<step outcome="successful">
+And en risque <parameter>5</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And en mode Flexi à <parameter>50%</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>21</parameter> 
+</step>
+<step outcome="successful">
+And le montant d'enjeu est égal à ｟31,50｠€ 
+</step>
+<step outcome="ignorable">
+!-- TODO Et le montant du compte est débité de 31,50€. 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 2 : Prise d'un pari Multi Combiné en 5 chevaux KO pas assez de chevaux">   
+<step outcome="successful">
+Given un pari "<parameter>Multi"</parameter> formule "｟Combinaison simplifiée｠" : <parameter>3-6-9-8</parameter> 
+</step>
+<step outcome="successful">
+And en risque <parameter>5</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+<step outcome="ignorable">
+!-- TODO Et le montant du pari n'est pas débité de 2,00€. 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 2 bis : Prise d'un pari Multi Combiné en 5 chevaux KO montant d'enjeu inférieur à la mise de base">   
+<step outcome="successful">
+Given un pari "<parameter>Multi"</parameter> formule "｟Combinaison simplifiée｠" : <parameter>3-6-9-8-1-2</parameter> 
+</step>
+<step outcome="successful">
+And en risque <parameter>5</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour une mise en valeur de ｟1,00｠€ 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>6</parameter> 
+</step>
+<step outcome="successful">
+And le montant denjeu est égal à {0} 
+</step>
+<step outcome="ignorable">
+!-- TODO Et le montant du pari n'est pas débité de 2,00€. 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 3 : risque = nb chevaux selectionnés">   
+<step outcome="successful">
+Given un pari "<parameter>Multi"</parameter> formule "｟Combinaison simplifiée｠" : <parameter>3-6-9-8</parameter> 
+</step>
+<step outcome="successful">
+And en risque <parameter>4</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour une mise en valeur de <parameter>4€</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS EXTRA 1 : Prise d'un pari Multi Combiné en 6 chevaux">   
+<step outcome="successful">
+Given un pari "<parameter>Multi"</parameter> formule "｟Combinaison simplifiée｠" : <parameter>8-1-9-2-3-6-10</parameter> 
+</step>
+<step outcome="successful">
+And en risque <parameter>6</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And en mode Flexi à <parameter>50%</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>7</parameter> 
+</step>
+<step outcome="successful">
+And le montant d'enjeu est égal à ｟10,50｠€ 
+</step>
+</scenario> 
+</story>
+

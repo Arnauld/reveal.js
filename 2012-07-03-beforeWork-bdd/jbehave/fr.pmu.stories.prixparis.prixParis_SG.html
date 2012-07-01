@@ -1,0 +1,116 @@
+
+<html>
+<body>
+<div class="story"><h1></h1>
+<div class="path">fr/pmu/stories/prixparis/prixParis_SG.story</div>
+<div class="scenario"><h2>Scenario: Cas 1</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Simple Gagnant"</span> formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">5</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est dune valeur de {0}  </div>
+
+<div class="step successful">And le Cheval <span class="step parameter">5</span> est déclaré "<span class="step parameter">partant partant"</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est OK  </div>
+
+<div class="step successful">And le montant denjeu est égal à {0}  </div>
+
+<div class="step successful">And le montant d'enjeu est ｟supérieur ou égal｠ à la mise de base  </div>
+
+<div class="step successful">And le montant du compte est débité de <span class="step parameter">3€</span>  </div>
+
+<div class="step successful">And le nombre de paris unitaires est ｟égal｠ à <span class="step parameter">1</span>  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cas 2 Prise d'un pari Simple Gagnant</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Simple Gagnant"</span> formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">2</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And pour <span class="step parameter">6</span> mises de base  </div>
+
+<div class="step successful">And le Cheval <span class="step parameter">2</span> est déclaré "<span class="step parameter">partant partant"</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est OK  </div>
+
+<div class="step successful">And le montant denjeu est égal à {0}  </div>
+
+<div class="step successful">And le nombre de paris unitaires est ｟égal｠ à <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And le montant du compte est débité de <span class="step parameter">9€</span>  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cas 3 Prise d'un pari Simple Gagnant sur un cheval non partant</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Simple Gagnant"</span> formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">12</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">And une course avec comme chevaux partants: [｟1,2,3,4,5,6,7,8｠]  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari indique que le cheval <span class="step parameter">12</span> est non partant  </div>
+
+<div class="step successful">And le compte n'est pas débité  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cas 4 Prise de plusieurs paris Simple Gagnant avec un cheval non partant</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Simple Gagnant"</span> formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">3-12</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And pour <span class="step parameter">1</span> mises de base  </div>
+
+<div class="step successful">And le Cheval <span class="step parameter">3</span> est déclaré "<span class="step parameter">partant partant"</span>  </div>
+
+<div class="step successful">And le Cheval <span class="step parameter">12</span> est déclaré "<span class="step parameter">partant non partant"</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And je suis alerté que "｟l'un des chevaux sélectionnés est non partant｠"  </div>
+
+<div class="step successful">And le montant du compte n'est pas débité  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cas 5 Prise de plusieurs paris Simple Gagnant avec solde pari insuffisant pour le second pari</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Simple Gagnant"</span> formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">3-4</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And pour <span class="step parameter">1</span> mises de base  </div>
+
+<div class="step successful">And le solde jeu du parieur est ｟2,00｠€  </div>
+
+<div class="step successful">And le Cheval <span class="step parameter">3</span> est déclaré "<span class="step parameter">partants partant"</span>  </div>
+
+<div class="step successful">And le Cheval <span class="step parameter">4</span> est déclaré "<span class="step parameter">partants partant"</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And je suis alerté que "｟solde de jeu est insuffisant pour enregistrer l'ensemble des paris｠"  </div>
+
+<div class="step successful">And le montant du compte n'est pas débité  </div>
+
+</div> <!-- end scenario -->
+</div> <!-- end story -->
+</body>
+</html>
+

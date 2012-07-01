@@ -1,0 +1,107 @@
+
+(fr/pmu/stories/prixparis/prixParis_Tierce.story)
+Scenario: Cas 1 Pari Tierce unitaire OK
+Given un pari "Tierce" formule "Unitaire" de 3 chevaux : 2-1-5
+And pour 1 mises de base
+And sur la course 1 de la réunion 1
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 1,00€
+And le nombre de paris unitaires est égal à 1
+
+Scenario: Cas 2 Pari Tierce combinée avec 5 chevaux OK
+Given un pari "Tierce" formule "Combinaison Simplifiée" de 5 chevaux : 2-1-5-12-7
+And pour 1 mises de base
+And sur la course 1 de la réunion 1
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 10,00€
+And le nombre de paris unitaires est égal à 10
+
+Scenario: Cas 3 Pari Tierce unitaire avec nombre de chevaux incoherent
+Given un pari "Tierce" formule "Unitaire" de 3 chevaux : 2-1-5-12
+And pour 1 mises de base
+And sur la course 1 de la réunion 1
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_SELECTIONNES_INCOHERENT]
+!-- Paris en champs
+
+Scenario: Cas 4 Pari Tierce combinée champ reduit combinaison simplifiée OK
+Given un pari "Tierce" formule "Champ réduit combinaison simplifiée" : 2-1-X/7,8,9,10,11
+And pour 1 mises de base
+And sur la course 1 de la réunion 1
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 5,00€
+And le nombre de paris unitaires est égal à 5
+
+Scenario: Cas 5 Pari Tierce champ total combinaison complete OK
+Given un pari "Tierce" formule "Champ total combinaison complète" : 2-X-X
+And pour 1 mises de base
+And sur la course 1 de la réunion 1
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 816,00€
+And le nombre de paris unitaires est égal à 816
+!-- Prise de pari spot
+
+Scenario: Cas 6 Prise pari spOt en Tierce Unitaire
+Given un pari "Tierce" formule "Unitaire" : ? - ? - ?
+And en spOt Automatique
+And sur la course 1 de la réunion 1
+And pour 1 paris
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 1,00€
+And le nombre de paris unitaires est égal à 1
+And le nombre de paris spOt est 1
+And le montant du compte est débité de 1,00€
+
+Scenario: Cas 7 Prise de 2 spOt en pari Tierce Unitaire
+Given un pari "Tierce" formule "Unitaire" : ? - ? - ?
+And en spOt Automatique
+And son Cheval de Complément désigné, CC ?
+And sur la course 1 de la réunion 1
+And un pari "Tierce" formule "Unitaire" : ? - ? - ?
+And en spOt Automatique
+And son Cheval de Complément désigné, CC ?
+And sur la course 1 de la réunion 1
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 2,00€
+And le nombre de paris unitaires est égal à 2
+And le nombre de paris spOt est 2
+And le prix unitaire de chaque pari est de 1,00€
+And le montant du compte est débité de 2,00€
+
+Scenario: Cas 8 Prise de 1 spOt en pari Tierce dans Tous Les Ordres
+Given un pari "Tierce" formule "Combinaison Complète" : ? - ? - ?
+And en spOt Automatique
+And son Cheval de Complément désigné, CC ?
+And sur la course 1 de la réunion 1
+And pour 1 paris
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_FORMULE_NON_AUTORISEE]
+
+Scenario: Cas 9 Prise de pari combinaison complète flexi
+Given un pari "Tierce" formule "Combinaison complète" de 3 chevaux : 1-2-3
+And sur la course 1 de la réunion 1
+And en mode Flexi à 50%
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 3,00€
+And le montant d'enjeu est supérieur ou égal à la mise de base
+And le nombre de paris unitaires est égal à 6
+And le montant du compte est débité de 3,00€
+
+Scenario: Cas 10 Prise de pari combinaison complète flexi interdit
+Given un pari "Tierce" formule "Combinaison complète" de 3 chevaux : 1-2-3
+And sur la course 1 de la réunion 1
+And en mode Flexi à 10%
+When j'enregistre le pari
+Then l'enregistrement est KO
+And le taux de Flexi n'existe pas pour ce pari
+
+

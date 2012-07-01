@@ -1,0 +1,172 @@
+
+<story path="fr/pmu/stories/validation/validationPari_syntaxique.story" title="">
+<narrative keyword="Narrative:">
+<inOrderTo keyword="In order to">la prise de pari se fasse dans les meilleures conditions</inOrderTo>
+<asA keyword="As a">parieur</asA>
+<iWantTo keyword="I want to">la formulation de mes paris soit vérifiée</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Cheval de complement déjà présent dans les chevaux de base">   
+<step outcome="successful">
+Given un pari "｟Couplé Placé｠" formule "｟Champ réduit combinaison simplifiée｠" : ｟1-X/3,4,5 CC 1｠ 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cheval associé déjà présent dans les chevaux de base">   
+<step outcome="successful">
+Given un pari "｟Couplé Placé｠" formule "｟Champ réduit combinaison simplifiée｠" : ｟1-X/1,4,5｠ 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cheval de base multiple">   
+<step outcome="successful">
+Given un pari "｟Quinté Plus｠" formule "｟Champ réduit combinaison simplifiée｠" : ｟1-1-1-X/2,4,5｠ 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+And en mode Flexi à <parameter>25%</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes d'erreurs suivant [｟PARI_TYPE_DE_MISE_NON_UNIQUE, PARI_PARTICIPANT_NON_UNIQUE, PARI_NB_CHEVAUX_DE_BASES_INCOHERENT｠] 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cheval associé et cheval de complément déjà présent dans les chevaux de base">   
+<step outcome="successful">
+Given un pari "｟Couplé Placé｠" formule "｟Champ réduit combinaison simplifiée｠" : ｟1-X/1,4,5 CC 1｠ 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes d'erreurs suivant [｟PARI_PARTICIPANT_NON_UNIQUE, PARI_CHEVAL_COMPLEMENT_INCORRECT｠] 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Il faut un cheval de base X et cheval de complément déjà présent dans les chevaux de base">   
+<step outcome="successful">
+Given un pari "｟Couplé Placé｠" formule "｟Champ réduit combinaison simplifiée｠" : ｟1-2/3,4,5 CC 1｠ 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes d'erreurs suivant [｟PARI_CHEVAL_DE_BASE_NON_DESIGNE_REQUIS, PARI_CHEVAL_COMPLEMENT_INCORRECT｠] 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Nombre de chevaux de base invalide et présence de doublons parmis les participants de bases et associés">   
+<step outcome="successful">
+Given un pari "｟Couplé Placé｠" formule "｟Champ réduit combinaison simplifiée｠" : ｟1-2-4-5-6/3,4,5｠ 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes d'erreurs suivant [｟PARI_PARTICIPANT_NON_UNIQUE, PARI_CHEVAL_DE_BASE_NON_DESIGNE_REQUIS, PARI_NB_CHEVAUX_DE_BASES_INCOHERENT｠] 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Pas de chevaux associés pour un pari unitaire">   
+<step outcome="successful">
+Given un pari "<parameter>Simple Gagnant"</parameter> formule "<parameter>Unitaire"</parameter> : ｟1/3,4｠ 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Pas de chevaux de base 'X' pour un pari unitaire">   
+<step outcome="successful">
+Given un pari "｟Couplé Placé｠" formule "<parameter>Unitaire"</parameter> : ｟1-X/3,4｠ 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+</story>
+

@@ -1,0 +1,71 @@
+<html><head><meta charset="utf-8">
+<title>Turf Pari Services</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: txt"><![CDATA[
+
+(fr/pmu/stories/validation/validationPari_nonPartants.story)
+Narrative:
+In order to la prise de pari se fasse dans les meilleures conditions
+As a parieur
+I want to la validation vérifie que les participants soient tous partants
+Scenario: Cheval associé non partant
+Given un pari "Couplé Placé" formule "Champ réduit combinaison simplifiée" : 1-X/3,4,5 CC 7
+And sur la course 1 de la réunion 1
+And la mise est d'une valeur de 2,00€
+And une course avec comme chevaux partants: [1,2,3,5,7]
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari indique que le cheval 4 est non partant
+And la validation du pari contient les codes d'erreurs suivant [PARI_PARTICIPANT_NONPARTANT]
+
+Scenario: Cheval de base non partant
+Given un pari "Couplé Placé" formule "Champ réduit combinaison simplifiée" : 9-X/3,4,5 CC 7
+And sur la course 1 de la réunion 1
+And la mise est d'une valeur de 2,00€
+And une course avec comme chevaux partants: [1,2,3,5,7]
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari indique que le cheval 9 est non partant
+And la validation du pari contient les codes d'erreurs suivant [PARI_PARTICIPANT_NONPARTANT]
+
+Scenario: Cheval de complément non partant
+Given un pari "Couplé Placé" formule "Champ réduit combinaison simplifiée" : 1-X/3,4,5 CC 9
+And sur la course 1 de la réunion 1
+And la mise est d'une valeur de 2,00€
+And une course avec comme chevaux partants: [1,2,3,5,7]
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari indique que le cheval 9 est non partant
+And la validation du pari contient les codes d'erreurs suivant [PARI_PARTICIPANT_NONPARTANT]
+
+
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

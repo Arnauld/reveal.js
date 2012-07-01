@@ -1,0 +1,167 @@
+
+<html>
+<body>
+<div class="story"><h1></h1>
+<div class="path">fr/pmu/stories/prixparis/prixParis_Tic3.story</div>
+<div class="scenario"><h2>Scenario: Cas 1 Pari Tic 3 unitaire OK</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Tic 3"</span> formule "<span class="step parameter">Unitaire"</span> de <span class="step parameter">5</span> chevaux : 2-1-<span class="step parameter">5</span>-3-4  </div>
+
+<div class="step successful">And pour <span class="step parameter">1</span> mises de base  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est OK  </div>
+
+<div class="step successful">And le montant d'enjeu est égal à ｟4,30｠€  </div>
+
+<div class="step successful">And le nombre de paris unitaires est ｟égal｠ à <span class="step parameter">1</span>  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cas 2 Pari Tic 3 combinée avec 5 chevaux KO</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Tic 3"</span> formule "｟Combinaison Simplifiée｠" de <span class="step parameter">6</span> chevaux : 2-1-5-12-7-<span class="step parameter">6</span>  </div>
+
+<div class="step successful">And pour <span class="step parameter">1</span> mises de base  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cas 3 Pari Tic 3 unitaire avec nombre de chevaux incoherent KO</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Tic 3"</span> formule "<span class="step parameter">Unitaire"</span> de <span class="step parameter">2</span> chevaux : <span class="step parameter">2</span>-1  </div>
+
+<div class="step successful">And pour <span class="step parameter">1</span> mises de base  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+<div class="step ignorable">!-- Paris en champs  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cas 4 Pari Tic 3 combinée champ reduit combinaison simplifiée KO</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Tic 3"</span> formule "｟Champ réduit combinaison simplifiée｠" : ｟2-1-X-X-X/7,8,9,10,11｠  </div>
+
+<div class="step successful">And pour <span class="step parameter">1</span> mises de base  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cas 5 Pari Tic 3 champ total combinaison complete KO</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Tic 3"</span> formule "｟Champ total combinaison complète｠" : <span class="step parameter">2-X-X-10-9</span>  </div>
+
+<div class="step successful">And pour <span class="step parameter">1</span> mises de base  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+<div class="step ignorable">!-- Prise de pari spot  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cas 6 Prise pari spOt en Tic 3 Unitaire KO</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Tic 3"</span> formule "<span class="step parameter">Unitaire"</span> : ｟? - ? - ? - ? - ?｠  </div>
+
+<div class="step successful">And en spOt Automatique  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And pour 1 paris  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cas 7 Pari Tic 3 unitaire nbMise != 1 KO</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Tic 3"</span> formule "<span class="step parameter">Unitaire"</span> de <span class="step parameter">5</span> chevaux : 2-1-<span class="step parameter">5</span>-3-4  </div>
+
+<div class="step successful">And pour <span class="step parameter">2</span> mises de base  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cas 8 Pari Tic 3 unitaire en valeur KO</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Tic 3"</span> formule "<span class="step parameter">Unitaire"</span> de <span class="step parameter">5</span> chevaux : 2-1-<span class="step parameter">5</span>-3-4  </div>
+
+<div class="step successful">And pour une mise en valeur de ｟4,30 ｠€  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cas 9 Pari Tic 3 unitaire en flexi KO</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Tic 3"</span> formule "<span class="step parameter">Unitaire"</span> de <span class="step parameter">5</span> chevaux : 2-1-<span class="step parameter">5</span>-3-4  </div>
+
+<div class="step successful">And en mode Flexi à <span class="step parameter">50%</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cas 9 Pari Tic 3 avec cheval de complement KO</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Tic 3"</span> formule "<span class="step parameter">Unitaire"</span> de <span class="step parameter">5</span> chevaux : 2-1-<span class="step parameter">5</span>-3-4  </div>
+
+<div class="step successful">And le cheval de complément <span class="step parameter">6</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+</div> <!-- end story -->
+</body>
+</html>
+

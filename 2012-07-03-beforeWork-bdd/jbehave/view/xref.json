@@ -1,0 +1,816 @@
+{"xref": {
+  "whenMade": 1340885559739,
+  "createdBy": "JBehave",
+  "metaFilter": "",
+  "meta": [
+  ],
+  "stories": [
+    {
+      "description": "",
+      "narrative": "In order to la prise de pari se fasse dans les meilleures conditions\u000aAs a parieur\u000aI want to la validation vérifie que les participants soient tous partants\u000a",
+      "name": "validationPari_nonPartants.story",
+      "path": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+      "html": "fr.pmu.stories.validation.validationPari_nonPartants.html",
+      "meta": "",
+      "scenarios": "Scenario:Cheval associé non partant\u000aGiven un pari \"Couplé Placé\" formule \"Champ réduit combinaison simplifiée\" : 1-X/3,4,5 CC 7\u000aAnd sur la course 1 de la réunion 1\u000aAnd la mise est d'une valeur de 2,00€\u000aAnd une course avec comme chevaux partants: [1,2,3,5,7]\u000aWhen j'enregistre le pari\u000aThen l'enregistrement est KO\u000aAnd la validation du pari indique que le cheval 4 est non partant\u000aAnd la validation du pari contient les codes d'erreurs suivant [PARI_PARTICIPANT_NONPARTANT]\u000a\u000a\u000aScenario:Cheval de base non partant\u000aGiven un pari \"Couplé Placé\" formule \"Champ réduit combinaison simplifiée\" : 9-X/3,4,5 CC 7\u000aAnd sur la course 1 de la réunion 1\u000aAnd la mise est d'une valeur de 2,00€\u000aAnd une course avec comme chevaux partants: [1,2,3,5,7]\u000aWhen j'enregistre le pari\u000aThen l'enregistrement est KO\u000aAnd la validation du pari indique que le cheval 9 est non partant\u000aAnd la validation du pari contient les codes d'erreurs suivant [PARI_PARTICIPANT_NONPARTANT]\u000a\u000a\u000aScenario:Cheval de complément non partant\u000aGiven un pari \"Couplé Placé\" formule \"Champ réduit combinaison simplifiée\" : 1-X/3,4,5 CC 9\u000aAnd sur la course 1 de la réunion 1\u000aAnd la mise est d'une valeur de 2,00€\u000aAnd une course avec comme chevaux partants: [1,2,3,5,7]\u000aWhen j'enregistre le pari\u000aThen l'enregistrement est KO\u000aAnd la validation du pari indique que le cheval 9 est non partant\u000aAnd la validation du pari contient les codes d'erreurs suivant [PARI_PARTICIPANT_NONPARTANT]\u000a\u000a\u000a",
+      "passed": true,
+      "started": 1340885559139,
+      "duration": 21
+    },
+    {
+      "description": "",
+      "narrative": "In order to la prise de pari se fasse dans les meilleures conditions\u000aAs a parieur\u000aI want to la formulation de mes paris soit vérifiée\u000a",
+      "name": "validationPari_syntaxique.story",
+      "path": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+      "html": "fr.pmu.stories.validation.validationPari_syntaxique.html",
+      "meta": "",
+      "scenarios": "Scenario:Cheval de complement déjà présent dans les chevaux de base\u000aGiven un pari \"Couplé Placé\" formule \"Champ réduit combinaison simplifiée\" : 1-X/3,4,5 CC 1\u000aAnd sur la course 1 de la réunion 1\u000aAnd la mise est d'une valeur de 2,00€\u000aWhen j'enregistre le pari\u000aThen l'enregistrement est KO\u000aAnd la validation du pari contient les codes d'erreurs suivant [PARI_CHEVAL_COMPLEMENT_INCORRECT]\u000a\u000a\u000aScenario:Cheval associé déjà présent dans les chevaux de base\u000aGiven un pari \"Couplé Placé\" formule \"Champ réduit combinaison simplifiée\" : 1-X/1,4,5\u000aAnd sur la course 1 de la réunion 1\u000aAnd la mise est d'une valeur de 2,00€\u000aWhen j'enregistre le pari\u000aThen l'enregistrement est KO\u000aAnd la validation du pari contient les codes d'erreurs suivant [PARI_PARTICIPANT_NON_UNIQUE]\u000a\u000a\u000aScenario:Cheval de base multiple\u000aGiven un pari \"Quinté Plus\" formule \"Champ réduit combinaison simplifiée\" : 1-1-1-X/2,4,5\u000aAnd sur la course 1 de la réunion 1\u000aAnd la mise est d'une valeur de 2,00€\u000aAnd en mode Flexi à 25%\u000aWhen j'enregistre le pari\u000aThen l'enregistrement est KO\u000aAnd la validation du pari contient les codes d'erreurs suivant [PARI_TYPE_DE_MISE_NON_UNIQUE, PARI_PARTICIPANT_NON_UNIQUE, PARI_NB_CHEVAUX_DE_BASES_INCOHERENT]\u000a\u000a\u000aScenario:Cheval associé et cheval de complément déjà présent dans les chevaux de base\u000aGiven un pari \"Couplé Placé\" formule \"Champ réduit combinaison simplifiée\" : 1-X/1,4,5 CC 1\u000aAnd sur la course 1 de la réunion 1\u000aAnd la mise est d'une valeur de 2,00€\u000aWhen j'enregistre le pari\u000aThen l'enregistrement est KO\u000aAnd la validation du pari contient les codes d'erreurs suivant [PARI_PARTICIPANT_NON_UNIQUE, PARI_CHEVAL_COMPLEMENT_INCORRECT]\u000a\u000a\u000aScenario:Il faut un cheval de base X et cheval de complément déjà présent dans les chevaux de base\u000aGiven un pari \"Couplé Placé\" formule \"Champ réduit combinaison simplifiée\" : 1-2/3,4,5 CC 1\u000aAnd sur la course 1 de la réunion 1\u000aAnd la mise est d'une valeur de 2,00€\u000aWhen j'enregistre le pari\u000aThen l'enregistrement est KO\u000aAnd la validation du pari contient les codes d'erreurs suivant [PARI_CHEVAL_DE_BASE_NON_DESIGNE_REQUIS, PARI_CHEVAL_COMPLEMENT_INCORRECT]\u000a\u000a\u000aScenario:Nombre de chevaux de base invalide et présence de doublons parmis les participants de bases et associés\u000aGiven un pari \"Couplé Placé\" formule \"Champ réduit combinaison simplifiée\" : 1-2-4-5-6/3,4,5\u000aAnd sur la course 1 de la réunion 1\u000aAnd la mise est d'une valeur de 2,00€\u000aWhen j'enregistre le pari\u000aThen l'enregistrement est KO\u000aAnd la validation du pari contient les codes d'erreurs suivant [PARI_PARTICIPANT_NON_UNIQUE, PARI_CHEVAL_DE_BASE_NON_DESIGNE_REQUIS, PARI_NB_CHEVAUX_DE_BASES_INCOHERENT]\u000a\u000a\u000aScenario:Pas de chevaux associés pour un pari unitaire\u000aGiven un pari \"Simple Gagnant\" formule \"Unitaire\" : 1/3,4\u000aAnd sur la course 1 de la réunion 1\u000aAnd la mise est d'une valeur de 2,00€\u000aWhen j'enregistre le pari\u000aThen l'enregistrement est KO\u000aAnd la validation du pari contient les codes d'erreurs suivant [PARI_CHEVAUX_ASSOCIES_NON_AUTORISES]\u000a\u000a\u000aScenario:Pas de chevaux de base 'X' pour un pari unitaire\u000aGiven un pari \"Couplé Placé\" formule \"Unitaire\" : 1-X/3,4\u000aAnd sur la course 1 de la réunion 1\u000aAnd la mise est d'une valeur de 2,00€\u000aWhen j'enregistre le pari\u000aThen l'enregistrement est KO\u000aAnd la validation du pari contient les codes d'erreurs suivant [PARI_CHEVAUX_DE_BASE_INCOMPATIBLE_UNITAIRE]\u000a\u000a\u000a",
+      "passed": true,
+      "started": 1340885559172,
+      "duration": 60
+    },
+    {
+      "description": "",
+      "narrative": "",
+      "name": "validationPari_usecase1.story",
+      "path": "fr/pmu/stories/validation/validationPari_usecase1.story",
+      "html": "fr.pmu.stories.validation.validationPari_usecase1.html",
+      "meta": "",
+      "scenarios": "Scenario:Couplé placé avec un X et un seul associé en champs réduit\u000aGiven un pari \"Couplé Placé\" formule \"Champ réduit combinaison simplifiée\" : 1-X/3\u000aAnd sur la course 1 de la réunion 1\u000aAnd la mise est d'une valeur de 2,00€\u000aWhen j'enregistre le pari\u000aThen l'enregistrement est KO\u000aAnd la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_ASSOCIES_INSUFFISANT]\u000a\u000a\u000aScenario:Trio avec un X et un seul associé en champs réduit\u000aGiven un pari \"Trio\" formule \"Champ réduit combinaison simplifiée\" : 3-5-X/1\u000aAnd sur la course 1 de la réunion 1\u000aAnd la mise est d'une valeur de 2,00€\u000aWhen j'enregistre le pari\u000aThen l'enregistrement est KO\u000aAnd la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_ASSOCIES_INSUFFISANT]\u000a\u000a\u000aScenario:Trio sans X en champs réduit\u000aGiven un pari \"Trio\" formule \"Champ réduit combinaison simplifiée\" : 3-5-1\u000aAnd sur la course 1 de la réunion 1\u000aAnd la mise est d'une valeur de 2,00€\u000aWhen j'enregistre le pari\u000aThen l'enregistrement est KO\u000aAnd la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_ASSOCIES_INSUFFISANT]\u000a\u000a\u000aScenario:Trio Ordre avec un X et un seul associé en champs réduit\u000aGiven un pari \"Trio Ordre\" formule \"Champ réduit combinaison complète\" : 3-5-X/1\u000aAnd sur la course 1 de la réunion 1\u000aAnd la mise est d'une valeur de 2,00€\u000aWhen j'enregistre le pari\u000aThen l'enregistrement est KO\u000aAnd la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_ASSOCIES_INSUFFISANT]\u000a\u000a\u000aScenario:Trio Ordre avec un X et un deux associés en champs réduit\u000aGiven un pari \"Trio Ordre\" formule \"Champ réduit combinaison complète\" : 3-5-X/1,2\u000aAnd sur la course 1 de la réunion 1\u000aAnd la mise est d'une valeur de 2,00€\u000aWhen j'enregistre le pari\u000aThen l'enregistrement est OK\u000a\u000a\u000aScenario:Quinté+ avec trois X et un seulemenent 2 associés en champs réduit\u000aGiven un pari \"Quinté Plus\" formule \"Champ réduit combinaison complète\" : 3-5-X-X-X/1,2\u000aAnd sur la course 1 de la réunion 1\u000aAnd la mise est d'une valeur de 2,00€\u000aWhen j'enregistre le pari\u000aThen l'enregistrement est KO\u000aAnd la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_ASSOCIES_INSUFFISANT]\u000a\u000a\u000aScenario:Quinté+ avec trois X et un seulemenent 3 associés en champs réduit\u000aGiven un pari \"Quinté Plus\" formule \"Champ réduit combinaison complète\" : 3-5-X-X-X/1,2,3\u000aAnd sur la course 1 de la réunion 1\u000aAnd la mise est d'une valeur de 2,00€\u000aWhen j'enregistre le pari\u000aThen l'enregistrement est KO\u000aAnd la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_ASSOCIES_INSUFFISANT]\u000a\u000a\u000aScenario:Pick5 avec trois X et un seulemenent 3 associés en champs réduit\u000aGiven un pari \"Pick 5\" formule \"Champ réduit combinaison simplifiée\" : 3-5-X-X-X/1,2,4\u000aAnd sur la course 1 de la réunion 1\u000aAnd la mise est d'une valeur de 2,00€\u000aWhen j'enregistre le pari\u000aThen l'enregistrement est KO\u000aAnd la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_ASSOCIES_INSUFFISANT]\u000a\u000a\u000aScenario:Pick5 avec trois X et un 4 associés en champs réduit\u000aGiven un pari \"Pick 5\" formule \"Champ réduit combinaison simplifiée\" : 3-5-X-X-X/1,2,4,7\u000aAnd sur la course 1 de la réunion 1\u000aAnd la mise est d'une valeur de 2,00€\u000aWhen j'enregistre le pari\u000aThen l'enregistrement est OK\u000a\u000a\u000aScenario:Quinté+ avec trois X et un associé X en champs réduit et en Spot et mise en valeur\u000aGiven un pari \"Quinté Plus\" formule \"Combinaison simplifiée\" : ?-2-?-4-?-?\u000aAnd sur la course 1 de la réunion 1\u000aAnd la mise est d'une valeur de 2,00€\u000aAnd en spOt Automatique\u000aWhen j'enregistre le pari\u000aThen l'enregistrement est KO\u000aAnd la validation du pari contient les codes d'erreurs suivant [PARI_SPOT_CHOIX_VALEUR_OU_NB_MISE_IMPOSSIBLE]\u000a\u000a\u000aScenario:Quinté+ en spOt mixte avec plus de chevaux de base que de chevaux réglementaires en combinaison simplifiée\u000aGiven un pari \"Quinté Plus\" formule \"Combinaison simplifiée\" : ?-2-?-4-?-?\u000aAnd sur la course 1 de la réunion 1\u000aAnd en spOt Mixte\u000aWhen j'enregistre le pari\u000aThen l'enregistrement est OK\u000a\u000a\u000a",
+      "passed": true,
+      "started": 1340885559243,
+      "duration": 75
+    }
+  ],
+  "stepMatches": [
+    {
+      "type": "GIVEN",
+      "annotatedPattern": "en spOt Automatique",
+      "resolvedPattern": "en\\s+spOt\\s+Automatique",
+      "usages": [
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ avec trois X et un associé X en champs réduit et en Spot et mise en valeur",
+          "step": "And en spOt Automatique"
+        }
+      ]
+    },
+    {
+      "type": "GIVEN",
+      "annotatedPattern": "sur la course $numCourse de la réunion $numReunion",
+      "resolvedPattern": "sur\\s+la\\s+course\\s+(.*)\\s+de\\s+la\\s+réunion\\s+(.*)",
+      "usages": [
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Pas de chevaux de base 'X' pour un pari unitaire",
+          "step": "And sur la course 1 de la réunion 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ avec trois X et un seulemenent 2 associés en champs réduit",
+          "step": "And sur la course 1 de la réunion 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Pas de chevaux associés pour un pari unitaire",
+          "step": "And sur la course 1 de la réunion 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Pick5 avec trois X et un seulemenent 3 associés en champs réduit",
+          "step": "And sur la course 1 de la réunion 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Trio avec un X et un seul associé en champs réduit",
+          "step": "And sur la course 1 de la réunion 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ avec trois X et un seulemenent 3 associés en champs réduit",
+          "step": "And sur la course 1 de la réunion 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval associé déjà présent dans les chevaux de base",
+          "step": "And sur la course 1 de la réunion 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Il faut un cheval de base X et cheval de complément déjà présent dans les chevaux de base",
+          "step": "And sur la course 1 de la réunion 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Trio Ordre avec un X et un seul associé en champs réduit",
+          "step": "And sur la course 1 de la réunion 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ avec trois X et un associé X en champs réduit et en Spot et mise en valeur",
+          "step": "And sur la course 1 de la réunion 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Trio Ordre avec un X et un deux associés en champs réduit",
+          "step": "And sur la course 1 de la réunion 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval de complément non partant",
+          "step": "And sur la course 1 de la réunion 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval de base multiple",
+          "step": "And sur la course 1 de la réunion 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ en spOt mixte avec plus de chevaux de base que de chevaux réglementaires en combinaison simplifiée",
+          "step": "And sur la course 1 de la réunion 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Couplé placé avec un X et un seul associé en champs réduit",
+          "step": "And sur la course 1 de la réunion 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval de base non partant",
+          "step": "And sur la course 1 de la réunion 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval de complement déjà présent dans les chevaux de base",
+          "step": "And sur la course 1 de la réunion 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Nombre de chevaux de base invalide et présence de doublons parmis les participants de bases et associés",
+          "step": "And sur la course 1 de la réunion 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval associé non partant",
+          "step": "And sur la course 1 de la réunion 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval associé et cheval de complément déjà présent dans les chevaux de base",
+          "step": "And sur la course 1 de la réunion 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Pick5 avec trois X et un 4 associés en champs réduit",
+          "step": "And sur la course 1 de la réunion 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Trio sans X en champs réduit",
+          "step": "And sur la course 1 de la réunion 1"
+        }
+      ]
+    },
+    {
+      "type": "GIVEN",
+      "annotatedPattern": "la mise est d'une valeur de $montant€",
+      "resolvedPattern": "la\\s+mise\\s+est\\s+d'une\\s+valeur\\s+de\\s+(.*)€",
+      "usages": [
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Pick5 avec trois X et un seulemenent 3 associés en champs réduit",
+          "step": "And la mise est d'une valeur de 2,00€"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Pick5 avec trois X et un 4 associés en champs réduit",
+          "step": "And la mise est d'une valeur de 2,00€"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval associé non partant",
+          "step": "And la mise est d'une valeur de 2,00€"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Nombre de chevaux de base invalide et présence de doublons parmis les participants de bases et associés",
+          "step": "And la mise est d'une valeur de 2,00€"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Pas de chevaux de base 'X' pour un pari unitaire",
+          "step": "And la mise est d'une valeur de 2,00€"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Couplé placé avec un X et un seul associé en champs réduit",
+          "step": "And la mise est d'une valeur de 2,00€"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Trio avec un X et un seul associé en champs réduit",
+          "step": "And la mise est d'une valeur de 2,00€"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Trio sans X en champs réduit",
+          "step": "And la mise est d'une valeur de 2,00€"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval associé déjà présent dans les chevaux de base",
+          "step": "And la mise est d'une valeur de 2,00€"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval associé et cheval de complément déjà présent dans les chevaux de base",
+          "step": "And la mise est d'une valeur de 2,00€"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Trio Ordre avec un X et un seul associé en champs réduit",
+          "step": "And la mise est d'une valeur de 2,00€"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Pas de chevaux associés pour un pari unitaire",
+          "step": "And la mise est d'une valeur de 2,00€"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ avec trois X et un associé X en champs réduit et en Spot et mise en valeur",
+          "step": "And la mise est d'une valeur de 2,00€"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval de base multiple",
+          "step": "And la mise est d'une valeur de 2,00€"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ avec trois X et un seulemenent 2 associés en champs réduit",
+          "step": "And la mise est d'une valeur de 2,00€"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Trio Ordre avec un X et un deux associés en champs réduit",
+          "step": "And la mise est d'une valeur de 2,00€"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ avec trois X et un seulemenent 3 associés en champs réduit",
+          "step": "And la mise est d'une valeur de 2,00€"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval de complement déjà présent dans les chevaux de base",
+          "step": "And la mise est d'une valeur de 2,00€"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval de base non partant",
+          "step": "And la mise est d'une valeur de 2,00€"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval de complément non partant",
+          "step": "And la mise est d'une valeur de 2,00€"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Il faut un cheval de base X et cheval de complément déjà présent dans les chevaux de base",
+          "step": "And la mise est d'une valeur de 2,00€"
+        }
+      ]
+    },
+    {
+      "type": "THEN",
+      "annotatedPattern": "l'enregistrement est OK",
+      "resolvedPattern": "l'enregistrement\\s+est\\s+OK",
+      "usages": [
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Pick5 avec trois X et un 4 associés en champs réduit",
+          "step": "Then l'enregistrement est OK"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Trio Ordre avec un X et un deux associés en champs réduit",
+          "step": "Then l'enregistrement est OK"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ en spOt mixte avec plus de chevaux de base que de chevaux réglementaires en combinaison simplifiée",
+          "step": "Then l'enregistrement est OK"
+        }
+      ]
+    },
+    {
+      "type": "THEN",
+      "annotatedPattern": "la validation du pari indique que le cheval $numParticipant est non partant",
+      "resolvedPattern": "la\\s+validation\\s+du\\s+pari\\s+indique\\s+que\\s+le\\s+cheval\\s+(.*)\\s+est\\s+non\\s+partant",
+      "usages": [
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval associé non partant",
+          "step": "And la validation du pari indique que le cheval 4 est non partant"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval de complément non partant",
+          "step": "And la validation du pari indique que le cheval 9 est non partant"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval de base non partant",
+          "step": "And la validation du pari indique que le cheval 9 est non partant"
+        }
+      ]
+    },
+    {
+      "type": "THEN",
+      "annotatedPattern": "l'enregistrement est KO",
+      "resolvedPattern": "l'enregistrement\\s+est\\s+KO",
+      "usages": [
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ avec trois X et un associé X en champs réduit et en Spot et mise en valeur",
+          "step": "Then l'enregistrement est KO"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ avec trois X et un seulemenent 3 associés en champs réduit",
+          "step": "Then l'enregistrement est KO"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ avec trois X et un seulemenent 2 associés en champs réduit",
+          "step": "Then l'enregistrement est KO"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval de base non partant",
+          "step": "Then l'enregistrement est KO"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval associé non partant",
+          "step": "Then l'enregistrement est KO"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Couplé placé avec un X et un seul associé en champs réduit",
+          "step": "Then l'enregistrement est KO"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval de base multiple",
+          "step": "Then l'enregistrement est KO"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Pas de chevaux de base 'X' pour un pari unitaire",
+          "step": "Then l'enregistrement est KO"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval associé déjà présent dans les chevaux de base",
+          "step": "Then l'enregistrement est KO"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Trio sans X en champs réduit",
+          "step": "Then l'enregistrement est KO"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Il faut un cheval de base X et cheval de complément déjà présent dans les chevaux de base",
+          "step": "Then l'enregistrement est KO"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Pick5 avec trois X et un seulemenent 3 associés en champs réduit",
+          "step": "Then l'enregistrement est KO"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Pas de chevaux associés pour un pari unitaire",
+          "step": "Then l'enregistrement est KO"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Trio Ordre avec un X et un seul associé en champs réduit",
+          "step": "Then l'enregistrement est KO"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval associé et cheval de complément déjà présent dans les chevaux de base",
+          "step": "Then l'enregistrement est KO"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Nombre de chevaux de base invalide et présence de doublons parmis les participants de bases et associés",
+          "step": "Then l'enregistrement est KO"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Trio avec un X et un seul associé en champs réduit",
+          "step": "Then l'enregistrement est KO"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval de complément non partant",
+          "step": "Then l'enregistrement est KO"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval de complement déjà présent dans les chevaux de base",
+          "step": "Then l'enregistrement est KO"
+        }
+      ]
+    },
+    {
+      "type": "GIVEN",
+      "annotatedPattern": "un pari \"$typePari\" formule \"$formule\" : $selection",
+      "resolvedPattern": "un\\s+pari\\s+\"(.*)\"\\s+formule\\s+\"(.*)\"\\s+:\\s+(.*)",
+      "usages": [
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ avec trois X et un associé X en champs réduit et en Spot et mise en valeur",
+          "step": "Given un pari \"Quinté Plus\" formule \"Combinaison simplifiée\" : ?-2-?-4-?-?"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Couplé placé avec un X et un seul associé en champs réduit",
+          "step": "Given un pari \"Couplé Placé\" formule \"Champ réduit combinaison simplifiée\" : 1-X/3"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Trio sans X en champs réduit",
+          "step": "Given un pari \"Trio\" formule \"Champ réduit combinaison simplifiée\" : 3-5-1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval de base multiple",
+          "step": "Given un pari \"Quinté Plus\" formule \"Champ réduit combinaison simplifiée\" : 1-1-1-X/2,4,5"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ en spOt mixte avec plus de chevaux de base que de chevaux réglementaires en combinaison simplifiée",
+          "step": "Given un pari \"Quinté Plus\" formule \"Combinaison simplifiée\" : ?-2-?-4-?-?"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ avec trois X et un seulemenent 3 associés en champs réduit",
+          "step": "Given un pari \"Quinté Plus\" formule \"Champ réduit combinaison complète\" : 3-5-X-X-X/1,2,3"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval associé déjà présent dans les chevaux de base",
+          "step": "Given un pari \"Couplé Placé\" formule \"Champ réduit combinaison simplifiée\" : 1-X/1,4,5"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Pas de chevaux associés pour un pari unitaire",
+          "step": "Given un pari \"Simple Gagnant\" formule \"Unitaire\" : 1/3,4"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval de complement déjà présent dans les chevaux de base",
+          "step": "Given un pari \"Couplé Placé\" formule \"Champ réduit combinaison simplifiée\" : 1-X/3,4,5 CC 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ avec trois X et un seulemenent 2 associés en champs réduit",
+          "step": "Given un pari \"Quinté Plus\" formule \"Champ réduit combinaison complète\" : 3-5-X-X-X/1,2"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Nombre de chevaux de base invalide et présence de doublons parmis les participants de bases et associés",
+          "step": "Given un pari \"Couplé Placé\" formule \"Champ réduit combinaison simplifiée\" : 1-2-4-5-6/3,4,5"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Trio Ordre avec un X et un deux associés en champs réduit",
+          "step": "Given un pari \"Trio Ordre\" formule \"Champ réduit combinaison complète\" : 3-5-X/1,2"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval associé et cheval de complément déjà présent dans les chevaux de base",
+          "step": "Given un pari \"Couplé Placé\" formule \"Champ réduit combinaison simplifiée\" : 1-X/1,4,5 CC 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Pas de chevaux de base 'X' pour un pari unitaire",
+          "step": "Given un pari \"Couplé Placé\" formule \"Unitaire\" : 1-X/3,4"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Pick5 avec trois X et un 4 associés en champs réduit",
+          "step": "Given un pari \"Pick 5\" formule \"Champ réduit combinaison simplifiée\" : 3-5-X-X-X/1,2,4,7"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Pick5 avec trois X et un seulemenent 3 associés en champs réduit",
+          "step": "Given un pari \"Pick 5\" formule \"Champ réduit combinaison simplifiée\" : 3-5-X-X-X/1,2,4"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval associé non partant",
+          "step": "Given un pari \"Couplé Placé\" formule \"Champ réduit combinaison simplifiée\" : 1-X/3,4,5 CC 7"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval de complément non partant",
+          "step": "Given un pari \"Couplé Placé\" formule \"Champ réduit combinaison simplifiée\" : 1-X/3,4,5 CC 9"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Trio Ordre avec un X et un seul associé en champs réduit",
+          "step": "Given un pari \"Trio Ordre\" formule \"Champ réduit combinaison complète\" : 3-5-X/1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Trio avec un X et un seul associé en champs réduit",
+          "step": "Given un pari \"Trio\" formule \"Champ réduit combinaison simplifiée\" : 3-5-X/1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Il faut un cheval de base X et cheval de complément déjà présent dans les chevaux de base",
+          "step": "Given un pari \"Couplé Placé\" formule \"Champ réduit combinaison simplifiée\" : 1-2/3,4,5 CC 1"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval de base non partant",
+          "step": "Given un pari \"Couplé Placé\" formule \"Champ réduit combinaison simplifiée\" : 9-X/3,4,5 CC 7"
+        }
+      ]
+    },
+    {
+      "type": "WHEN",
+      "annotatedPattern": "j'enregistre le pari",
+      "resolvedPattern": "j'enregistre\\s+le\\s+pari",
+      "usages": [
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Pas de chevaux de base 'X' pour un pari unitaire",
+          "step": "When j'enregistre le pari"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ avec trois X et un associé X en champs réduit et en Spot et mise en valeur",
+          "step": "When j'enregistre le pari"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Pas de chevaux associés pour un pari unitaire",
+          "step": "When j'enregistre le pari"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Nombre de chevaux de base invalide et présence de doublons parmis les participants de bases et associés",
+          "step": "When j'enregistre le pari"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval associé et cheval de complément déjà présent dans les chevaux de base",
+          "step": "When j'enregistre le pari"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ avec trois X et un seulemenent 3 associés en champs réduit",
+          "step": "When j'enregistre le pari"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval associé non partant",
+          "step": "When j'enregistre le pari"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval de complément non partant",
+          "step": "When j'enregistre le pari"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ en spOt mixte avec plus de chevaux de base que de chevaux réglementaires en combinaison simplifiée",
+          "step": "When j'enregistre le pari"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Trio avec un X et un seul associé en champs réduit",
+          "step": "When j'enregistre le pari"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Pick5 avec trois X et un 4 associés en champs réduit",
+          "step": "When j'enregistre le pari"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval de base non partant",
+          "step": "When j'enregistre le pari"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval associé déjà présent dans les chevaux de base",
+          "step": "When j'enregistre le pari"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Couplé placé avec un X et un seul associé en champs réduit",
+          "step": "When j'enregistre le pari"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Pick5 avec trois X et un seulemenent 3 associés en champs réduit",
+          "step": "When j'enregistre le pari"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval de complement déjà présent dans les chevaux de base",
+          "step": "When j'enregistre le pari"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Il faut un cheval de base X et cheval de complément déjà présent dans les chevaux de base",
+          "step": "When j'enregistre le pari"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Trio Ordre avec un X et un deux associés en champs réduit",
+          "step": "When j'enregistre le pari"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Trio sans X en champs réduit",
+          "step": "When j'enregistre le pari"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ avec trois X et un seulemenent 2 associés en champs réduit",
+          "step": "When j'enregistre le pari"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval de base multiple",
+          "step": "When j'enregistre le pari"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Trio Ordre avec un X et un seul associé en champs réduit",
+          "step": "When j'enregistre le pari"
+        }
+      ]
+    },
+    {
+      "type": "GIVEN",
+      "annotatedPattern": "une course avec comme chevaux partants: [$commaSeparatedNumPartants]",
+      "resolvedPattern": "une\\s+course\\s+avec\\s+comme\\s+chevaux\\s+partants:\\s+\\[(.*)\\]",
+      "usages": [
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval de complément non partant",
+          "step": "And une course avec comme chevaux partants: [1,2,3,5,7]"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval de base non partant",
+          "step": "And une course avec comme chevaux partants: [1,2,3,5,7]"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval associé non partant",
+          "step": "And une course avec comme chevaux partants: [1,2,3,5,7]"
+        }
+      ]
+    },
+    {
+      "type": "GIVEN",
+      "annotatedPattern": "en spOt Mixte",
+      "resolvedPattern": "en\\s+spOt\\s+Mixte",
+      "usages": [
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ en spOt mixte avec plus de chevaux de base que de chevaux réglementaires en combinaison simplifiée",
+          "step": "And en spOt Mixte"
+        }
+      ]
+    },
+    {
+      "type": "THEN",
+      "annotatedPattern": "la validation du pari contient les codes d'erreurs suivant [$commaSeparatedErrorCode]",
+      "resolvedPattern": "la\\s+validation\\s+du\\s+pari\\s+contient\\s+les\\s+codes\\s+d'erreurs\\s+suivant\\s+\\[(.*)\\]",
+      "usages": [
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Nombre de chevaux de base invalide et présence de doublons parmis les participants de bases et associés",
+          "step": "And la validation du pari contient les codes d'erreurs suivant [PARI_PARTICIPANT_NON_UNIQUE, PARI_CHEVAL_DE_BASE_NON_DESIGNE_REQUIS, PARI_NB_CHEVAUX_DE_BASES_INCOHERENT]"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Trio Ordre avec un X et un seul associé en champs réduit",
+          "step": "And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_ASSOCIES_INSUFFISANT]"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval associé et cheval de complément déjà présent dans les chevaux de base",
+          "step": "And la validation du pari contient les codes d'erreurs suivant [PARI_PARTICIPANT_NON_UNIQUE, PARI_CHEVAL_COMPLEMENT_INCORRECT]"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval associé déjà présent dans les chevaux de base",
+          "step": "And la validation du pari contient les codes d'erreurs suivant [PARI_PARTICIPANT_NON_UNIQUE]"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ avec trois X et un associé X en champs réduit et en Spot et mise en valeur",
+          "step": "And la validation du pari contient les codes d'erreurs suivant [PARI_SPOT_CHOIX_VALEUR_OU_NB_MISE_IMPOSSIBLE]"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Pas de chevaux de base 'X' pour un pari unitaire",
+          "step": "And la validation du pari contient les codes d'erreurs suivant [PARI_CHEVAUX_DE_BASE_INCOMPATIBLE_UNITAIRE]"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval de complément non partant",
+          "step": "And la validation du pari contient les codes d'erreurs suivant [PARI_PARTICIPANT_NONPARTANT]"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Couplé placé avec un X et un seul associé en champs réduit",
+          "step": "And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_ASSOCIES_INSUFFISANT]"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Pas de chevaux associés pour un pari unitaire",
+          "step": "And la validation du pari contient les codes d'erreurs suivant [PARI_CHEVAUX_ASSOCIES_NON_AUTORISES]"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval associé non partant",
+          "step": "And la validation du pari contient les codes d'erreurs suivant [PARI_PARTICIPANT_NONPARTANT]"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval de complement déjà présent dans les chevaux de base",
+          "step": "And la validation du pari contient les codes d'erreurs suivant [PARI_CHEVAL_COMPLEMENT_INCORRECT]"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Pick5 avec trois X et un seulemenent 3 associés en champs réduit",
+          "step": "And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_ASSOCIES_INSUFFISANT]"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Trio sans X en champs réduit",
+          "step": "And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_ASSOCIES_INSUFFISANT]"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Trio avec un X et un seul associé en champs réduit",
+          "step": "And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_ASSOCIES_INSUFFISANT]"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_nonPartants.story",
+          "scenario": "Cheval de base non partant",
+          "step": "And la validation du pari contient les codes d'erreurs suivant [PARI_PARTICIPANT_NONPARTANT]"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Il faut un cheval de base X et cheval de complément déjà présent dans les chevaux de base",
+          "step": "And la validation du pari contient les codes d'erreurs suivant [PARI_CHEVAL_DE_BASE_NON_DESIGNE_REQUIS, PARI_CHEVAL_COMPLEMENT_INCORRECT]"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ avec trois X et un seulemenent 2 associés en champs réduit",
+          "step": "And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_ASSOCIES_INSUFFISANT]"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_usecase1.story",
+          "scenario": "Quinté+ avec trois X et un seulemenent 3 associés en champs réduit",
+          "step": "And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_ASSOCIES_INSUFFISANT]"
+        },
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval de base multiple",
+          "step": "And la validation du pari contient les codes d'erreurs suivant [PARI_TYPE_DE_MISE_NON_UNIQUE, PARI_PARTICIPANT_NON_UNIQUE, PARI_NB_CHEVAUX_DE_BASES_INCOHERENT]"
+        }
+      ]
+    },
+    {
+      "type": "GIVEN",
+      "annotatedPattern": "en mode Flexi à $nb%",
+      "resolvedPattern": "en\\s+mode\\s+Flexi\\s+à\\s+(.*)%",
+      "usages": [
+        {
+          "story": "fr/pmu/stories/validation/validationPari_syntaxique.story",
+          "scenario": "Cheval de base multiple",
+          "step": "And en mode Flexi à 25%"
+        }
+      ]
+    }
+  ]
+}}

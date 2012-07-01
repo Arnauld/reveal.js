@@ -1,0 +1,125 @@
+<html><head><meta charset="utf-8">
+<title>Turf Pari Services</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: txt"><![CDATA[
+
+(fr/pmu/stories/prixparis/prixParis_Multi_ChampTotal.story)
+Scenario: CAS 1 : Dans une course à partir du programme,
+je reçois un pari Multi Champ Total,
+avec 3 chevaux de base et un risque 6 pour une mise de 3€,
+l'enjeu du pari à enregistrer est de 495€ (165 paris unitaires pour une course avec 14 partants).
+Given un pari "Multi" formule "Champ total combinaison simplifiée" : 3-6-9-x-x-x
+And en risque 6
+And sur la course 1 de la réunion 1
+And une course avec comme chevaux partants: [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+And pour 1 mise de base
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le nombre de paris unitaires est égal à 165
+And le montant d'enjeu est égal à 495€
+
+Scenario: CAS 2 Dans une course à partir du programme, 
+je reçois un pari Multi Champ Total,
+avec 7 chevaux et un risque de 4 pour une mise de 10€,
+le pari est rejeté car la formulation du pari est invalide
+(incohérence risque et nombre de chevaux désignés dans un Multi).
+Given un pari "Multi" formule "Champ total combinaison simplifiée" : 3-6-9-x-x-x-x
+And en risque 4
+And sur la course 1 de la réunion 1
+And pour une mise en valeur de 10€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_DE_BASES_INCOHERENT]
+
+Scenario: CAS 2 Dans une course à partir du programme, 
+je reçois un pari Multi Champ Total,
+avec 7 chevaux et un risque de 4 pour une mise de 10€,
+le pari est rejeté car la formulation du pari est invalide
+(incohérence risque et nombre de chevaux désignés dans un Multi).
+Given un pari "Multi" formule "Champ total combinaison simplifiée" : 3-6-9-x-x-x-x
+And en risque 4
+And sur la course 1 de la réunion 1
+And pour une mise en valeur de 10€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_DE_BASES_INCOHERENT]
+
+Scenario: CAS 4 Dans une course à partir du programme,
+je reçois un pari Multi Total,
+avec 6 chevaux et un risque de 3 pour une mise de 10€,
+le pari est rejeté car la formulation du pari est invalide (le niveau de risque est invalide en Multi).
+Given un pari "Multi" formule "Champ total combinaison simplifiée" : 3-6-9-x-x-x
+And en risque 3
+And sur la course 1 de la réunion 1
+And pour une mise en valeur de 10€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_MULTI_VALEUR_RISQUE_INVALIDE]
+
+Scenario: CAS 5 : La formule Champ total combinaison complète est interdite en multi
+Given un pari "Multi" formule "Champ total combinaison complète" : 3-6-9-x-x-x
+And en risque 6
+And sur la course 1 de la réunion 1
+And pour 1 mise de base
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_MODE_DTLO_NON_AUTORISE]
+
+Scenario: CAS 6: La formule Combinaison complète est interdite en multi
+Given un pari "Multi" formule "Combinaison complète" : 1-2-3-4-5-6
+And en risque 6
+And sur la course 1 de la réunion 1
+And pour 1 mise de base
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_MODE_DTLO_NON_AUTORISE]
+
+Scenario: CAS 7: La formule Champ réduit combinaison complète est interdite en multi
+Given un pari "Multi" formule "Champ réduit combinaison complète" : 1-2-3-4-5-x/6,7
+And en risque 6
+And sur la course 1 de la réunion 1
+And pour 1 mise de base
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_MODE_DTLO_NON_AUTORISE]
+
+Scenario: CAS 8 PAs assez de chevaux désignés
+Given un pari "Multi" formule "Champ total combinaison simplifiée" : x-x
+And en risque 4
+And sur la course 1 de la réunion 1
+And pour une mise en valeur de 10€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_DE_BASES_INCOHERENT]
+
+
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

@@ -1,0 +1,89 @@
+
+(fr/pmu/stories/validation/validationPari_usecase1.story)
+Scenario: Couplé placé avec un X et un seul associé en champs réduit
+Given un pari "Couplé Placé" formule "Champ réduit combinaison simplifiée" : 1-X/3
+And sur la course 1 de la réunion 1
+And la mise est d'une valeur de 2,00€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_ASSOCIES_INSUFFISANT]
+
+Scenario: Trio avec un X et un seul associé en champs réduit
+Given un pari "Trio" formule "Champ réduit combinaison simplifiée" : 3-5-X/1
+And sur la course 1 de la réunion 1
+And la mise est d'une valeur de 2,00€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_ASSOCIES_INSUFFISANT]
+
+Scenario: Trio sans X en champs réduit
+Given un pari "Trio" formule "Champ réduit combinaison simplifiée" : 3-5-1
+And sur la course 1 de la réunion 1
+And la mise est d'une valeur de 2,00€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_ASSOCIES_INSUFFISANT]
+
+Scenario: Trio Ordre avec un X et un seul associé en champs réduit
+Given un pari "Trio Ordre" formule "Champ réduit combinaison complète" : 3-5-X/1
+And sur la course 1 de la réunion 1
+And la mise est d'une valeur de 2,00€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_ASSOCIES_INSUFFISANT]
+
+Scenario: Trio Ordre avec un X et un deux associés en champs réduit
+Given un pari "Trio Ordre" formule "Champ réduit combinaison complète" : 3-5-X/1,2
+And sur la course 1 de la réunion 1
+And la mise est d'une valeur de 2,00€
+When j'enregistre le pari
+Then l'enregistrement est OK
+
+Scenario: Quinté+ avec trois X et un seulemenent 2 associés en champs réduit
+Given un pari "Quinté Plus" formule "Champ réduit combinaison complète" : 3-5-X-X-X/1,2
+And sur la course 1 de la réunion 1
+And la mise est d'une valeur de 2,00€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_ASSOCIES_INSUFFISANT]
+
+Scenario: Quinté+ avec trois X et un seulemenent 3 associés en champs réduit
+Given un pari "Quinté Plus" formule "Champ réduit combinaison complète" : 3-5-X-X-X/1,2,3
+And sur la course 1 de la réunion 1
+And la mise est d'une valeur de 2,00€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_ASSOCIES_INSUFFISANT]
+
+Scenario: Pick5 avec trois X et un seulemenent 3 associés en champs réduit
+Given un pari "Pick 5" formule "Champ réduit combinaison simplifiée" : 3-5-X-X-X/1,2,4
+And sur la course 1 de la réunion 1
+And la mise est d'une valeur de 2,00€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_ASSOCIES_INSUFFISANT]
+
+Scenario: Pick5 avec trois X et un 4 associés en champs réduit
+Given un pari "Pick 5" formule "Champ réduit combinaison simplifiée" : 3-5-X-X-X/1,2,4,7
+And sur la course 1 de la réunion 1
+And la mise est d'une valeur de 2,00€
+When j'enregistre le pari
+Then l'enregistrement est OK
+
+Scenario: Quinté+ avec trois X et un associé X en champs réduit et en Spot et mise en valeur
+Given un pari "Quinté Plus" formule "Combinaison simplifiée" : ?-2-?-4-?-?
+And sur la course 1 de la réunion 1
+And la mise est d'une valeur de 2,00€
+And en spOt Automatique
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_SPOT_CHOIX_VALEUR_OU_NB_MISE_IMPOSSIBLE]
+
+Scenario: Quinté+ en spOt mixte avec plus de chevaux de base que de chevaux réglementaires en combinaison simplifiée
+Given un pari "Quinté Plus" formule "Combinaison simplifiée" : ?-2-?-4-?-?
+And sur la course 1 de la réunion 1
+And en spOt Mixte
+When j'enregistre le pari
+Then l'enregistrement est OK
+
+

@@ -1,0 +1,180 @@
+<html><head><meta charset="utf-8">
+<title>Turf Pari Services</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+
+<html>
+<body>
+<div class="story"><h1></h1>
+<div class="path">fr/pmu/stories/prixparis/prixParis_Multi_ChampTotal.story</div>
+<div class="scenario"><h2>Scenario: CAS 1 : Dans une course à partir du programme,<br/>je reçois un pari Multi Champ Total,<br/>avec 3 chevaux de base et un risque 6 pour une mise de 3€,<br/>l'enjeu du pari à enregistrer est de 495€ (165 paris unitaires pour une course avec 14 partants).</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Multi"</span> formule "｟Champ total combinaison simplifiée｠" : <span class="step parameter">3-6-9-x-x-x</span>  </div>
+
+<div class="step successful">And en risque <span class="step parameter">6</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And une course avec comme chevaux partants: [｟1,2,3,4,5,6,7,8,9,10,11,12,13,14｠]  </div>
+
+<div class="step successful">And pour <span class="step parameter">1</span> mise de base  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est OK  </div>
+
+<div class="step successful">And le nombre de paris unitaires est ｟égal｠ à <span class="step parameter">165</span>  </div>
+
+<div class="step successful">And le montant denjeu est égal à {0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: CAS 2 Dans une course à partir du programme, <br/>je reçois un pari Multi Champ Total,<br/>avec 7 chevaux et un risque de 4 pour une mise de 10€,<br/>le pari est rejeté car la formulation du pari est invalide<br/>(incohérence risque et nombre de chevaux désignés dans un Multi).</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Multi"</span> formule "｟Champ total combinaison simplifiée｠" : <span class="step parameter">3-6-9-x-x-x-x</span>  </div>
+
+<div class="step successful">And en risque <span class="step parameter">4</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And pour une mise en valeur de <span class="step parameter">10€</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: CAS 2 Dans une course à partir du programme, <br/>je reçois un pari Multi Champ Total,<br/>avec 7 chevaux et un risque de 4 pour une mise de 10€,<br/>le pari est rejeté car la formulation du pari est invalide<br/>(incohérence risque et nombre de chevaux désignés dans un Multi).</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Multi"</span> formule "｟Champ total combinaison simplifiée｠" : <span class="step parameter">3-6-9-x-x-x-x</span>  </div>
+
+<div class="step successful">And en risque <span class="step parameter">4</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And pour une mise en valeur de <span class="step parameter">10€</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: CAS 4 Dans une course à partir du programme,<br/>je reçois un pari Multi Total,<br/>avec 6 chevaux et un risque de 3 pour une mise de 10€,<br/>le pari est rejeté car la formulation du pari est invalide (le niveau de risque est invalide en Multi).</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Multi"</span> formule "｟Champ total combinaison simplifiée｠" : <span class="step parameter">3-6-9-x-x-x</span>  </div>
+
+<div class="step successful">And en risque <span class="step parameter">3</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And pour une mise en valeur de <span class="step parameter">10€</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: CAS 5 : La formule Champ total combinaison complète est interdite en multi</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Multi"</span> formule "｟Champ total combinaison complète｠" : <span class="step parameter">3-6-9-x-x-x</span>  </div>
+
+<div class="step successful">And en risque <span class="step parameter">6</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And pour <span class="step parameter">1</span> mise de base  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: CAS 6: La formule Combinaison complète est interdite en multi</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Multi"</span> formule "｟Combinaison complète｠" : <span class="step parameter">1-2-3-4-5-6</span>  </div>
+
+<div class="step successful">And en risque <span class="step parameter">6</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And pour <span class="step parameter">1</span> mise de base  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: CAS 7: La formule Champ réduit combinaison complète est interdite en multi</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Multi"</span> formule "｟Champ réduit combinaison complète｠" : ｟1-2-3-4-5-x/6,7｠  </div>
+
+<div class="step successful">And en risque <span class="step parameter">6</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And pour <span class="step parameter">1</span> mise de base  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: CAS 8 PAs assez de chevaux désignés</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Multi"</span> formule "｟Champ total combinaison simplifiée｠" : <span class="step parameter">x-x</span>  </div>
+
+<div class="step successful">And en risque <span class="step parameter">4</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And pour une mise en valeur de <span class="step parameter">10€</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+</div> <!-- end story -->
+</body>
+</html>
+
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

@@ -1,0 +1,71 @@
+
+<html>
+<body>
+<div class="story"><h1></h1>
+<div class="path">fr/pmu/stories/validation/validationPari_nonPartants.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">In order to</span> la prise de pari se fasse dans les meilleures conditions</div>
+<div class="element asA"><span class="keyword asA">As a</span> parieur</div>
+<div class="element iWantTo"><span class="keyword iWantTo">I want to</span> la validation vérifie que les participants soient tous partants</div>
+</div>
+<div class="scenario"><h2>Scenario: Cheval associé non partant</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "｟Couplé Placé｠" formule "｟Champ réduit combinaison simplifiée｠" : ｟1-X/3,4,5 CC 7｠  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">And une course avec comme chevaux partants: [｟1,2,3,5,7｠]  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari indique que le cheval <span class="step parameter">4</span> est non partant  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cheval de base non partant</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "｟Couplé Placé｠" formule "｟Champ réduit combinaison simplifiée｠" : ｟9-X/3,4,5 CC 7｠  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">And une course avec comme chevaux partants: [｟1,2,3,5,7｠]  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari indique que le cheval <span class="step parameter">9</span> est non partant  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cheval de complément non partant</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "｟Couplé Placé｠" formule "｟Champ réduit combinaison simplifiée｠" : ｟1-X/3,4,5 CC 9｠  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">And une course avec comme chevaux partants: [｟1,2,3,5,7｠]  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari indique que le cheval <span class="step parameter">9</span> est non partant  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+</div> <!-- end story -->
+</body>
+</html>
+

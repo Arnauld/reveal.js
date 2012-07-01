@@ -1,0 +1,601 @@
+<!doctype html>  
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    
+    <title>BDD beforework</title>
+
+    <meta name="description" content="BDD @rolla beforework 03/07/2012">
+    <meta name="author" content="Arnauld Loyer">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <link href='font/Lato/lato-400-700.css' rel='stylesheet' type='text/css'>
+    <link href='font/Swanky_and_Moo_Moo/Swanky.css' rel='stylesheet' type='text/css'-->
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/override.css">
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+
+    <link rel="stylesheet" href="lib/zenburn.css">
+  </head>
+  
+  <body>
+    
+    <div class="reveal">
+
+      <!-- Used to fade in a background when a specific slide state is reached -->
+      <div class="state-background"></div>
+      
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+        <section>
+          <h1>beforework BDD</h1>
+          <h3 class="kw">Du concrets!</h3>
+          <script>
+            // Delicously hacky. Look away.
+            if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ) document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
+          </script>
+          <div class="caption">
+            <i><small><a href="http://arnauld.github.com">Arnauld Loyer</a> / <a href="http://twitter.com/aloyer">@aloyer</a>/ <a href="mailto:arnauld.loyer@arolla.fr">arnauld.loyer@arolla.fr</a></small> </i>
+            </div>
+        </section>
+        
+        <section>
+            <section>
+              <h2>Notre première “Story”</h2>
+              <h3 class="part hidden">Qui est concerné?</h3>
+              <p class="story narrative">
+                <span class="part hidden"><b>En tant que</b> participants à cette présentation</span>
+              </p>
+              <h3 class="part hidden">Pourquoi êtes-vous venu?</h3>
+              <span class="part hidden extra">Pour manger des croissants!</span>
+              <p class="story narrative">
+                <span class="part hidden"><b>Afin de</b> ressentir les bénéfices de l'approche <em>BDD</em></span><br/>
+              </p>
+              <h3 class="part hidden">Quelles sont vos attentes?</h3>
+              <p class="story narrative">
+                <span class="part hidden"><b>Je veux</b> que des cas concrets soient présentés</span><br/>
+                <!-- ça c'est une interpretation personnelle, c'est en tout cas ce que moi j'aurai souhaité,
+                     et puis il fallait définir la trame de cette présentation -->            
+              </p>
+
+              <!-- 
+                  ça c'est la partie narrative de notre histoire, elle lui donne sa consistance et décrit son but
+              -->
+            </section>
+
+            <section>
+              <h2>Quelles seraient les critères d'acceptances?</h2>
+              <br/>
+              <h3 class="part hidden kw">Les scénarios</h3>
+            </section>
+        </section>
+
+
+        <section>
+            <section>
+              <h2>Notre premier “Scénario”</h2>
+              <br/>
+              <p class="story scenario">
+                <b class="title">Scenario:</b> Commençons par la fin et montrez-nous des résultat!<br/>
+              </p>
+              <br/>
+              <p class="story steps">
+                <span class="part hidden">
+                  <b>Etant donné</b> un SI très complexe</span>
+                  <img width="20px" class="part hidden icon" order="5" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <br/>
+                <!-- Je m'en suis chargé pour vous -->
+
+                <span class="part hidden">
+                  <b>Et</b> une mise en application chez un client</span>
+                  <img width="20px" class="part hidden icon" order="6" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <br/>
+                <!-- Je m'en suis chargé pour vous -->
+
+                <span class="part hidden">
+                  <b>Quand</b> on observe les résultats</span>
+                  <img width="20px" class="part hidden icon" order="7" src="2012-07-03-beforeWork-bdd/200px-Dialog-error-round.svg.png"/>
+                  <br/>
+                <!-- Nous allons voir ça ensemble -->
+
+                <span class="part hidden">
+                  <b>Alors</b> on se dit qu'en y allant petit à petit c'est possible</span>
+                  <img width="20px" class="part hidden icon" order="8" src="2012-07-03-beforeWork-bdd/200px-Dialog-error-round.svg.png"/>
+                  <br/>
+                <!-- ça vous pourrez me le dire/confirmer après ;) -->
+
+              </p>
+            </section>
+
+            <section>
+              <h3 class="kw">Le S.I.!</h3>
+            </section>
+
+            <section>
+              <img width="600px" src="2012-07-03-beforeWork-bdd/PMU-SI-overview.png"/>
+              <div class="part hidden" style="z-index: 30; position: relative; border-width:5px; border-color:red; width: 360px; height: 120px; top: -430px; left: 270px;border-style: solid;" />
+            </section>
+
+            <section>
+              <img width="800px" src="2012-07-03-beforeWork-bdd/PMU-SI-PriseDePari.png"/>
+            </section>
+
+            <section>
+              <h3 class="kw">Un rapport de résultat!</h3>
+            </section>
+
+            <section>
+                <img src="2012-07-03-beforeWork-bdd/PMU-rapport-jbehave-overview-sec.png">
+            </section>
+
+            <section>
+                <img src="2012-07-03-beforeWork-bdd/PMU-rapport-jbehave-overview-top.png"/>
+                <img class="part hidden" src="2012-07-03-beforeWork-bdd/PMU-rapport-jbehave-overview-bottom.png"/>
+                <img class="part hidden" style="position: fixed; z-index:5; left:300px; top:220px;" src="2012-07-03-beforeWork-bdd/PMU-rapport-jbehave-overview-date.png"/>
+            </section>
+
+            <section>
+              <p class="story scenario">
+                <b class="title">Scenario:</b> Nous sommes impatients (Commençons par la fin et) montrez-nous des résultat!<br/>
+              </p>
+              
+              <p class="story steps">
+                  <b>Etant donné</b> un SI très complexe
+                  <img width="20px" class="part hidden icon" order="5" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <br/>
+
+                  <b>Et</b> une mise en application chez un client
+                  <img width="20px" class="part hidden icon" order="6" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <br/>
+
+                  <b>Quand</b> on observe les résultats
+                  <img width="20px" class="part hidden icon" order="7" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <br/>
+
+                  <b>Alors</b> on se dit qu'en y allant petit à petit c'est possible
+                  <img width="20px" class="part hidden icon" order="8" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <br/>
+              </p>
+            </section>
+
+        </section>
+
+        <section>
+          <section>
+          </section>
+          ... A quoi ressemble les scénarios
+
+
+            => permet de tester des cas nominaux
+
+            => permet de tester des cas d'erreurs
+
+            => permet de tester des cas d'erreurs multiples...
+
+
+
+            <section>
+              <p class="story scenario">
+                <b class="title">Scenario:</b> A quoi ressemble un scénario!<br/>
+              </p>
+              
+              <p class="story steps">
+                  <b>Etant donné</b> un SI très complexe
+                  <img width="20px" class="part hidden icon" order="5" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <br/>
+
+                  <b>Et</b> une mise en application chez un client
+                  <img width="20px" class="part hidden icon" order="6" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <br/>
+
+                  <b>Quand</b> on regarde les scénarios
+                  <img width="20px" class="part hidden icon" order="7" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <br/>
+
+                  <b>Alors</b> on voit qu'il est possible de tester des cas nominaux
+                  <img width="20px" class="part hidden icon" order="8" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <br/>
+
+                  <b>Et</b> on voit qu'il est possible de tester des cas d'erreurs
+                  <img width="20px" class="part hidden icon" order="8" src="2012-07-03-beforeWork-bdd/200px-Dialog-accept.svg.png"/>
+                  <br/>
+              </p>
+            </section>
+
+        </section>
+
+        <section>
+            1 story + 1 à 3 scénarios 
+            => jusqu'à 17 variantes souvent en collaboration avec le P.O.
+        </section>
+
+        <section>
+          Une infra qui permet de plus en plus de tester: "est-ce possible de..."
+          => une documentation vivante et enrichie très facilement
+        </section>
+
+        <section>
+          Evolutif?
+
+            3j mise en place des étapes pour l'Arjel...
+        </section>
+
+        <section>
+          <h2>Notre première “Story”</h2>
+          <p class="story narrative">
+            <b>En tant que</b> participants à cette présentation<br/>
+            <b>Afin de</b> ressentir les bénéfices de l'approche <em>BDD</em><br/>
+            <b>Je veux</b> que des cas concrets soient présentés<br/>                
+            <span class="part hidden small">&nbsp;&nbsp; (et de prendre contact avec <em style="color:green;">Arolla</em> pour un accompagnement!)</span>
+          </p>
+          <p>
+              A nous d'écrire les suivantes!
+          </p>
+        </section>
+
+
+        <section>
+          <section>
+              <p class="story scenario">
+                      <span class="part hidden"><b class="title">Scenario:</b> Commençons par la fin, le résultat!</span><br/>
+              </p>
+              <p class="story steps">
+                      <span class="part hidden">
+                          <b>Etant donné</b> un cas concret</span>
+                          <img width="20px" class="part hidden icon" order="5" src="2012-07-03-beforeWork-bdd/200px-Dialog-error-round.svg.png"/>
+                          <br/>
+                      <span class="part hidden">
+                          <b>Et</b> avec plusieurs scénarios réels</span>
+                          <img width="20px" class="part hidden icon" order="6" src="2012-07-03-beforeWork-bdd/200px-Dialog-error-round.svg.png"/>
+                          <br/>
+                      <span class="part hidden">
+                          <b>Quand</b> je consulte le rapport</span>
+                        <img width="20px" class="part hidden icon" order="7" src="2012-07-03-beforeWork-bdd/200px-Dialog-error-round.svg.png"/>
+                          <br/>
+                      <span class="part hidden">
+                          <b>Alors</b> je peux voir le nombre de scénario actuellement en place</span>
+                          <img width="20px" class="part hidden icon" order="8" src="2012-07-03-beforeWork-bdd/200px-Dialog-error-round.svg.png"/>
+                          <br/>
+                      <span class="part hidden">
+                          <b>Et</b> consulter leur contenu</span>
+                          <img width="20px" class="part hidden icon" order="9" src="2012-07-03-beforeWork-bdd/200px-Dialog-error-round.svg.png"/>
+              </p>
+            </section>
+
+
+            <!-- Vertical slide parts -->
+            <section>
+                <img src="2012-07-03-beforeWork-bdd/PMU-rapport-jbehave-overview-sec.png">
+            </section>
+
+            <section>
+                <img src="2012-07-03-beforeWork-bdd/PMU-rapport-jbehave-overview-top.png"/>
+                <img class="part hidden" src="2012-07-03-beforeWork-bdd/PMU-rapport-jbehave-overview-bottom.png"/>
+                <img class="part hidden" style="position: fixed; z-index:5; left:300px; top:220px;" src="2012-07-03-beforeWork-bdd/PMU-rapport-jbehave-overview-date.png"/>
+            </section>
+
+        </section>
+        
+        <!-- Example of nested vertical slides -->
+        <section>
+          <section>
+            <h2>Vertical Slides</h2>
+            <p>
+              Slides can be nested inside of other slides,<br/>
+              try pressing <a href="#/2/1">down</a>.
+            </p>
+            <a href="#/2/1" class="image">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
+            </a>
+          </section>
+          <section>
+            <h2>Basement Level 1</h2>
+            <p>Press down or up to navigate.</p>
+          </section>
+          <section>
+            <h2>Basement Level 2</h2>
+            <p>Cornify</p>
+            <a class="test" href="http://cornify.com">
+              <img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif">
+            </a>
+          </section>
+          <section>
+            <h2>Basement Level 3</h2>
+            <p>That's it, time to go back up.</p>
+            <a href="#/2" class="image">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" style="-webkit-transform: rotate(180deg);">
+            </a>
+          </section>
+        </section>
+
+        <section>
+          <h2>Holistic Overview</h2>
+          <p>
+            Press <strong>ESC</strong> to enter the slide overview!
+          </p>
+        </section>
+
+        <section>
+          <h2>Works in Mobile Safari</h2>
+          <p>
+            Try it out! You can swipe through the slides pinch your way to the overview.
+          </p>
+        </section>
+
+        <section>
+          <h2>Transition Styles</h2>
+          <p>
+            You can select from different transitions, like:
+          </p>
+          <ul>
+            <li><a href="http://lab.hakim.se/reveal-js/?transition=cube">Cube</a></li>
+            <li><a href="http://lab.hakim.se/reveal-js/?transition=page">Page</a></li>
+            <li><a href="http://lab.hakim.se/reveal-js/?transition=concave">Concave</a></li>
+            <li><a href="http://lab.hakim.se/reveal-js/?transition=linear">Linear</a></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Marvelous Unordered List</h2>
+          <ul>
+            <li>No order here</li>
+            <li>Or here</li>
+            <li>Or here</li>
+            <li>Or here</li>
+          </ul>
+        </section>
+        
+        <section>
+          <h2>Fantastic Ordered List</h2>
+          <ol>
+            <li>One is smaller than...</li>
+            <li>Two is smaller than...</li>
+            <li>Three!</li>
+          </ol>
+        </section>
+
+        <section>
+          <section data-state="alert">
+            <h2>Global State</h2>
+            <p>
+              Set <code>data-state="something"</code> on a slide and <code>"something"</code>
+              will be added as a class to the document element when the slide is open. This let's you
+              apply broader style changes, like switching the background.
+            </p>
+            <a href="#/7/1" class="image">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
+            </a>
+          </section>
+          <section data-state="blackout">
+            <h2>"blackout"</h2>
+            <a href="#/7/2" class="image">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
+            </a>
+          </section>
+          <section data-state="soothe">
+            <h2>"soothe"</h2>
+            <a href="#/7/0" class="image">
+              <img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" style="-webkit-transform: rotate(180deg);">
+            </a>
+          </section>
+        </section>
+
+        <section data-state="customevent">
+          <h2>Custom Events</h2>
+          <p>
+            Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
+          </p>
+          <pre><code contenteditable style="font-size: 18px; margin-top: 20px;">Reveal.addEventListener( 'customevent', function() {
+  alert( '"customevent" has fired' );
+} );
+          </code></pre>
+        </section>
+
+        <section>
+          <h2>Clever Quotes</h2>
+          <p>
+            These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+            The nice thing about standards is that there are so many to choose from</q> and block:
+          </p>
+          <blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+            For years there has been a theory that millions of monkeys typing at random on millions of typewriters would 
+            reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
+          </blockquote>
+        </section>
+        
+        <section>
+          <h2>Pretty Code</h2>
+          <pre><code contenteditable>
+var supports3DTransforms =  document.body.style['webkitPerspective'] !== undefined || 
+        document.body.style['MozPerspective'] !== undefined ||
+        document.body.style['perspective'] !== undefined;
+
+function linkify( selector ) {
+    if( supports3DTransforms ) {
+        
+        var nodes = document.querySelectorAll( selector );
+
+        for( var i = 0, len = nodes.length; i < len; i++ ) {
+            var node = nodes[i];
+
+            if( !node.className || !node.className.match( /roll/g ) ) {
+                node.className += ' roll';
+                node.innerHTML = '<span data-title="'+ node.text +'">' + node.innerHTML + '</span>';
+            }
+        };
+    }
+}
+
+linkify( 'a' );
+          </code></pre>
+          <p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+        </section>
+        
+        <section>
+          <h2>Intergalactic Interconnections</h2>
+          <p>
+            You can link between slides internally,<br/>
+            <a href="#/2/3">like this</a>.
+          </p>
+        </section>
+
+        <section>
+          <h2>Fragmented Views</h2>
+          <p>Hit the next arrow...</p>
+          <p class="fragment">... to step through ...</p>
+          <ol>
+            <li class="fragment"><code>any type</code></li>
+            <li class="fragment"><em>of view</em></li>
+            <li class="fragment"><strong>fragments</strong></li>
+          </ol>
+        </section>
+        
+        <section>
+          <h2>Spectacular image!</h2>
+          <a class="image" href="http://hakim.se/experiments/html5/breakdom/" target="_blank">
+            <img width="320" height="412" src="https://s3.amazonaws.com/hakim-static/reveal-js/breakdom.png">
+          </a>
+        </section>
+        
+        <section>
+          <h2>Stellar Links</h2>
+          <ul>
+            <li><a href="https://github.com/hakimel/reveal.js">Source code on github</a></li>
+            <li><a href="http://hakim.se/projects/reveal-js">Read more on my site</a></li>
+            <li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
+          </ul>
+        </section>
+        
+        <section>
+          <h1>THE END</h1>
+          <h3 class="inverted">BY Hakim El Hattab / hakim.se</h3>
+        </section>
+      </div>
+
+      <!-- The navigational controls UI -->
+      <aside class="controls">
+        <a class="left" href="#">&#x25C4;</a>
+        <a class="right" href="#">&#x25BA;</a>
+        <a class="up" href="#">&#x25B2;</a>
+        <a class="down" href="#">&#x25BC;</a>
+      </aside>
+
+      <!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
+      <div class="progress"><span></span></div>
+      
+    </div>
+
+    <!-- Optional libraries for code syntax highlighting and classList support in IE9 -->
+    <script src="lib/highlight.js"></script>
+    <script src="lib/classList.js"></script>
+    
+    <script src="js/reveal.js"></script>
+    <script type="text/javascript" src="lib/jquery-1.7.1.min.js"></script>
+    
+    <script>
+      // Parse the query string into a key/value object
+      var query = {};
+      location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+        query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+      } );
+
+      // Fires when a slide with data-state=customevent is activated
+      Reveal.addEventListener( 'customevent', function() {
+        console.log( '"customevent" has fired' );
+      } );
+
+      // Fires each time a new slide is activated
+      Reveal.addEventListener( 'slidechanged', function( event ) {
+        // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+      } );
+
+      var $ = jQuery;
+
+      var currentSlide = null;
+      $(document).bind('slidechanged', function(eventObject) {
+            currentSlide = eventObject.originalEvent.currentSlide;
+      });
+
+      // make sure all parts are ordered
+      var elems = $(".part.hidden");
+      var start = -elems.size();
+      elems.each(function(index, elem) {
+      	  var $elem = $(elem);
+      	  if(typeof $elem.attr("order") === "undefined") {
+      	      $elem.attr("order", start);
+      		  start = start + 1;
+      	  }
+      });
+
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // If true; each slide will be pushed to the browser history
+        history: true,
+
+        // Loops the presentation, defaults to false
+        loop: false,
+
+        // Flags if mouse wheel navigation should be enabled
+        mouseWheel: true,
+
+        // Apply a 3D roll to links on hover
+        rollingLinks: true,
+
+        // UI style
+        theme: query.theme || 'default', // default/neon
+
+        // Transition style
+        transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
+
+        // Uh!
+        ,interceptors: {
+            navigateNext: function() {
+                if(currentSlide==null) {
+                    return false;
+                }
+                var hiddens = $(currentSlide).find(".part.hidden");
+                if(hiddens.size()==0) {
+                    return false;
+                }
+
+                hiddens.sort(function(a, b){
+                    return ($(a).attr("order")||0) - ($(b).attr("order")||0); // ASC -> a - b; DESC -> b - a
+                });
+
+                $(hiddens.get(0)).removeClass("hidden");
+                return true;
+            },
+            navigatePrev: function() {
+                if(currentSlide==null) {
+                    return false;
+                }
+                var hiddens = $(currentSlide).find(".part:not(.hidden)");
+                if(hiddens.size()==0) {
+                    return false;
+                }
+
+                hiddens.sort(function(a, b){
+                    return ($(a).attr("order")||0) - ($(b).attr("order")||0); // ASC -> a - b; DESC -> b - a
+                });
+
+                $(hiddens.get(hiddens.size()-1)).addClass("hidden");
+                return true;
+            }
+        }
+      });
+
+      hljs.initHighlightingOnLoad();
+    </script>
+
+  </body>
+</html>

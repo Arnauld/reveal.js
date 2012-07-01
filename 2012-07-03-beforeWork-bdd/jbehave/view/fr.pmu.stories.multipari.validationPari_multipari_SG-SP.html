@@ -1,0 +1,170 @@
+<html><head><meta charset="utf-8">
+<title>Turf Pari Services</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+
+<html>
+<body>
+<div class="story"><h1></h1>
+<div class="path">fr/pmu/stories/multipari/validationPari_multipari_SG-SP.story</div>
+<div class="scenario"><h2>Scenario: Cas x - Prise d'un pari Simple Gagnant/Placé Unitaire de 4 chevaux (passant)</h2>   
+ <!-- normal scenario steps -->
+<div class="step ignorable">!-- Verbeux mais correspond à l'appel: un pari "Simple Gagnant" formule "Unitaire" : 3-6-9-8  </div>
+
+<div class="step successful">Given un pari "<span class="step parameter">Simple Gagnant"</span> formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">3</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">Given un pari "<span class="step parameter">Simple Gagnant"</span> formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">6</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">Given un pari "<span class="step parameter">Simple Gagnant"</span> formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">9</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">Given un pari "<span class="step parameter">Simple Gagnant"</span> formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">8</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step ignorable">!-- Verbeux mais correspond à l'appel: un pari "Simple Placé" formule "Unitaire" : 3-6-9-8  </div>
+
+<div class="step successful">Given un pari "｟Simple Placé｠" formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">3</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">Given un pari "｟Simple Placé｠" formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">6</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">Given un pari "｟Simple Placé｠" formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">9</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">Given un pari "｟Simple Placé｠" formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">8</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est OK  </div>
+
+<div class="step successful">And le montant d'enjeu est égal à ｟16,00｠€  </div>
+
+<div class="step successful">And le nombre de paris unitaires est ｟égal｠ à <span class="step parameter">8</span>  </div>
+
+<div class="step successful">And le compte est débité de ｟16,00｠€  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cas y - Prise d'un pari Simple Gagnant/Placé Unitaire de 4 chevaux (non-passant)</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given une course avec comme chevaux partants: [｟3,6,9｠]  </div>
+
+<div class="step ignorable">!-- Verbeux mais correspond à l'appel: un pari "Simple Gagnant" formule "Unitaire" : 3-6-9-8  </div>
+
+<div class="step successful">Given un pari "<span class="step parameter">Simple Gagnant"</span> formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">3</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">Given un pari "<span class="step parameter">Simple Gagnant"</span> formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">6</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">Given un pari "<span class="step parameter">Simple Gagnant"</span> formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">9</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">Given un pari "<span class="step parameter">Simple Gagnant"</span> formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">8</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step ignorable">!-- Verbeux mais correspond à l'appel: un pari "Simple Placé" formule "Unitaire" : 3-6-9-8  </div>
+
+<div class="step successful">Given un pari "｟Simple Placé｠" formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">3</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">Given un pari "｟Simple Placé｠" formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">6</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">Given un pari "｟Simple Placé｠" formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">9</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">Given un pari "｟Simple Placé｠" formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">8</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And le parieur est informé que lun au moins des chevaux désignés est non partant (le {0}  </div>
+
+<div class="step successful">And le compte n'est pas débité  </div>
+
+</div> <!-- end scenario -->
+</div> <!-- end story -->
+</body>
+</html>
+
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

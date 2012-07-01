@@ -1,0 +1,276 @@
+
+<story path="fr/pmu/stories/prixparis/prixParis_Tierce.story" title="">
+<scenario keyword="Scenario:" title="Cas 1 Pari Tierce unitaire OK">   
+<step outcome="successful">
+Given un pari "<parameter>Tierce"</parameter> formule "<parameter>Unitaire"</parameter> de <parameter>3</parameter> chevaux : <parameter>2-1-5</parameter> 
+</step>
+<step outcome="successful">
+And pour <parameter>1</parameter> mises de base 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le montant d'enjeu est égal à ｟1,00｠€ 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>1</parameter> 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 2 Pari Tierce combinée avec 5 chevaux OK">   
+<step outcome="successful">
+Given un pari "<parameter>Tierce"</parameter> formule "｟Combinaison Simplifiée｠" de <parameter>5</parameter> chevaux : 2-1-<parameter>5</parameter>-12-7 
+</step>
+<step outcome="successful">
+And pour <parameter>1</parameter> mises de base 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le montant d'enjeu est égal à ｟10,00｠€ 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>10</parameter> 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 3 Pari Tierce unitaire avec nombre de chevaux incoherent">   
+<step outcome="successful">
+Given un pari "<parameter>Tierce"</parameter> formule "<parameter>Unitaire"</parameter> de <parameter>3</parameter> chevaux : <parameter>2-1-5-12</parameter> 
+</step>
+<step outcome="successful">
+And pour <parameter>1</parameter> mises de base 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+<step outcome="ignorable">
+!-- Paris en champs 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 4 Pari Tierce combinée champ reduit combinaison simplifiée OK">   
+<step outcome="successful">
+Given un pari "<parameter>Tierce"</parameter> formule "｟Champ réduit combinaison simplifiée｠" : ｟2-1-X/7,8,9,10,11｠ 
+</step>
+<step outcome="successful">
+And pour <parameter>1</parameter> mises de base 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le montant d'enjeu est égal à ｟5,00｠€ 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>5</parameter> 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 5 Pari Tierce champ total combinaison complete OK">   
+<step outcome="successful">
+Given un pari "<parameter>Tierce"</parameter> formule "｟Champ total combinaison complète｠" : <parameter>2-X-X</parameter> 
+</step>
+<step outcome="successful">
+And pour <parameter>1</parameter> mises de base 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le montant d'enjeu est égal à ｟816,00｠€ 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>816</parameter> 
+</step>
+<step outcome="ignorable">
+!-- Prise de pari spot 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 6 Prise pari spOt en Tierce Unitaire">   
+<step outcome="successful">
+Given un pari "<parameter>Tierce"</parameter> formule "<parameter>Unitaire"</parameter> : ｟? - ? - ?｠ 
+</step>
+<step outcome="successful">
+And en spOt Automatique 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour 1 paris 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le montant d'enjeu est égal à ｟1,00｠€ 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And le nombre de paris spOt est <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And le montant du compte est débité de ｟1,00｠€ 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 7 Prise de 2 spOt en pari Tierce Unitaire">   
+<step outcome="successful">
+Given un pari "<parameter>Tierce"</parameter> formule "<parameter>Unitaire"</parameter> : ｟? - ? - ?｠ 
+</step>
+<step outcome="successful">
+And en spOt Automatique 
+</step>
+<step outcome="successful">
+And son Cheval de Complément désigné, CC ? 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And un pari "<parameter>Tierce"</parameter> formule "<parameter>Unitaire"</parameter> : ｟? - ? - ?｠ 
+</step>
+<step outcome="successful">
+And en spOt Automatique 
+</step>
+<step outcome="successful">
+And son Cheval de Complément désigné, CC ? 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le montant d'enjeu est égal à ｟2,00｠€ 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>2</parameter> 
+</step>
+<step outcome="successful">
+And le nombre de paris spOt est <parameter>2</parameter> 
+</step>
+<step outcome="successful">
+And le prix unitaire de chaque pari est de ｟1,00｠€ 
+</step>
+<step outcome="successful">
+And le montant du compte est débité de ｟2,00｠€ 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 8 Prise de 1 spOt en pari Tierce dans Tous Les Ordres">   
+<step outcome="successful">
+Given un pari "<parameter>Tierce"</parameter> formule "｟Combinaison Complète｠" : ｟? - ? - ?｠ 
+</step>
+<step outcome="successful">
+And en spOt Automatique 
+</step>
+<step outcome="successful">
+And son Cheval de Complément désigné, CC ? 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour 1 paris 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 9 Prise de pari combinaison complète flexi">   
+<step outcome="successful">
+Given un pari "<parameter>Tierce"</parameter> formule "｟Combinaison complète｠" de <parameter>3</parameter> chevaux : 1-2-<parameter>3</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And en mode Flexi à <parameter>50%</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le montant d'enjeu est égal à ｟3,00｠€ 
+</step>
+<step outcome="successful">
+And le montant d'enjeu est ｟supérieur ou égal｠ à la mise de base 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>6</parameter> 
+</step>
+<step outcome="successful">
+And le montant du compte est débité de ｟3,00｠€ 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 10 Prise de pari combinaison complète flexi interdit">   
+<step outcome="successful">
+Given un pari "<parameter>Tierce"</parameter> formule "｟Combinaison complète｠" de <parameter>3</parameter> chevaux : 1-2-<parameter>3</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And en mode Flexi à <parameter>10%</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And le taux de Flexi n'existe pas pour ce pari 
+</step>
+</scenario> 
+</story>
+

@@ -1,0 +1,42 @@
+
+<story path="fr/pmu/stories/traceArjel/traceArjel-Quarte.story" title="!-- Paris en champs">
+<scenario keyword="Scenario:" title="Cas 1 Pari Quarte combinée champ reduit combinaison simplifiée OK">   
+<step outcome="successful">
+Given nous sommes le "｟2012/08/27 15:05:55｠" 
+</step>
+<step outcome="successful">
+Given un utilisateur avec comme numéro interne <parameter>00009992</parameter> 
+</step>
+<step outcome="successful">
+And connecté depuis ladresse {0} 
+</step>
+<step outcome="successful">
+And authentifié avec le numéro de session <parameter>123456789</parameter> 
+</step>
+<step outcome="successful">
+And avec un solde de ｟26,50｠€ 
+</step>
+<step outcome="successful">
+Given un pari "｟Quarté plus｠" formule "｟Champ réduit combinaison simplifiée｠" : ｟1-X-10-X/9,8,7｠ 
+</step>
+<step outcome="successful">
+And pour <parameter>1</parameter> mises de base 
+</step>
+<step outcome="successful">
+And sur la course <parameter>6</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And dont l'heure de départ est "｟2012/07/14 09:37:00｠" 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And la trace arjel est "｟PAHIMISE~IDOper=0002~DateEvt=2012/08/27 15:05:55~IDJoueur=386533977~␤    Login=386533977~Pseudo=386533977~IPJoueur=127.0.0.1~IDSession=123456789~␤    FamEvt=EJ~TypEnr=PAHIMISE~TypAg=PH~␤    Tech=Quarte Plus R1C6 14/07/2012~Clair=Quarte Plus R1C6 14/07/2012~␤    DescType=Quarte Plus~DescNom=R1C6~DescDateHeure=120714093700~DescChoix=B:1,,10,A:9,8,7~␤    SoldeAvantMise=26.50~Mise=7.80~SoldeApresMise=18.70~␤    MiseAbond=null~BonusAvantMise=null~BonusMouvement=null~BonusApresMise=null~BonusNom=null｠" 
+</step>
+</scenario> 
+</story>
+

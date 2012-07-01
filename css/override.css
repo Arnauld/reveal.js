@@ -1,0 +1,65 @@
+.reveal .kw {
+	color: hsl(185, 85%, 50%);
+}
+
+.story {
+	text-align:left;
+	font-size: 80%;
+}
+
+.story.narrative b,
+.story.narrative em {
+	color: #FA2233;
+}
+
+.story.scenario b,
+.story.scenario em {
+	color: #FAFA33;
+}
+
+.story.steps b,
+.story.steps em {
+	color: hsl(185, 85%, 50%);
+}
+
+.extra {
+	color: #FAFA33;
+}
+
+.hidden {
+	display:none;
+}
+
+.center {
+	position:absolute;
+	margin: auto;
+}
+
+.small {
+	font-size:70%;
+}
+
+.caption {
+    position: absolute; 
+    bottom: 50px; 
+    right: 50px;
+    padding-left: 100px;
+    padding-right: 30px;
+}
+
+.reveal section img.icon {
+	margin: 0px;
+	margin-bottom: -3px;
+	background: none;
+	border: 0px solid #eee;
+	
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	        box-shadow: none;
+	
+	-webkit-transition: all .2s linear;
+	   -moz-transition: all .2s linear;
+	    -ms-transition: all .2s linear;
+	     -o-transition: all .2s linear;
+	        transition: all .2s linear;
+}

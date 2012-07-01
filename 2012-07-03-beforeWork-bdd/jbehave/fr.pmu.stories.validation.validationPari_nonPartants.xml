@@ -1,0 +1,87 @@
+
+<story path="fr/pmu/stories/validation/validationPari_nonPartants.story" title="">
+<narrative keyword="Narrative:">
+<inOrderTo keyword="In order to">la prise de pari se fasse dans les meilleures conditions</inOrderTo>
+<asA keyword="As a">parieur</asA>
+<iWantTo keyword="I want to">la validation vérifie que les participants soient tous partants</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Cheval associé non partant">   
+<step outcome="successful">
+Given un pari "｟Couplé Placé｠" formule "｟Champ réduit combinaison simplifiée｠" : ｟1-X/3,4,5 CC 7｠ 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+And une course avec comme chevaux partants: [｟1,2,3,5,7｠] 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari indique que le cheval <parameter>4</parameter> est non partant 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cheval de base non partant">   
+<step outcome="successful">
+Given un pari "｟Couplé Placé｠" formule "｟Champ réduit combinaison simplifiée｠" : ｟9-X/3,4,5 CC 7｠ 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+And une course avec comme chevaux partants: [｟1,2,3,5,7｠] 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari indique que le cheval <parameter>9</parameter> est non partant 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cheval de complément non partant">   
+<step outcome="successful">
+Given un pari "｟Couplé Placé｠" formule "｟Champ réduit combinaison simplifiée｠" : ｟1-X/3,4,5 CC 9｠ 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+And une course avec comme chevaux partants: [｟1,2,3,5,7｠] 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari indique que le cheval <parameter>9</parameter> est non partant 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+</story>
+

@@ -1,0 +1,168 @@
+
+<story path="fr/pmu/stories/prixparis/prixParis_Quinte.story" title="">
+<scenario keyword="Scenario:" title="Cas 1">   
+<step outcome="successful">
+Given un pari "｟Quinté plus｠" formule "<parameter>Unitaire"</parameter> de <parameter>5</parameter> chevaux : 2-1-9-<parameter>5</parameter>-12 
+</step>
+<step outcome="successful">
+And pour <parameter>1</parameter> mises de base 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le montant d'enjeu est égal à ｟2,00｠€ 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>1</parameter> 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 2 DTLO">   
+<step outcome="successful">
+Given un pari "｟Quinté plus｠" formule "｟Combinaison complète｠" de <parameter>5</parameter> chevaux : 2-1-9-<parameter>5</parameter>-12 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le montant d'enjeu est égal à ｟240,00｠€ 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>120</parameter> 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 3 Combine 7 chevaux">   
+<step outcome="successful">
+Given un pari "｟Quinté plus｠" formule "｟Combinaison simplifiée｠" de <parameter>7</parameter> chevaux : <parameter>2-1-9-5-12-8-6</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟3,00｠€ 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le montant d'enjeu est égal à ｟63,00｠€ 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>21</parameter> 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 4 Champ reduit">   
+<step outcome="successful">
+Given un pari "｟Quinté plus｠" formule "｟Champ réduit combinaison simplifiée｠" : ｟X-2-X-1-9/8,11,3,7｠ 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟10,00｠€ 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le montant d'enjeu est égal à ｟120,00｠€ 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>12</parameter> 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 5 Champ total">   
+<step outcome="successful">
+Given un pari "｟Quinté plus｠" formule "｟Champ total combinaison simplifiée｠" : <parameter>X-12-9-X-X</parameter> 
+</step>
+<step outcome="successful">
+And une course avec comme chevaux partants: [｟1,2,3,4,5,6,7,8,9,10,11,12,13,14,15｠] 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le montant d'enjeu est égal à ｟3432,00｠€ 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>1716</parameter> 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 6 un Q+ en sp0t UNITAIRE sans chevaux de base "?"">   
+<step outcome="successful">
+Given un pari "｟Quinté plus｠" formule "<parameter>UNITAIRE"</parameter> : <parameter>1-2-3-4-5</parameter> 
+</step>
+<step outcome="successful">
+And en spOt Mixte 
+</step>
+<step outcome="successful">
+And une course avec comme chevaux partants: [｟1,2,3,4,5,6,7,8,9,10,11,12,13,14,15｠] 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 6 un Q+ en sp0t COMBINAISON SIMPLIFIEE sans chevaux de base "?"">   
+<step outcome="successful">
+Given un pari "｟Quinté plus｠" formule "<parameter>COMBINAISON SIMPLIFIEE"</parameter> : <parameter>1-2-3-4-5-6</parameter> 
+</step>
+<step outcome="successful">
+And en spOt Mixte 
+</step>
+<step outcome="successful">
+And une course avec comme chevaux partants: [｟1,2,3,4,5,6,7,8,9,10,11,12,13,14,15｠] 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+</story>
+

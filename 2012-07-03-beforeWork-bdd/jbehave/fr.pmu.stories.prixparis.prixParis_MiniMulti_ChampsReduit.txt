@@ -1,0 +1,107 @@
+
+(fr/pmu/stories/prixparis/prixParis_MiniMulti_ChampsReduit.story)
+Scenario: CAS 1 : Dans une course à partir du programme, je reçois un pari Mini Multi Champ Réduit, avec 3 chevaux de base et 3 associés avec un risque 5 pour une mise de 10€, l'enjeu du pari à enregistrer est de 30€ (3 paris unitaires).
+Given un pari "Mini Multi" formule "Champ réduit combinaison simplifiée" : 3-6-9-x-x/8,1,2
+And en risque 5
+And sur la course 1 de la réunion 1
+And pour une mise en valeur de 10€
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le nombre de paris unitaires est égal à 3
+And le montant d'enjeu est égal à 30€
+!-- TODO Et le montant du compte est débité de 31,50€.
+
+Scenario: CAS 1bis : Dans une course à partir du programme, je reçois un pari Mini Multi Champ Réduit, avec 3 chevaux de base et 3 associés avec un risque 5 pour une mise de 10€, l'enjeu du pari à enregistrer est de 30€ (3 paris unitaires).
+Given un pari "Mini Multi" formule "Champ réduit combinaison simplifiée" : 3-6-x-x-9/8,1,2
+And en risque 5
+And sur la course 1 de la réunion 1
+And pour une mise en valeur de 10€
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le nombre de paris unitaires est égal à 3
+And le montant d'enjeu est égal à 30€
+!-- TODO Et le montant du compte est débité de 31,50€.
+
+Scenario: CAS 2 : Dans une course à partir du programme, je reçois un pari Mini Multi Champ Réduit, avec 2 chevaux de base et 5 associés avec un risque 5 pour une mise de 5€, l'enjeu du pari à enregistrer est de 50€ (10 paris unitaires).
+Given un pari "Mini Multi" formule "Champ réduit combinaison simplifiée" : 1-2-x-x-x/3,4,5,6,7
+And en risque 5
+And sur la course 1 de la réunion 1
+And pour une mise en valeur de 5€
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le nombre de paris unitaires est égal à 10
+And le montant d'enjeu est égal à 50€
+
+Scenario: CAS 3 : Dans une course à partir du programme, je reçois un pari Mini Multi Champ Réduit, avec 6 chevaux et un risque de 7 pour une mise de 10€, le pari est rejeté car la formulation du pari est invalide (incohérence risque et nombre de chevaux désignés dans un Multi Champ Réduit).
+Given un pari "Mini Multi" formule "Champ réduit combinaison simplifiée" : 1-2-x-x-x-x/3,4,5,6,7
+And en risque 7
+And sur la course 1 de la réunion 1
+And pour une mise en valeur de 10€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_MINI_MULTI_VALEUR_RISQUE_INVALIDE]
+
+Scenario: CAS 4 : Dans une course à partir du programme, je reçois un pari Mini Multi Champ Réduit, avec 7 chevaux et un risque de 4 pour une mise de 10€, le pari est rejeté car la formulation du pari est invalide (incohérence risque et nombre de chevaux désignés dans un Multi Champ Réduit).
+Given un pari "Mini Multi" formule "Champ réduit combinaison simplifiée" : 1-2-x-x-x-x-x/3,4,5,6,7,8
+And en risque 4
+And sur la course 1 de la réunion 1
+And pour une mise en valeur de 10€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_DE_BASES_INCOHERENT]
+
+Scenario: CAS 5 : Pas de chevaux de bases désignés
+Given un pari "Mini Multi" formule "Champ réduit combinaison simplifiée" : x-x-x-x/3,4,5,6,7,8
+And en risque 4
+And sur la course 1 de la réunion 1
+And pour une mise en valeur de 10€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_CHEVAL_DE_BASE_SELECTIONNE_REQUIS]
+
+Scenario: CAS 5bis : Pas de chevaux associés
+Given un pari "Mini Multi" formule "Champ réduit combinaison simplifiée" : 1-2-3-x
+And en risque 4
+And sur la course 1 de la réunion 1
+And pour une mise en valeur de 10€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_ASSOCIES_INSUFFISANT]
+
+Scenario: CAS 6 : Trop de chevaux de base
+Given un pari "Mini Multi" formule "Champ réduit combinaison simplifiée" : 1-2-3-4/5,6
+And en risque 4
+And sur la course 1 de la réunion 1
+And pour une mise en valeur de 10€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_CHEVAL_DE_BASE_NON_DESIGNE_REQUIS]
+
+Scenario: CAS 7 : Mêmes chevaux de base et associés
+Given un pari "Mini Multi" formule "Champ réduit combinaison simplifiée" : 1-2-3-x/5,2
+And en risque 4
+And sur la course 1 de la réunion 1
+And pour une mise en valeur de 10€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_PARTICIPANT_NON_UNIQUE]
+
+Scenario: CAS 8 : Mêmes chevaux de base et associés
+Given un pari "Mini Multi" formule "Champ réduit combinaison simplifiée" : 1-2-2-X/5,6
+And en risque 4
+And sur la course 1 de la réunion 1
+And pour une mise en valeur de 10€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_PARTICIPANT_NON_UNIQUE]
+
+Scenario: CAS 9 : Dans une course à partir du programme, je reçois un pari Multi Champ Réduit, avec 7 chevaux et un risque de 8 pour une mise de 10€, le pari est rejeté car la formulation du pari est invalide (le niveau de risque est invalide en Multi).
+Given un pari "Mini Multi" formule "Champ réduit combinaison simplifiée" : 1-2-x-x-x-x-x-x/3,4,5,6,7,8,9,10,11
+And en risque 3
+And sur la course 1 de la réunion 1
+And pour une mise en valeur de 10€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_MINI_MULTI_VALEUR_RISQUE_INVALIDE]
+
+

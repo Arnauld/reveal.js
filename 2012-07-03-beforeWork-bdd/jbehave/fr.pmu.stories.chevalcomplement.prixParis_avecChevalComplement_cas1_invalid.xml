@@ -1,0 +1,27 @@
+
+<story path="fr/pmu/stories/chevalcomplement/prixParis_avecChevalComplement_cas1_invalid.story" title="">
+<scenario keyword="Scenario:" title="Scenario : Cheval de complement déjà prresent dans les chevaux de base">   
+<step outcome="successful">
+Given un pari "｟Couplé Placé｠" formule "｟Champ réduit combinaison simplifiée｠" : ｟1-X/3,4,5 CC 1｠ 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And je suis alerté que le cheval <parameter>1</parameter> ne peut, à la fois, faire partie de la sélection de base et être Cheval de Complément 
+</step>
+<step outcome="successful">
+And le montant du compte n'est pas débité 
+</step>
+</scenario> 
+</story>
+

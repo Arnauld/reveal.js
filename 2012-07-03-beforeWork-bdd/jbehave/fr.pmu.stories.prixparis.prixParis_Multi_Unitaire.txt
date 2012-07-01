@@ -1,0 +1,71 @@
+
+(fr/pmu/stories/prixparis/prixParis_Multi_Unitaire.story)
+Scenario: Prise d'un pari Multi Unitaire en 5 chevaux
+Given un pari "Multi" formule "Unitaire" : 3-6-9-8-1
+And en risque 5
+And sur la course 1 de la réunion 1
+And la mise est d'une valeur de 4€
+!-- TODO And les chevaux 3-6-9-8-1 sont déclarés partant partant
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 4€
+And le nombre de paris unitaires est égal à 1
+And le montant du compte est débité de 4€
+
+Scenario: Prise d'un pari Multi Unitaire en 6 chevaux KO
+Given un pari "Multi" formule "Unitaire" : 3-6-9-8-1-2
+And en risque 7
+And la mise est d'une valeur de 4€
+And sur la course 1 de la réunion 1
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_SELECTIONNES_INCOHERENT]
+And le montant du compte n'est pas débité
+
+Scenario: Prise d'un pari Multi Unitaire en 6 chevaux KO
+Given un pari "Multi" formule "Unitaire" : 3-6-9-8-1-2-7
+And en risque 7
+And sur la course 1 de la réunion 1
+And la mise est d'une valeur de 2€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_ENJEU_INFERIEUR_MINIMUM_ENJEU]
+And le montant du compte n'est pas débité
+
+Scenario: Prise d'un pari Multi Unitaire en 7 chevaux KO
+Given un pari "Multi" formule "Unitaire" : 3-6-9-8-1-2-4
+And en risque 4
+And sur la course 1 de la réunion 1
+And la mise est d'une valeur de 3€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_SELECTIONNES_INCOHERENT]
+And le montant du compte n'est pas débité
+
+Scenario: Prise d'un pari Multi Unitaire, avec 7 chevaux et un risque de 8 KO
+Given un pari "Multi" formule "Unitaire" : 3-6-9-8-1-2-4
+And en risque 8
+And sur la course 1 de la réunion 1
+And la mise est d'une valeur de 10€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_MULTI_VALEUR_RISQUE_INVALIDE]
+
+Scenario: Sans Risque (null)
+Given un pari "Multi" formule "Unitaire" : 3-6-9-8-1-2-4
+And sur la course 1 de la réunion 1
+And la mise est d'une valeur de 10€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_MULTI_VALEUR_RISQUE_INVALIDE]
+
+Scenario: Pas de chevaux
+Given un pari "Multi" formule "Unitaire" sans chevaux spécifiés
+And en risque 4
+And sur la course 1 de la réunion 1
+And la mise est d'une valeur de 10€
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_SELECTIONNES_INCOHERENT]
+
+

@@ -1,0 +1,121 @@
+<html><head><meta charset="utf-8">
+<title>Turf Pari Services</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: txt"><![CDATA[
+
+(fr/pmu/stories/prixparis/prixParis_Tic3.story)
+Scenario: Cas 1 Pari Tic 3 unitaire OK
+Given un pari "Tic 3" formule "Unitaire" de 5 chevaux : 2-1-5-3-4
+And pour 1 mises de base
+And sur la course 1 de la réunion 1
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 4,30€
+And le nombre de paris unitaires est égal à 1
+
+Scenario: Cas 2 Pari Tic 3 combinée avec 5 chevaux KO
+Given un pari "Tic 3" formule "Combinaison Simplifiée" de 6 chevaux : 2-1-5-12-7-6
+And pour 1 mises de base
+And sur la course 1 de la réunion 1
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_FORMULE_NON_AUTORISEE]
+
+Scenario: Cas 3 Pari Tic 3 unitaire avec nombre de chevaux incoherent KO
+Given un pari "Tic 3" formule "Unitaire" de 2 chevaux : 2-1
+And pour 1 mises de base
+And sur la course 1 de la réunion 1
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_SELECTIONNES_INCOHERENT]
+!-- Paris en champs
+
+Scenario: Cas 4 Pari Tic 3 combinée champ reduit combinaison simplifiée KO
+Given un pari "Tic 3" formule "Champ réduit combinaison simplifiée" : 2-1-X-X-X/7,8,9,10,11
+And pour 1 mises de base
+And sur la course 1 de la réunion 1
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_FORMULE_NON_AUTORISEE]
+
+Scenario: Cas 5 Pari Tic 3 champ total combinaison complete KO
+Given un pari "Tic 3" formule "Champ total combinaison complète" : 2-X-X-10-9
+And pour 1 mises de base
+And sur la course 1 de la réunion 1
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_FORMULE_NON_AUTORISEE]
+!-- Prise de pari spot
+
+Scenario: Cas 6 Prise pari spOt en Tic 3 Unitaire KO
+Given un pari "Tic 3" formule "Unitaire" : ? - ? - ? - ? - ?
+And en spOt Automatique
+And sur la course 1 de la réunion 1
+And pour 1 paris
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_MALFORME]
+
+Scenario: Cas 7 Pari Tic 3 unitaire nbMise != 1 KO
+Given un pari "Tic 3" formule "Unitaire" de 5 chevaux : 2-1-5-3-4
+And pour 2 mises de base
+And sur la course 1 de la réunion 1
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_MALFORME]
+
+Scenario: Cas 8 Pari Tic 3 unitaire en valeur KO
+Given un pari "Tic 3" formule "Unitaire" de 5 chevaux : 2-1-5-3-4
+And pour une mise en valeur de 4,30 €
+And sur la course 1 de la réunion 1
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_MALFORME]
+
+Scenario: Cas 9 Pari Tic 3 unitaire en flexi KO
+Given un pari "Tic 3" formule "Unitaire" de 5 chevaux : 2-1-5-3-4
+And en mode Flexi à 50%
+And sur la course 1 de la réunion 1
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_MALFORME]
+
+Scenario: Cas 9 Pari Tic 3 avec cheval de complement KO
+Given un pari "Tic 3" formule "Unitaire" de 5 chevaux : 2-1-5-3-4
+And le cheval de complément 6
+And sur la course 1 de la réunion 1
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_CHEVAL_COMPLEMENT_NON_AUTORISE]
+
+
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

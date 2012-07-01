@@ -1,0 +1,268 @@
+<html><head><meta charset="utf-8">
+<title>Turf Pari Services</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+
+<story path="fr/pmu/stories/prixparis/prixParis_MiniMulti_ChampTotal.story" title="">
+<scenario keyword="Scenario:" title="Cas 1 Dans une course à partir du programme,
+je reçois un pari Mini Multi Champ Total,
+avec 3 chevaux de base et un risque 6 pour une mise de 3€,
+l'enjeu du pari à enregistrer est de 495€ (165 paris unitaires pour une course avec 14 partants).">   
+<step outcome="successful">
+Given un pari "<parameter>Mini Multi"</parameter> formule "｟Champ total combinaison simplifiée｠" : <parameter>3-6-9-x-x-x</parameter> 
+</step>
+<step outcome="successful">
+And en risque <parameter>6</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And une course avec comme chevaux partants: [｟1,2,3,4,5,6,7,8,9,10,11,12,13,14｠] 
+</step>
+<step outcome="successful">
+And pour <parameter>1</parameter> mise de base 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>165</parameter> 
+</step>
+<step outcome="successful">
+And le montant denjeu est égal à {0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 2 Dans une course à partir du programme, 
+je reçois un pari Mini Multi Champ Total,
+avec 7 chevaux et un risque de 4 pour une mise de 10€,
+le pari est rejeté car la formulation du pari est invalide
+(incohérence risque et nombre de chevaux désignés dans un Multi).">   
+<step outcome="successful">
+Given un pari "<parameter>Mini Multi"</parameter> formule "｟Champ total combinaison simplifiée｠" : <parameter>3-6-9-x-x-x-x</parameter> 
+</step>
+<step outcome="successful">
+And en risque <parameter>4</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour une mise en valeur de <parameter>10€</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 3 Dans une course à partir du programme, 
+je reçois un pari Mini Multi Champ Total,
+avec 7 chevaux et un risque de 4 pour une mise de 10€,
+le pari est rejeté car la formulation du pari est invalide
+(incohérence risque et nombre de chevaux désignés dans un Multi).">   
+<step outcome="successful">
+Given un pari "<parameter>Mini Multi"</parameter> formule "｟Champ total combinaison simplifiée｠" : <parameter>3-6-9-x-x-x-x</parameter> 
+</step>
+<step outcome="successful">
+And en risque <parameter>4</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour une mise en valeur de <parameter>10€</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 4 Dans une course à partir du programme,
+je reçois un pari Mini Multi Total,
+avec 6 chevaux et un risque de 3 pour une mise de 10€,
+le pari est rejeté car la formulation du pari est invalide (le niveau de risque est invalide en Multi).">   
+<step outcome="successful">
+Given un pari "<parameter>Mini Multi"</parameter> formule "｟Champ total combinaison simplifiée｠" : <parameter>3-6-9-x-x-x</parameter> 
+</step>
+<step outcome="successful">
+And en risque <parameter>3</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour une mise en valeur de <parameter>10€</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 5 : La formule Champ total combinaison complète est interdite en mini multi">   
+<step outcome="successful">
+Given un pari "<parameter>Mini Multi"</parameter> formule "｟Champ total combinaison complète｠" : <parameter>3-6-9-x-x-x</parameter> 
+</step>
+<step outcome="successful">
+And en risque <parameter>6</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour <parameter>1</parameter> mise de base 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 6: La formule Combinaison complète est interdite en mini multi">   
+<step outcome="successful">
+Given un pari "<parameter>Mini Multi"</parameter> formule "｟Combinaison complète｠" : <parameter>1-2-3-4-5-6</parameter> 
+</step>
+<step outcome="successful">
+And en risque <parameter>6</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour <parameter>1</parameter> mise de base 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 7: La formule Champ réduit combinaison complète est interdite en multi">   
+<step outcome="successful">
+Given un pari "<parameter>Mini Multi"</parameter> formule "｟Champ réduit combinaison complète｠" : ｟1-2-3-4-5-x/6,7｠ 
+</step>
+<step outcome="successful">
+And en risque <parameter>6</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour <parameter>1</parameter> mise de base 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 8 Pas assez de chevaux désignés">   
+<step outcome="successful">
+Given un pari "<parameter>Mini Multi"</parameter> formule "｟Champ total combinaison simplifiée｠" : <parameter>x-x</parameter> 
+</step>
+<step outcome="successful">
+And en risque <parameter>4</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour une mise en valeur de <parameter>10€</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 9 Dans une course à partir du programme,
+je reçois un pari Mini Multi Total,
+avec 7 chevaux et un risque de 7 pour une mise de 10€,
+le pari est rejeté car la formulation du pari est invalide (le niveau de risque est invalide en Multi).">   
+<step outcome="successful">
+Given un pari "<parameter>Mini Multi"</parameter> formule "｟Champ total combinaison simplifiée｠" : <parameter>3-6-9-x-x-x-x</parameter> 
+</step>
+<step outcome="successful">
+And en risque <parameter>7</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour une mise en valeur de <parameter>10€</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+</story>
+
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

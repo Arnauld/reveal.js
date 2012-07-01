@@ -1,0 +1,130 @@
+
+<html>
+<body>
+<div class="story"><h1></h1>
+<div class="path">fr/pmu/stories/prixparis/prixParis_Quinte.story</div>
+<div class="scenario"><h2>Scenario: Cas 1</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "｟Quinté plus｠" formule "<span class="step parameter">Unitaire"</span> de <span class="step parameter">5</span> chevaux : 2-1-9-<span class="step parameter">5</span>-12  </div>
+
+<div class="step successful">And pour <span class="step parameter">1</span> mises de base  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est OK  </div>
+
+<div class="step successful">And le montant d'enjeu est égal à ｟2,00｠€  </div>
+
+<div class="step successful">And le nombre de paris unitaires est ｟égal｠ à <span class="step parameter">1</span>  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cas 2 DTLO</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "｟Quinté plus｠" formule "｟Combinaison complète｠" de <span class="step parameter">5</span> chevaux : 2-1-9-<span class="step parameter">5</span>-12  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est OK  </div>
+
+<div class="step successful">And le montant d'enjeu est égal à ｟240,00｠€  </div>
+
+<div class="step successful">And le nombre de paris unitaires est ｟égal｠ à <span class="step parameter">120</span>  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cas 3 Combine 7 chevaux</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "｟Quinté plus｠" formule "｟Combinaison simplifiée｠" de <span class="step parameter">7</span> chevaux : <span class="step parameter">2-1-9-5-12-8-6</span>  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟3,00｠€  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est OK  </div>
+
+<div class="step successful">And le montant d'enjeu est égal à ｟63,00｠€  </div>
+
+<div class="step successful">And le nombre de paris unitaires est ｟égal｠ à <span class="step parameter">21</span>  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cas 4 Champ reduit</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "｟Quinté plus｠" formule "｟Champ réduit combinaison simplifiée｠" : ｟X-2-X-1-9/8,11,3,7｠  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟10,00｠€  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est OK  </div>
+
+<div class="step successful">And le montant d'enjeu est égal à ｟120,00｠€  </div>
+
+<div class="step successful">And le nombre de paris unitaires est ｟égal｠ à <span class="step parameter">12</span>  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cas 5 Champ total</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "｟Quinté plus｠" formule "｟Champ total combinaison simplifiée｠" : <span class="step parameter">X-12-9-X-X</span>  </div>
+
+<div class="step successful">And une course avec comme chevaux partants: [｟1,2,3,4,5,6,7,8,9,10,11,12,13,14,15｠]  </div>
+
+<div class="step successful">And la mise est d'une valeur de ｟2,00｠€  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est OK  </div>
+
+<div class="step successful">And le montant d'enjeu est égal à ｟3432,00｠€  </div>
+
+<div class="step successful">And le nombre de paris unitaires est ｟égal｠ à <span class="step parameter">1716</span>  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cas 6 un Q+ en sp0t UNITAIRE sans chevaux de base "?"</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "｟Quinté plus｠" formule "<span class="step parameter">UNITAIRE"</span> : <span class="step parameter">1-2-3-4-5</span>  </div>
+
+<div class="step successful">And en spOt Mixte  </div>
+
+<div class="step successful">And une course avec comme chevaux partants: [｟1,2,3,4,5,6,7,8,9,10,11,12,13,14,15｠]  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cas 6 un Q+ en sp0t COMBINAISON SIMPLIFIEE sans chevaux de base "?"</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "｟Quinté plus｠" formule "<span class="step parameter">COMBINAISON SIMPLIFIEE"</span> : <span class="step parameter">1-2-3-4-5-6</span>  </div>
+
+<div class="step successful">And en spOt Mixte  </div>
+
+<div class="step successful">And une course avec comme chevaux partants: [｟1,2,3,4,5,6,7,8,9,10,11,12,13,14,15｠]  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+</div> <!-- end story -->
+</body>
+</html>
+

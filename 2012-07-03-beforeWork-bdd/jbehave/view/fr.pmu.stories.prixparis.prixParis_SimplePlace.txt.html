@@ -1,0 +1,93 @@
+<html><head><meta charset="utf-8">
+<title>Turf Pari Services</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: txt"><![CDATA[
+
+(fr/pmu/stories/prixparis/prixParis_SimplePlace.story)
+Scenario: Cas 1 Prise d'un pari Simple Placé
+Given un pari "Simple Placé" formule "Unitaire" : 5
+And sur la course 1 de la réunion 1
+And la mise est d'une valeur de 3€
+And le Cheval 5 est déclaré "partant partant"
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 3€
+And le prix unitaire de chaque pari est de 3,00€
+And le nombre de paris unitaires est égal à 1
+And le montant du compte est débité de 3€
+
+Scenario: Cas 2 Prise d'un pari Simple Placé
+Given un pari "Simple Placé" formule "Unitaire" : 2
+And sur la course 1 de la réunion 1
+And pour 6 mises de base
+And le Cheval 2 est déclaré "partant partant"
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 9€
+And le nombre de paris unitaires est égal à 1
+And le montant du compte est débité de 9€
+
+Scenario: Cas 3 Prise d'un pari Simple Placé sur un cheval non partant
+Given un pari "Simple Placé" formule "Unitaire" : 12
+And sur la course 1 de la réunion 1
+And la mise est d'une valeur de 2,00€
+And une course avec comme chevaux partants: [1,2,3,4,5,6,7,8]
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari indique que le cheval 12 est non partant
+And le compte n'est pas débité
+
+Scenario: Cas 4 Prise de plusieurs paris Simple Placé avec un cheval non partant
+Given un pari "Simple Placé" formule "Unitaire" : 3-12
+And sur la course 1 de la réunion 1
+And pour 1 mises de base
+And le Cheval 3 est déclaré "partant partant"
+And le Cheval 12 est déclaré "partant non partant"
+When j'enregistre le pari
+Then l'enregistrement est KO
+And je suis alerté que "l'un des chevaux sélectionnés est non partant"
+And le montant du compte n'est pas débité
+
+Scenario: Cas 5 Prise de plusieurs paris Simple Placé avec solde pari insuffisant pour le second pari
+Given un pari "Simple Placé" formule "Unitaire" : 3-4
+And sur la course 1 de la réunion 1
+And pour 1 mises de base
+And le solde jeu du parieur est 2,00€
+And le Cheval 3 est déclaré "partants partant"
+And le Cheval 4 est déclaré "partants partant"
+When j'enregistre le pari
+Then l'enregistrement est KO
+And je suis alerté que "solde de jeu est insuffisant pour enregistrer l'ensemble des paris"
+And le montant du compte n'est pas débité
+
+
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

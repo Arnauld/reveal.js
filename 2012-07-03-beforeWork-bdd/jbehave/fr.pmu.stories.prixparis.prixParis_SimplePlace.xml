@@ -1,0 +1,152 @@
+
+<story path="fr/pmu/stories/prixparis/prixParis_SimplePlace.story" title="">
+<scenario keyword="Scenario:" title="Cas 1 Prise d'un pari Simple Placé">   
+<step outcome="successful">
+Given un pari "｟Simple Placé｠" formule "<parameter>Unitaire"</parameter> : <parameter>5</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est dune valeur de {0} 
+</step>
+<step outcome="successful">
+And le Cheval <parameter>5</parameter> est déclaré "<parameter>partant partant"</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le montant denjeu est égal à {0} 
+</step>
+<step outcome="successful">
+And le prix unitaire de chaque pari est de ｟3,00｠€ 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And le montant du compte est débité de <parameter>3€</parameter> 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 2 Prise d'un pari Simple Placé">   
+<step outcome="successful">
+Given un pari "｟Simple Placé｠" formule "<parameter>Unitaire"</parameter> : <parameter>2</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour <parameter>6</parameter> mises de base 
+</step>
+<step outcome="successful">
+And le Cheval <parameter>2</parameter> est déclaré "<parameter>partant partant"</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le montant denjeu est égal à {0} 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And le montant du compte est débité de <parameter>9€</parameter> 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 3 Prise d'un pari Simple Placé sur un cheval non partant">   
+<step outcome="successful">
+Given un pari "｟Simple Placé｠" formule "<parameter>Unitaire"</parameter> : <parameter>12</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+And une course avec comme chevaux partants: [｟1,2,3,4,5,6,7,8｠] 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari indique que le cheval <parameter>12</parameter> est non partant 
+</step>
+<step outcome="successful">
+And le compte n'est pas débité 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 4 Prise de plusieurs paris Simple Placé avec un cheval non partant">   
+<step outcome="successful">
+Given un pari "｟Simple Placé｠" formule "<parameter>Unitaire"</parameter> : <parameter>3-12</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour <parameter>1</parameter> mises de base 
+</step>
+<step outcome="successful">
+And le Cheval <parameter>3</parameter> est déclaré "<parameter>partant partant"</parameter> 
+</step>
+<step outcome="successful">
+And le Cheval <parameter>12</parameter> est déclaré "<parameter>partant non partant"</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And je suis alerté que "｟l'un des chevaux sélectionnés est non partant｠" 
+</step>
+<step outcome="successful">
+And le montant du compte n'est pas débité 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 5 Prise de plusieurs paris Simple Placé avec solde pari insuffisant pour le second pari">   
+<step outcome="successful">
+Given un pari "｟Simple Placé｠" formule "<parameter>Unitaire"</parameter> : <parameter>3-4</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour <parameter>1</parameter> mises de base 
+</step>
+<step outcome="successful">
+And le solde jeu du parieur est ｟2,00｠€ 
+</step>
+<step outcome="successful">
+And le Cheval <parameter>3</parameter> est déclaré "<parameter>partants partant"</parameter> 
+</step>
+<step outcome="successful">
+And le Cheval <parameter>4</parameter> est déclaré "<parameter>partants partant"</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And je suis alerté que "｟solde de jeu est insuffisant pour enregistrer l'ensemble des paris｠" 
+</step>
+<step outcome="successful">
+And le montant du compte n'est pas débité 
+</step>
+</scenario> 
+</story>
+

@@ -25,7 +25,8 @@ var Reveal = (function(){
 			mouseWheel: true,
 			rollingLinks: true,
 			transition: 'default',
-			theme: 'default'
+			theme: 'default',
+			interceptors: {}
 		},
 
 		// Slides may hold a data-state attribute which we pick up and apply 
@@ -883,6 +884,13 @@ var Reveal = (function(){
 	 * 3) Previous horizontal slide
 	 */
 	function navigatePrev() {
+
+		if(config.interceptors.hasOwnProperty("navigatePrev")) {
+			if(config.interceptors["navigatePrev"]()) {
+				return;
+			}
+		}
+
 		// Prioritize revealing fragments
 		if( previousFragment() === false ) {
 			if( availableRoutes().up ) {
@@ -905,6 +913,13 @@ var Reveal = (function(){
 	 * Same as #navigatePrev() but navigates forwards.
 	 */
 	function navigateNext() {
+
+		if(config.interceptors.hasOwnProperty("navigateNext")) {
+			if(config.interceptors["navigateNext"]()) {
+				return;
+			}
+		}
+
 		// Prioritize revealing fragments
 		if( nextFragment() === false ) {
 			availableRoutes().down ? navigateDown() : navigateRight();

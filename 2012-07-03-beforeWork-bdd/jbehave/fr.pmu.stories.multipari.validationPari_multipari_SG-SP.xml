@@ -1,0 +1,194 @@
+
+<story path="fr/pmu/stories/multipari/validationPari_multipari_SG-SP.story" title="">
+<scenario keyword="Scenario:" title="Cas x - Prise d'un pari Simple Gagnant/Placé Unitaire de 4 chevaux (passant)">   
+<step outcome="ignorable">
+!-- Verbeux mais correspond à l'appel: un pari "Simple Gagnant" formule "Unitaire" : 3-6-9-8 
+</step>
+<step outcome="successful">
+Given un pari "<parameter>Simple Gagnant"</parameter> formule "<parameter>Unitaire"</parameter> : <parameter>3</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+Given un pari "<parameter>Simple Gagnant"</parameter> formule "<parameter>Unitaire"</parameter> : <parameter>6</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+Given un pari "<parameter>Simple Gagnant"</parameter> formule "<parameter>Unitaire"</parameter> : <parameter>9</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+Given un pari "<parameter>Simple Gagnant"</parameter> formule "<parameter>Unitaire"</parameter> : <parameter>8</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="ignorable">
+!-- Verbeux mais correspond à l'appel: un pari "Simple Placé" formule "Unitaire" : 3-6-9-8 
+</step>
+<step outcome="successful">
+Given un pari "｟Simple Placé｠" formule "<parameter>Unitaire"</parameter> : <parameter>3</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+Given un pari "｟Simple Placé｠" formule "<parameter>Unitaire"</parameter> : <parameter>6</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+Given un pari "｟Simple Placé｠" formule "<parameter>Unitaire"</parameter> : <parameter>9</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+Given un pari "｟Simple Placé｠" formule "<parameter>Unitaire"</parameter> : <parameter>8</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le montant d'enjeu est égal à ｟16,00｠€ 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>8</parameter> 
+</step>
+<step outcome="successful">
+And le compte est débité de ｟16,00｠€ 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas y - Prise d'un pari Simple Gagnant/Placé Unitaire de 4 chevaux (non-passant)">   
+<step outcome="successful">
+Given une course avec comme chevaux partants: [｟3,6,9｠] 
+</step>
+<step outcome="ignorable">
+!-- Verbeux mais correspond à l'appel: un pari "Simple Gagnant" formule "Unitaire" : 3-6-9-8 
+</step>
+<step outcome="successful">
+Given un pari "<parameter>Simple Gagnant"</parameter> formule "<parameter>Unitaire"</parameter> : <parameter>3</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+Given un pari "<parameter>Simple Gagnant"</parameter> formule "<parameter>Unitaire"</parameter> : <parameter>6</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+Given un pari "<parameter>Simple Gagnant"</parameter> formule "<parameter>Unitaire"</parameter> : <parameter>9</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+Given un pari "<parameter>Simple Gagnant"</parameter> formule "<parameter>Unitaire"</parameter> : <parameter>8</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="ignorable">
+!-- Verbeux mais correspond à l'appel: un pari "Simple Placé" formule "Unitaire" : 3-6-9-8 
+</step>
+<step outcome="successful">
+Given un pari "｟Simple Placé｠" formule "<parameter>Unitaire"</parameter> : <parameter>3</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+Given un pari "｟Simple Placé｠" formule "<parameter>Unitaire"</parameter> : <parameter>6</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+Given un pari "｟Simple Placé｠" formule "<parameter>Unitaire"</parameter> : <parameter>9</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+Given un pari "｟Simple Placé｠" formule "<parameter>Unitaire"</parameter> : <parameter>8</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est d'une valeur de ｟2,00｠€ 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And le parieur est informé que lun au moins des chevaux désignés est non partant (le {0} 
+</step>
+<step outcome="successful">
+And le compte n'est pas débité 
+</step>
+</scenario> 
+</story>
+

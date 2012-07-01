@@ -1,0 +1,195 @@
+<html><head><meta charset="utf-8">
+<title>Turf Pari Services</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+
+<story path="fr/pmu/stories/prixparis/prixParis_SpotAuto.story" title="">
+<scenario keyword="Scenario:" title="CAS 1 Prise de 3 spOt en pari Couplé Unitaire">   
+<step outcome="successful">
+Given un pari "｟Couplé Placé｠" formule "<parameter>Unitaire"</parameter> : ｟? - ?｠ 
+</step>
+<step outcome="successful">
+And en spOt Automatique 
+</step>
+<step outcome="successful">
+And son Cheval de Complément désigné, CC ? 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour 1 paris 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le montant d'enjeu est égal à ｟1,50｠€ 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And le nombre de paris spOt est <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And le prix unitaire de chaque pari est de ｟1,50｠€ 
+</step>
+<step outcome="successful">
+And le 1er pari spOt Automatique en Couplé Placé Unitaire avec un Cheval de Complément est retourné par le SIC 
+</step>
+<step outcome="successful">
+And le montant du compte est débité de ｟1,50｠€ 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 2 Prise de 1 spOt en pari Couplé Ordre Unitaire Dans Tous Les Ordres">   
+<step outcome="successful">
+Given un pari "｟Couplé Ordre｠" formule "｟Combinaison Complète｠" : ｟? - ? - ?｠ 
+</step>
+<step outcome="successful">
+And en spOt Automatique 
+</step>
+<step outcome="successful">
+And son Cheval de Complément désigné, CC ? 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour 1 paris 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 3 Prise de 3 spOt en pari Couplé Unitaire avec un solde enjeu parieur insuffisant pour l'ensemble des paris">   
+<step outcome="successful">
+Given un pari "｟Couplé Placé｠" formule "<parameter>Unitaire"</parameter> : ｟? - ?｠ 
+</step>
+<step outcome="successful">
+And en spOt Automatique 
+</step>
+<step outcome="successful">
+And son Cheval de Complément désigné, CC ? 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour <parameter>1</parameter> mises de base 
+</step>
+<step outcome="successful">
+And pour 3 paris 
+</step>
+<step outcome="successful">
+And le solde jeu du parieur est ｟3,85｠€ 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And je suis alerté que "｟la demande n'a pas abouti car son solde de jeu est insuffisant pour enregistrer l'ensemble des paris demandés｠" 
+</step>
+<step outcome="successful">
+And le montant du compte n'est pas débité 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 4 Prise de 2 spOt en pari Couplé Unitaire">   
+<step outcome="successful">
+Given un pari "｟Couplé Placé｠" formule "<parameter>Unitaire"</parameter> : ｟? - ?｠ 
+</step>
+<step outcome="successful">
+And en spOt Automatique 
+</step>
+<step outcome="successful">
+And son Cheval de Complément désigné, CC ? 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And un pari "｟Couplé Placé｠" formule "<parameter>Unitaire"</parameter> : ｟? - ?｠ 
+</step>
+<step outcome="successful">
+And en spOt Automatique 
+</step>
+<step outcome="successful">
+And son Cheval de Complément désigné, CC ? 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le montant d'enjeu est égal à ｟3,00｠€ 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>2</parameter> 
+</step>
+<step outcome="successful">
+And le nombre de paris spOt est <parameter>2</parameter> 
+</step>
+<step outcome="successful">
+And le prix unitaire de chaque pari est de ｟1,50｠€ 
+</step>
+<step outcome="successful">
+And le 1er pari spOt Automatique en Couplé Placé Unitaire avec un Cheval de Complément est retourné par le SIC 
+</step>
+<step outcome="successful">
+And le 2nd pari spOt Automatique en Couplé Placé Unitaire avec un Cheval de Complément est retourné par le SIC 
+</step>
+<step outcome="successful">
+And le montant du compte est débité de ｟3,00｠€ 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 5 Prise de pari en spOt avec plusieurs erreurs en paramètres">   
+</scenario> 
+</story>
+
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

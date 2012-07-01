@@ -1,0 +1,140 @@
+
+<html>
+<body>
+<div class="story"><h1></h1>
+<div class="path">fr/pmu/stories/prixparis/prixParis_MiniMulti_Combine.story</div>
+<div class="scenario"><h2>Scenario: CAS 1 : Prise d'un pari Mini Multi Combiné en 5 chevaux</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Mini Multi"</span> formule "｟Combinaison simplifiée｠" : <span class="step parameter">3-6-9-8-1-2-10</span>  </div>
+
+<div class="step successful">And en risque <span class="step parameter">5</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And en mode Flexi à <span class="step parameter">50%</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est OK  </div>
+
+<div class="step successful">And le nombre de paris unitaires est ｟égal｠ à <span class="step parameter">21</span>  </div>
+
+<div class="step successful">And le montant d'enjeu est égal à ｟31,50｠€  </div>
+
+<div class="step ignorable">!-- TODO Et le montant du compte est débité de 31,50€.  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: CAS 2 : Prise d'un pari Mini Multi Combiné en 5 chevaux KO pas assez de chevaux</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Mini Multi"</span> formule "｟Combinaison simplifiée｠" : <span class="step parameter">3-6-9-8</span>  </div>
+
+<div class="step successful">And en risque <span class="step parameter">5</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+<div class="step ignorable">!-- TODO Et le montant du pari n'est pas débité de 2,00€.  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: CAS 2 bis : Prise d'un pari Mini Multi Combiné en 5 chevaux KO montant d'enjeu inférieur à la mise de base</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Mini Multi"</span> formule "｟Combinaison simplifiée｠" : <span class="step parameter">3-6-9-8-1-2</span>  </div>
+
+<div class="step successful">And en risque <span class="step parameter">5</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And pour une mise en valeur de ｟1,00｠€  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est OK  </div>
+
+<div class="step successful">And le nombre de paris unitaires est ｟égal｠ à <span class="step parameter">6</span>  </div>
+
+<div class="step successful">And le montant denjeu est égal à {0}  </div>
+
+<div class="step ignorable">!-- TODO Et le montant du pari n'est pas débité de 2,00€.  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: CAS 3 : risque = nb chevaux selectionnés</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Mini Multi"</span> formule "｟Combinaison simplifiée｠" : <span class="step parameter">3-6-9-8</span>  </div>
+
+<div class="step successful">And en risque <span class="step parameter">4</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And pour une mise en valeur de <span class="step parameter">4€</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Cas 4 - Prise d'un pari Mini Multi Unitaire, avec 8 chevaux et un risque de 7 KO</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Mini Multi"</span> formule "｟Combinaison simplifiée｠" : <span class="step parameter">3-6-9-8-1-2-4-10</span>  </div>
+
+<div class="step successful">And en risque <span class="step parameter">7</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est dune valeur de {0}  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: CAS 5 : Prise d'un pari Mini Multi Combiné en 5 chevaux KO (pourcent flexi invalid)</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Mini Multi"</span> formule "｟Combinaison simplifiée｠" : <span class="step parameter">3-6-9-8-1-2-10</span>  </div>
+
+<div class="step successful">And en risque <span class="step parameter">5</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And en mode Flexi à <span class="step parameter">33%</span>  </div>
+
+<div class="step ignorable">!-- changer 33% en 25%  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: CAS EXTRA 1 : Prise d'un pari Mini Multi Combiné en 6 chevaux</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Mini Multi"</span> formule "｟Combinaison simplifiée｠" : <span class="step parameter">8-1-9-2-3-6-10</span>  </div>
+
+<div class="step successful">And en risque <span class="step parameter">6</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And en mode Flexi à <span class="step parameter">50%</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est OK  </div>
+
+<div class="step successful">And le nombre de paris unitaires est ｟égal｠ à <span class="step parameter">7</span>  </div>
+
+<div class="step successful">And le montant d'enjeu est égal à ｟10,50｠€  </div>
+
+</div> <!-- end scenario -->
+</div> <!-- end story -->
+</body>
+</html>
+

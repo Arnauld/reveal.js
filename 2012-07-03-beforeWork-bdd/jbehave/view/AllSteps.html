@@ -1,0 +1,69 @@
+<html><head><meta charset="utf-8">
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+<style type='text/css' media='all'>
+@import url( "./style/jbehave-core.css" );
+.reports table td.pattern, 
+.reports table td.method { text-align:left; }
+.reports table tr:nth-child(2n+1) {
+   background-color: #ddd;
+}
+</style>
+</head>
+<body>
+<div class='reports'>
+<table>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>le solde jeu du parieur est <b>$solde</b>€</td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#defineLeSoldeJeuDuParieur</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>pour <b>$nbParis</b> paris</td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#defineNbParis</td></tr>
+<tr><td class='step-type'>WHEN</td><td class='pattern'>j'enregistre le pari</td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#processPari</td></tr>
+<tr><td class='step-type'>THEN</td><td class='pattern'>la trace arjel est "<b>$traceArjel</b>"</td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#assertLaTraceArjel</td></tr>
+<tr><td class='step-type'>THEN</td><td class='pattern'>l'enregistrement est OK</td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#assertEnregistrementEstOK</td></tr>
+<tr><td class='step-type'>THEN</td><td class='pattern'>l'enregistrement est KO</td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#assertEnregistrementEstKO</td></tr>
+<tr><td class='step-type'>THEN</td><td class='pattern'>le montant d'enjeu est égal à <b>$amount</b>€</td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#assertPrixPari</td></tr>
+<tr><td class='step-type'>THEN</td><td class='pattern'>le montant d'enjeu est <b>$comparator</b> à la mise de base</td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#assertPrixPariComparedToMiseDeBase</td></tr>
+<tr><td class='step-type'>THEN</td><td class='pattern'>le nombre de paris unitaires est <b>$comparator</b> à <b>$count</b></td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#assertNbParisUnitairesComparedTo</td></tr>
+<tr><td class='step-type'>THEN</td><td class='pattern'>le prix unitaire est de <b>$amount</b>€</td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#assertPrixPariUnitaire</td></tr>
+<tr><td class='step-type'>THEN</td><td class='pattern'>le prix unitaire de chaque pari est de <b>$amount</b>€</td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#assertPrixPariUnitaire</td></tr>
+<tr><td class='step-type'>THEN</td><td class='pattern'>le montant du compte est débité de <b>$amount</b>€</td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#assertCompteEstDebite</td></tr>
+<tr><td class='step-type'>THEN</td><td class='pattern'>le compte est débité de <b>$amount</b>€</td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#assertCompteEstDebite</td></tr>
+<tr><td class='step-type'>THEN</td><td class='pattern'>le montant du compte n'est pas débité</td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#assertCompteNEstPasDebite</td></tr>
+<tr><td class='step-type'>THEN</td><td class='pattern'>le compte n'est pas débité</td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#assertCompteNEstPasDebite</td></tr>
+<tr><td class='step-type'>THEN</td><td class='pattern'>le taux de Flexi n'existe pas pour ce pari</td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#assertFlexiEstInvalideAvecCeTaux</td></tr>
+<tr><td class='step-type'>THEN</td><td class='pattern'>le mode Flexi n'existe pas pour ce pari</td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#assertFlexiEstInvalidePourCePari</td></tr>
+<tr><td class='step-type'>THEN</td><td class='pattern'>le cheval <b>$numChevalComplement</b> est désigné comme Cheval de Complément</td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#assertChevalComplementEstBienDefini</td></tr>
+<tr><td class='step-type'>THEN</td><td class='pattern'>je suis alerté que le cheval <b>$numCheval</b> ne peut, à la fois, faire partie de la sélection de base et être Cheval de Complément</td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#assertChevalComplementDupliqueAvecBase</td></tr>
+<tr><td class='step-type'>THEN</td><td class='pattern'>la validation du pari indique que le cheval <b>$numParticipant</b> est non partant</td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#assertErrorsContainNonPartant</td></tr>
+<tr><td class='step-type'>THEN</td><td class='pattern'>le parieur est informé que l'un au moins des chevaux désignés est non partant (le <b>$numParticipant</b>)</td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#assertErrorsContainNonPartant</td></tr>
+<tr><td class='step-type'>THEN</td><td class='pattern'>la validation du pari contient les codes d'erreurs suivant [<b>$commaSeparatedErrorCode</b>]</td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#assertErrorsContain</td></tr>
+<tr><td class='step-type'>THEN</td><td class='pattern'>je suis alerté que "<b>$message</b>"</td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#assertAlert</td></tr>
+<tr><td class='step-type'>THEN</td><td class='pattern'>le nombre de paris spOt est <b>$nbSpot</b></td><td class='method'>fr.pmu.turfpari.jbehave.step.PriseDePariSteps#assertNbSpOt</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>un utilisateur avec comme numéro interne <b>$numeroInterne</b></td><td class='method'>fr.pmu.turfpari.jbehave.step.ParieurSteps#initialiserNumInterneParieur</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>connecté depuis l'adresse <b>$adresseIp</b></td><td class='method'>fr.pmu.turfpari.jbehave.step.ParieurSteps#initialiserAdresseIpParieur</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>authentifié avec le numéro de session <b>$numSession</b></td><td class='method'>fr.pmu.turfpari.jbehave.step.ParieurSteps#initialiserNumSessionParieur</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>avec un solde de <b>$solde</b>€</td><td class='method'>fr.pmu.turfpari.jbehave.step.ParieurSteps#initialiserSoldeParieur</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>nous sommes le "<b>$dateCourante</b>"</td><td class='method'>fr.pmu.turfpari.jbehave.step.ParieurSteps#initialiserDateCouranteParieur</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>un pari "<b>$typePari</b>" spOt Tout Automatique</td><td class='method'>fr.pmu.turfpari.jbehave.step.PariFormulationSteps#initializeTypePariToutAutomatique</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>en spOt Tout Automatique</td><td class='method'>fr.pmu.turfpari.jbehave.step.PariFormulationSteps#initializeSpotToutAutomatique</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>un pari "<b>$typePari</b>" formule "<b>$formule</b>" de <b>$nbChevaux</b> chevaux : <b>$selection</b></td><td class='method'>fr.pmu.turfpari.jbehave.step.PariFormulationSteps#initializeTypePariAndSelection</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>un pari '<b>$typePari</b>' formule '<b>$formule</b>' de <b>$nbChevaux</b> chevaux : <b>$selection</b></td><td class='method'>fr.pmu.turfpari.jbehave.step.PariFormulationSteps#initializeTypePariAndSelection</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>un pari "<b>$typePari</b>" formule "<b>$formule</b>" sans chevaux spécifiés</td><td class='method'>fr.pmu.turfpari.jbehave.step.PariFormulationSteps#initializeTypePariAndSelection</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>un pari "<b>$typePari</b>" formule "<b>$formule</b>" : <b>$selection</b></td><td class='method'>fr.pmu.turfpari.jbehave.step.PariFormulationSteps#initializeTypePariAndSelection</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>un pari '<b>$typePari</b>' formule '<b>$formule</b>' : <b>$selection</b></td><td class='method'>fr.pmu.turfpari.jbehave.step.PariFormulationSteps#initializeTypePariAndSelection</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>un pari "<b>$typePari</b>" sans formule : <b>$selection</b></td><td class='method'>fr.pmu.turfpari.jbehave.step.PariFormulationSteps#initializeTypePariAndSelectionSansFormule</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>en risque <b>$niveauRisque</b></td><td class='method'>fr.pmu.turfpari.jbehave.step.PariFormulationSteps#defineNiveauRisqueMulti</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>sur la course <b>$numCourse</b> de la réunion <b>$numReunion</b></td><td class='method'>fr.pmu.turfpari.jbehave.step.PariFormulationSteps#defineCourseEtReunion</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>en mode Flexi à <b>$nb</b>%</td><td class='method'>fr.pmu.turfpari.jbehave.step.PariFormulationSteps#activateModeFlexi</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>la mise est d'une valeur de <b>$montant</b>€</td><td class='method'>fr.pmu.turfpari.jbehave.step.PariFormulationSteps#defineMontantEnjeu</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>pour une mise en valeur de <b>$montant</b>€</td><td class='method'>fr.pmu.turfpari.jbehave.step.PariFormulationSteps#defineMontantEnjeu</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>pour <b>$nbMises</b> mises de base</td><td class='method'>fr.pmu.turfpari.jbehave.step.PariFormulationSteps#defineNbMises</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>pour <b>$nbMises</b> mise de base</td><td class='method'>fr.pmu.turfpari.jbehave.step.PariFormulationSteps#defineNbMises</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>le cheval de complément <b>$numChevalComplement</b></td><td class='method'>fr.pmu.turfpari.jbehave.step.PariFormulationSteps#defineChevalDeComplement</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>son Cheval de Complément désigné, CC ?</td><td class='method'>fr.pmu.turfpari.jbehave.step.PariFormulationSteps#defineChevalDeComplementDesigneCC</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>en spOt Automatique</td><td class='method'>fr.pmu.turfpari.jbehave.step.PariFormulationSteps#defineSpOtAutomatique</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>en spOt Mixte</td><td class='method'>fr.pmu.turfpari.jbehave.step.PariFormulationSteps#defineSpOtAutomatique</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>une course avec comme chevaux partants: [<b>$commaSeparatedNumPartants</b>]</td><td class='method'>fr.pmu.turfpari.jbehave.step.ProgrammeDefinitionSteps#initializeNombreChevauxPartants</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>le Cheval <b>$numCheval</b> est déclaré "<b>$statutCheval</b>"</td><td class='method'>fr.pmu.turfpari.jbehave.step.ProgrammeDefinitionSteps#defineLeChevalEstDeclare</td></tr>
+<tr><td class='step-type'>GIVEN</td><td class='pattern'>dont l'heure de départ est "<b>$heureDepartCourse</b>"</td><td class='method'>fr.pmu.turfpari.jbehave.step.ProgrammeDefinitionSteps#defineHeureDepartCourse</td></tr>
+</table>
+</div>
+</body>
+</html>

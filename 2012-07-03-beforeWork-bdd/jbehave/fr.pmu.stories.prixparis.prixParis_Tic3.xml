@@ -1,0 +1,216 @@
+
+<story path="fr/pmu/stories/prixparis/prixParis_Tic3.story" title="">
+<scenario keyword="Scenario:" title="Cas 1 Pari Tic 3 unitaire OK">   
+<step outcome="successful">
+Given un pari "<parameter>Tic 3"</parameter> formule "<parameter>Unitaire"</parameter> de <parameter>5</parameter> chevaux : 2-1-<parameter>5</parameter>-3-4 
+</step>
+<step outcome="successful">
+And pour <parameter>1</parameter> mises de base 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le montant d'enjeu est égal à ｟4,30｠€ 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>1</parameter> 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 2 Pari Tic 3 combinée avec 5 chevaux KO">   
+<step outcome="successful">
+Given un pari "<parameter>Tic 3"</parameter> formule "｟Combinaison Simplifiée｠" de <parameter>6</parameter> chevaux : 2-1-5-12-7-<parameter>6</parameter> 
+</step>
+<step outcome="successful">
+And pour <parameter>1</parameter> mises de base 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 3 Pari Tic 3 unitaire avec nombre de chevaux incoherent KO">   
+<step outcome="successful">
+Given un pari "<parameter>Tic 3"</parameter> formule "<parameter>Unitaire"</parameter> de <parameter>2</parameter> chevaux : <parameter>2</parameter>-1 
+</step>
+<step outcome="successful">
+And pour <parameter>1</parameter> mises de base 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+<step outcome="ignorable">
+!-- Paris en champs 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 4 Pari Tic 3 combinée champ reduit combinaison simplifiée KO">   
+<step outcome="successful">
+Given un pari "<parameter>Tic 3"</parameter> formule "｟Champ réduit combinaison simplifiée｠" : ｟2-1-X-X-X/7,8,9,10,11｠ 
+</step>
+<step outcome="successful">
+And pour <parameter>1</parameter> mises de base 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 5 Pari Tic 3 champ total combinaison complete KO">   
+<step outcome="successful">
+Given un pari "<parameter>Tic 3"</parameter> formule "｟Champ total combinaison complète｠" : <parameter>2-X-X-10-9</parameter> 
+</step>
+<step outcome="successful">
+And pour <parameter>1</parameter> mises de base 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+<step outcome="ignorable">
+!-- Prise de pari spot 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 6 Prise pari spOt en Tic 3 Unitaire KO">   
+<step outcome="successful">
+Given un pari "<parameter>Tic 3"</parameter> formule "<parameter>Unitaire"</parameter> : ｟? - ? - ? - ? - ?｠ 
+</step>
+<step outcome="successful">
+And en spOt Automatique 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour 1 paris 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 7 Pari Tic 3 unitaire nbMise != 1 KO">   
+<step outcome="successful">
+Given un pari "<parameter>Tic 3"</parameter> formule "<parameter>Unitaire"</parameter> de <parameter>5</parameter> chevaux : 2-1-<parameter>5</parameter>-3-4 
+</step>
+<step outcome="successful">
+And pour <parameter>2</parameter> mises de base 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 8 Pari Tic 3 unitaire en valeur KO">   
+<step outcome="successful">
+Given un pari "<parameter>Tic 3"</parameter> formule "<parameter>Unitaire"</parameter> de <parameter>5</parameter> chevaux : 2-1-<parameter>5</parameter>-3-4 
+</step>
+<step outcome="successful">
+And pour une mise en valeur de ｟4,30 ｠€ 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 9 Pari Tic 3 unitaire en flexi KO">   
+<step outcome="successful">
+Given un pari "<parameter>Tic 3"</parameter> formule "<parameter>Unitaire"</parameter> de <parameter>5</parameter> chevaux : 2-1-<parameter>5</parameter>-3-4 
+</step>
+<step outcome="successful">
+And en mode Flexi à <parameter>50%</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Cas 9 Pari Tic 3 avec cheval de complement KO">   
+<step outcome="successful">
+Given un pari "<parameter>Tic 3"</parameter> formule "<parameter>Unitaire"</parameter> de <parameter>5</parameter> chevaux : 2-1-<parameter>5</parameter>-3-4 
+</step>
+<step outcome="successful">
+And le cheval de complément <parameter>6</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+</story>
+

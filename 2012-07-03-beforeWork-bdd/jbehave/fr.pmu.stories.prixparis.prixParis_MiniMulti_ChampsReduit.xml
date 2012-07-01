@@ -1,0 +1,272 @@
+
+<story path="fr/pmu/stories/prixparis/prixParis_MiniMulti_ChampsReduit.story" title="">
+<scenario keyword="Scenario:" title="CAS 1 : Dans une course à partir du programme, je reçois un pari Mini Multi Champ Réduit, avec 3 chevaux de base et 3 associés avec un risque 5 pour une mise de 10€, l'enjeu du pari à enregistrer est de 30€ (3 paris unitaires).">   
+<step outcome="successful">
+Given un pari "<parameter>Mini Multi"</parameter> formule "｟Champ réduit combinaison simplifiée｠" : ｟3-6-9-x-x/8,1,2｠ 
+</step>
+<step outcome="successful">
+And en risque <parameter>5</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour une mise en valeur de <parameter>10€</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>3</parameter> 
+</step>
+<step outcome="successful">
+And le montant denjeu est égal à {0} 
+</step>
+<step outcome="ignorable">
+!-- TODO Et le montant du compte est débité de 31,50€. 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 1bis : Dans une course à partir du programme, je reçois un pari Mini Multi Champ Réduit, avec 3 chevaux de base et 3 associés avec un risque 5 pour une mise de 10€, l'enjeu du pari à enregistrer est de 30€ (3 paris unitaires).">   
+<step outcome="successful">
+Given un pari "<parameter>Mini Multi"</parameter> formule "｟Champ réduit combinaison simplifiée｠" : ｟3-6-x-x-9/8,1,2｠ 
+</step>
+<step outcome="successful">
+And en risque <parameter>5</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour une mise en valeur de <parameter>10€</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>3</parameter> 
+</step>
+<step outcome="successful">
+And le montant denjeu est égal à {0} 
+</step>
+<step outcome="ignorable">
+!-- TODO Et le montant du compte est débité de 31,50€. 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 2 : Dans une course à partir du programme, je reçois un pari Mini Multi Champ Réduit, avec 2 chevaux de base et 5 associés avec un risque 5 pour une mise de 5€, l'enjeu du pari à enregistrer est de 50€ (10 paris unitaires).">   
+<step outcome="successful">
+Given un pari "<parameter>Mini Multi"</parameter> formule "｟Champ réduit combinaison simplifiée｠" : ｟1-2-x-x-x/3,4,5,6,7｠ 
+</step>
+<step outcome="successful">
+And en risque <parameter>5</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour une mise en valeur de <parameter>5€</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>10</parameter> 
+</step>
+<step outcome="successful">
+And le montant denjeu est égal à {0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 3 : Dans une course à partir du programme, je reçois un pari Mini Multi Champ Réduit, avec 6 chevaux et un risque de 7 pour une mise de 10€, le pari est rejeté car la formulation du pari est invalide (incohérence risque et nombre de chevaux désignés dans un Multi Champ Réduit).">   
+<step outcome="successful">
+Given un pari "<parameter>Mini Multi"</parameter> formule "｟Champ réduit combinaison simplifiée｠" : ｟1-2-x-x-x-x/3,4,5,6,7｠ 
+</step>
+<step outcome="successful">
+And en risque <parameter>7</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour une mise en valeur de <parameter>10€</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 4 : Dans une course à partir du programme, je reçois un pari Mini Multi Champ Réduit, avec 7 chevaux et un risque de 4 pour une mise de 10€, le pari est rejeté car la formulation du pari est invalide (incohérence risque et nombre de chevaux désignés dans un Multi Champ Réduit).">   
+<step outcome="successful">
+Given un pari "<parameter>Mini Multi"</parameter> formule "｟Champ réduit combinaison simplifiée｠" : ｟1-2-x-x-x-x-x/3,4,5,6,7,8｠ 
+</step>
+<step outcome="successful">
+And en risque <parameter>4</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour une mise en valeur de <parameter>10€</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 5 : Pas de chevaux de bases désignés">   
+<step outcome="successful">
+Given un pari "<parameter>Mini Multi"</parameter> formule "｟Champ réduit combinaison simplifiée｠" : ｟x-x-x-x/3,4,5,6,7,8｠ 
+</step>
+<step outcome="successful">
+And en risque <parameter>4</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour une mise en valeur de <parameter>10€</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 5bis : Pas de chevaux associés">   
+<step outcome="successful">
+Given un pari "<parameter>Mini Multi"</parameter> formule "｟Champ réduit combinaison simplifiée｠" : <parameter>1-2-3-x</parameter> 
+</step>
+<step outcome="successful">
+And en risque <parameter>4</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour une mise en valeur de <parameter>10€</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 6 : Trop de chevaux de base">   
+<step outcome="successful">
+Given un pari "<parameter>Mini Multi"</parameter> formule "｟Champ réduit combinaison simplifiée｠" : ｟1-2-3-4/5,6｠ 
+</step>
+<step outcome="successful">
+And en risque <parameter>4</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour une mise en valeur de <parameter>10€</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 7 : Mêmes chevaux de base et associés">   
+<step outcome="successful">
+Given un pari "<parameter>Mini Multi"</parameter> formule "｟Champ réduit combinaison simplifiée｠" : ｟1-2-3-x/5,2｠ 
+</step>
+<step outcome="successful">
+And en risque <parameter>4</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour une mise en valeur de <parameter>10€</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 8 : Mêmes chevaux de base et associés">   
+<step outcome="successful">
+Given un pari "<parameter>Mini Multi"</parameter> formule "｟Champ réduit combinaison simplifiée｠" : ｟1-2-2-X/5,6｠ 
+</step>
+<step outcome="successful">
+And en risque <parameter>4</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour une mise en valeur de <parameter>10€</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="CAS 9 : Dans une course à partir du programme, je reçois un pari Multi Champ Réduit, avec 7 chevaux et un risque de 8 pour une mise de 10€, le pari est rejeté car la formulation du pari est invalide (le niveau de risque est invalide en Multi).">   
+<step outcome="successful">
+Given un pari "<parameter>Mini Multi"</parameter> formule "｟Champ réduit combinaison simplifiée｠" : ｟1-2-x-x-x-x-x-x/3,4,5,6,7,8,9,10,11｠ 
+</step>
+<step outcome="successful">
+And en risque <parameter>3</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And pour une mise en valeur de <parameter>10€</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+</story>
+

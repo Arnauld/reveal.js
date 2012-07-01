@@ -1,0 +1,191 @@
+<html><head><meta charset="utf-8">
+<title>Turf Pari Services</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: txt"><![CDATA[
+
+(fr/pmu/stories/prixparis/prixParis_Trio.story)
+Scenario: Cas 1 Prise d'un pari Trio avec une mise de base
+Given un pari "Trio" formule "Unitaire" :  1 - 2 - 3
+And sur la course 1 de la réunion 1
+And pour 1 mises de base
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 1,50€
+And le prix unitaire de chaque pari est de 1,50€
+And le nombre de paris unitaires est égal à 1
+And le montant du compte est débité de 1,50€
+
+Scenario: Cas 2 Prise d'un pari Trio avec une valeur
+Given un pari "Trio" formule "Unitaire" :  1 - 2 - 3
+And sur la course 1 de la réunion 1
+And la mise est d'une valeur de 5€
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 5€
+And le prix unitaire de chaque pari est de 5,00€
+And le nombre de paris unitaires est égal à 1
+And le montant du compte est débité de 5€
+
+Scenario: Cas 3 Prise d'un pari Trio avec un nombre de chevaux inférieur aux chevaux réglementaire
+Given un pari "Trio" formule "Unitaire"  :  1 - 2
+And sur la course 1 de la réunion 1
+And pour 1 mises de base
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_NB_CHEVAUX_SELECTIONNES_INCOHERENT]
+
+Scenario: Cas 4 Prise d'un pari Trio avec une mise de base en combinaison simplifiée
+Given un pari "Trio" formule "combinaison simplifiee" de 7 chevaux :  1 - 2 - 3 - 5 - 6 - 8 - 9
+And sur la course 1 de la réunion 1
+And pour 1 mises de base
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 52,50€
+And le prix unitaire de chaque pari est de 1,50€
+And le nombre de paris unitaires est égal à 35
+And le montant du compte est débité de 52,50€
+
+Scenario: Cas 5 Prise d'un pari Trio avec une mise de base en combinaison complète
+Given un pari "Trio" formule "combinaison complète" de 7 chevaux :  1 - 2 - 3 - 5 - 6 - 8 - 9
+And sur la course 1 de la réunion 1
+And pour 1 mises de base
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_MODE_DTLO_NON_AUTORISE]
+
+Scenario: Cas 6 Prise d'un pari Trio avec une mise de base en champ reduit combinaison simplifiée
+Given un pari "Trio" formule "champ reduit combinaison simplifiée" :  1 - X - X / 4,8,9,6
+And sur la course 1 de la réunion 1
+And pour 1 mises de base
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 9€
+And le prix unitaire de chaque pari est de 1,50€
+And le nombre de paris unitaires est égal à 6
+And le montant du compte est débité de 9€
+
+Scenario: Cas 7 Prise d'un pari Trio avec une mise de base en champ reduit combinaison complète
+Given un pari "Trio" formule "champ reduit combinaison complète" :  1 - X - X / 4,8,9,6
+And sur la course 1 de la réunion 1
+And pour 1 mises de base
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_MODE_DTLO_NON_AUTORISE]
+
+Scenario: Cas 8 Prise d'un pari Trio avec une mise de base en champ reduit combinaison simplifiée et un cheval de complement déjà en désigné base.
+Given un pari "Trio" formule "champ reduit combinaison simplifiée" :  1 - X - X / 4,8,9,6
+And sur la course 1 de la réunion 1
+And le cheval de complément 1
+And pour 1 mises de base
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_CHEVAL_COMPLEMENT_INCORRECT]
+
+Scenario: Cas 9 Prise d'un pari Trio avec une mise de base en champ total combinaison simplifiée
+Given un pari "Trio" formule "champ total combinaison simplifiée" :  1 - X - X
+And sur la course 1 de la réunion 1
+And pour 1 mises de base
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 204€
+And le prix unitaire de chaque pari est de 1,50€
+And le nombre de paris unitaires est égal à 136
+And le montant du compte est débité de 204€
+
+Scenario: Cas 10 Prise d'un pari Trio en mode flexi 50% en champ total combinaison simplifiée
+Given un pari "Trio" formule "champ total combinaison simplifiée" :  1 - X - X
+And sur la course 1 de la réunion 1
+And en mode Flexi à 50%
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 102€
+And le prix unitaire de chaque pari est de 0,75€
+And le nombre de paris unitaires est égal à 136
+And le montant du compte est débité de 102€
+
+Scenario: Cas 11 Prise d'un pari Trio en mode flexi 25% en champ total combinaison simplifiée
+Given un pari "Trio" formule "champ total combinaison simplifiée" :  1 - X - X
+And sur la course 1 de la réunion 1
+And en mode Flexi à 25%
+When j'enregistre le pari
+Then l'enregistrement est KO
+And la validation du pari contient les codes d'erreurs suivant [PARI_POURCENTAGE_FLEXI_NON_AUTORISE]
+
+Scenario: Cas 12 Prise d'un pari Trio avec un cheval de complement
+Given un pari "Trio" formule "Unitaire" :  1 - 2 - 3
+And le cheval de complément 8
+And sur la course 1 de la réunion 1
+And pour 1 mises de base
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le cheval 8 est désigné comme Cheval de Complément
+And le montant d'enjeu est égal à 1,50€
+And le nombre de paris unitaires est égal à 1
+And le montant du compte est débité de 1,50€
+
+Scenario: Cas 13 Prise d'un pari Trio en mode spOt auto
+Given un pari "Trio" formule "Unitaire" :  ? - ? - ?
+And sur la course 1 de la réunion 1
+And en spOt Automatique
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 1,50€
+And le nombre de paris unitaires est égal à 1
+And le montant du compte est débité de 1,50€
+
+Scenario: Cas 14 Prise d'un pari Trio en mode spOt mixte
+Given un pari "Trio" formule "Unitaire" :  8 - 7 - ?
+And sur la course 1 de la réunion 1
+And en spOt Mixte
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le montant d'enjeu est égal à 1,50€
+And le nombre de paris unitaires est égal à 1
+And le montant du compte est débité de 1,50€
+
+Scenario: Cas 16 Prise d'un pari Trio avec 2 spOt
+Given un pari "Trio" formule "Unitaire" :  ? - ? - ?
+And sur la course 1 de la réunion 1
+And en spOt Automatique
+Given un pari "Trio" formule "Unitaire" :  7 - 2 - ?
+And sur la course 1 de la réunion 1
+And en spOt Mixte
+When j'enregistre le pari
+Then l'enregistrement est OK
+And le nombre de paris spOt est 2
+And le prix unitaire de chaque pari est de 1,50€
+And le 1er pari spOt Automatique en Couplé Placé Unitaire avec un Cheval de Complément est retourné par le SIC
+And le 2nd pari spOt Automatique en Couplé Placé Unitaire avec un Cheval de Complément est retourné par le SIC
+And le montant du compte est débité de 3,00€
+
+
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

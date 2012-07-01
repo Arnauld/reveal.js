@@ -1,0 +1,138 @@
+
+<html>
+<body>
+<div class="story"><h1></h1>
+<div class="path">fr/pmu/stories/prixparis/prixParis_Multi_Unitaire.story</div>
+<div class="scenario"><h2>Scenario: Prise d'un pari Multi Unitaire en 5 chevaux</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Multi"</span> formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">3-6-9-8-1</span>  </div>
+
+<div class="step successful">And en risque <span class="step parameter">5</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est dune valeur de {0}  </div>
+
+<div class="step ignorable">!-- TODO And les chevaux 3-6-9-8-1 sont déclarés partant partant  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est OK  </div>
+
+<div class="step successful">And le montant denjeu est égal à {0}  </div>
+
+<div class="step successful">And le nombre de paris unitaires est ｟égal｠ à <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And le montant du compte est débité de <span class="step parameter">4€</span>  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Prise d'un pari Multi Unitaire en 6 chevaux KO</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Multi"</span> formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">3-6-9-8-1-2</span>  </div>
+
+<div class="step successful">And en risque <span class="step parameter">7</span>  </div>
+
+<div class="step successful">And la mise est dune valeur de {0}  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+<div class="step successful">And le montant du compte n'est pas débité  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Prise d'un pari Multi Unitaire en 6 chevaux KO</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Multi"</span> formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">3-6-9-8-1-2-7</span>  </div>
+
+<div class="step successful">And en risque <span class="step parameter">7</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est dune valeur de {0}  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+<div class="step successful">And le montant du compte n'est pas débité  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Prise d'un pari Multi Unitaire en 7 chevaux KO</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Multi"</span> formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">3-6-9-8-1-2-4</span>  </div>
+
+<div class="step successful">And en risque <span class="step parameter">4</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est dune valeur de {0}  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+<div class="step successful">And le montant du compte n'est pas débité  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Prise d'un pari Multi Unitaire, avec 7 chevaux et un risque de 8 KO</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Multi"</span> formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">3-6-9-8-1-2-4</span>  </div>
+
+<div class="step successful">And en risque <span class="step parameter">8</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est dune valeur de {0}  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Sans Risque (null)</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Multi"</span> formule "<span class="step parameter">Unitaire"</span> : <span class="step parameter">3-6-9-8-1-2-4</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est dune valeur de {0}  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+<div class="scenario"><h2>Scenario: Pas de chevaux</h2>   
+ <!-- normal scenario steps -->
+<div class="step successful">Given un pari "<span class="step parameter">Multi"</span> formule "<span class="step parameter">Unitaire"</span> sans chevaux spécifiés  </div>
+
+<div class="step successful">And en risque <span class="step parameter">4</span>  </div>
+
+<div class="step successful">And sur la course <span class="step parameter">1</span> de la réunion <span class="step parameter">1</span>  </div>
+
+<div class="step successful">And la mise est dune valeur de {0}  </div>
+
+<div class="step successful">When j'enregistre le pari  </div>
+
+<div class="step successful">Then l'enregistrement est KO  </div>
+
+<div class="step successful">And la validation du pari contient les codes derreurs suivant [{0}  </div>
+
+</div> <!-- end scenario -->
+</div> <!-- end story -->
+</body>
+</html>
+

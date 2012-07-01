@@ -1,0 +1,180 @@
+
+<story path="fr/pmu/stories/prixparis/prixParis_Multi_Unitaire.story" title="">
+<scenario keyword="Scenario:" title="Prise d'un pari Multi Unitaire en 5 chevaux">   
+<step outcome="successful">
+Given un pari "<parameter>Multi"</parameter> formule "<parameter>Unitaire"</parameter> : <parameter>3-6-9-8-1</parameter> 
+</step>
+<step outcome="successful">
+And en risque <parameter>5</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est dune valeur de {0} 
+</step>
+<step outcome="ignorable">
+!-- TODO And les chevaux 3-6-9-8-1 sont déclarés partant partant 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est OK 
+</step>
+<step outcome="successful">
+And le montant denjeu est égal à {0} 
+</step>
+<step outcome="successful">
+And le nombre de paris unitaires est ｟égal｠ à <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And le montant du compte est débité de <parameter>4€</parameter> 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Prise d'un pari Multi Unitaire en 6 chevaux KO">   
+<step outcome="successful">
+Given un pari "<parameter>Multi"</parameter> formule "<parameter>Unitaire"</parameter> : <parameter>3-6-9-8-1-2</parameter> 
+</step>
+<step outcome="successful">
+And en risque <parameter>7</parameter> 
+</step>
+<step outcome="successful">
+And la mise est dune valeur de {0} 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+<step outcome="successful">
+And le montant du compte n'est pas débité 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Prise d'un pari Multi Unitaire en 6 chevaux KO">   
+<step outcome="successful">
+Given un pari "<parameter>Multi"</parameter> formule "<parameter>Unitaire"</parameter> : <parameter>3-6-9-8-1-2-7</parameter> 
+</step>
+<step outcome="successful">
+And en risque <parameter>7</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est dune valeur de {0} 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+<step outcome="successful">
+And le montant du compte n'est pas débité 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Prise d'un pari Multi Unitaire en 7 chevaux KO">   
+<step outcome="successful">
+Given un pari "<parameter>Multi"</parameter> formule "<parameter>Unitaire"</parameter> : <parameter>3-6-9-8-1-2-4</parameter> 
+</step>
+<step outcome="successful">
+And en risque <parameter>4</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est dune valeur de {0} 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+<step outcome="successful">
+And le montant du compte n'est pas débité 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Prise d'un pari Multi Unitaire, avec 7 chevaux et un risque de 8 KO">   
+<step outcome="successful">
+Given un pari "<parameter>Multi"</parameter> formule "<parameter>Unitaire"</parameter> : <parameter>3-6-9-8-1-2-4</parameter> 
+</step>
+<step outcome="successful">
+And en risque <parameter>8</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est dune valeur de {0} 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Sans Risque (null)">   
+<step outcome="successful">
+Given un pari "<parameter>Multi"</parameter> formule "<parameter>Unitaire"</parameter> : <parameter>3-6-9-8-1-2-4</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est dune valeur de {0} 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+<scenario keyword="Scenario:" title="Pas de chevaux">   
+<step outcome="successful">
+Given un pari "<parameter>Multi"</parameter> formule "<parameter>Unitaire"</parameter> sans chevaux spécifiés 
+</step>
+<step outcome="successful">
+And en risque <parameter>4</parameter> 
+</step>
+<step outcome="successful">
+And sur la course <parameter>1</parameter> de la réunion <parameter>1</parameter> 
+</step>
+<step outcome="successful">
+And la mise est dune valeur de {0} 
+</step>
+<step outcome="successful">
+When j'enregistre le pari 
+</step>
+<step outcome="successful">
+Then l'enregistrement est KO 
+</step>
+<step outcome="successful">
+And la validation du pari contient les codes derreurs suivant [{0} 
+</step>
+</scenario> 
+</story>
+
