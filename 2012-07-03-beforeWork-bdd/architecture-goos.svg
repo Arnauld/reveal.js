@@ -256,8 +256,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.75521514"
-     inkscape:cx="371.83545"
-     inkscape:cy="498.96852"
+     inkscape:cx="353.95975"
+     inkscape:cy="224.1755"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -282,200 +282,271 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <g
-       id="g91056"
-       transform="translate(79.44756,418.42382)">
-      <path
-         transform="matrix(0.24843918,0,0,0.24843918,339.11183,2.3357955)"
-         d="m 500.02553,307.20352 c 0,48.81554 -39.57281,88.38835 -88.38835,88.38835 -48.81554,0 -88.38835,-39.57281 -88.38835,-88.38835 0,-48.81554 39.57281,-88.38835 88.38835,-88.38835 48.81554,0 88.38835,39.57281 88.38835,88.38835 z"
-         sodipodi:ry="88.388351"
-         sodipodi:rx="88.388351"
-         sodipodi:cy="307.20352"
-         sodipodi:cx="411.63718"
-         id="path4214"
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         sodipodi:type="arc" />
-      <path
-         transform="matrix(0.24843918,0,0,0.24843918,233.44349,-29.929515)"
-         d="m 500.02553,307.20352 c 0,48.81554 -39.57281,88.38835 -88.38835,88.38835 -48.81554,0 -88.38835,-39.57281 -88.38835,-88.38835 0,-48.81554 39.57281,-88.38835 88.38835,-88.38835 48.81554,0 88.38835,39.57281 88.38835,88.38835 z"
-         sodipodi:ry="88.388351"
-         sodipodi:rx="88.388351"
-         sodipodi:cy="307.20352"
-         sodipodi:cx="411.63718"
-         id="path4214-9"
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         sodipodi:type="arc" />
-      <path
-         transform="matrix(0.24843918,0,0,0.24843918,248.29025,123.5104)"
-         d="m 500.02553,307.20352 c 0,48.81554 -39.57281,88.38835 -88.38835,88.38835 -48.81554,0 -88.38835,-39.57281 -88.38835,-88.38835 0,-48.81554 39.57281,-88.38835 88.38835,-88.38835 48.81554,0 88.38835,39.57281 88.38835,88.38835 z"
-         sodipodi:ry="88.388351"
-         sodipodi:rx="88.388351"
-         sodipodi:cy="307.20352"
-         sodipodi:cx="411.63718"
-         id="path4214-1"
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         sodipodi:type="arc" />
-      <path
-         transform="matrix(0.24843918,0,0,0.24843918,439.58577,26.962625)"
-         d="m 500.02553,307.20352 c 0,48.81554 -39.57281,88.38835 -88.38835,88.38835 -48.81554,0 -88.38835,-39.57281 -88.38835,-88.38835 0,-48.81554 39.57281,-88.38835 88.38835,-88.38835 48.81554,0 88.38835,39.57281 88.38835,88.38835 z"
-         sodipodi:ry="88.388351"
-         sodipodi:rx="88.388351"
-         sodipodi:cy="307.20352"
-         sodipodi:cx="411.63718"
-         id="path4214-8"
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         sodipodi:type="arc" />
-      <path
-         transform="matrix(0.24843918,0,0,0.24843918,363.83208,98.814125)"
-         d="m 500.02553,307.20352 c 0,48.81554 -39.57281,88.38835 -88.38835,88.38835 -48.81554,0 -88.38835,-39.57281 -88.38835,-88.38835 0,-48.81554 39.57281,-88.38835 88.38835,-88.38835 48.81554,0 88.38835,39.57281 88.38835,88.38835 z"
-         sodipodi:ry="88.388351"
-         sodipodi:rx="88.388351"
-         sodipodi:cy="307.20352"
-         sodipodi:cx="411.63718"
-         id="path4214-8-8"
-         style="fill:#ffffff;fill-opacity:1;stroke:#ff5500;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         sodipodi:type="arc" />
-      <path
-         transform="matrix(0.24843918,0,0,0.24843918,468.21758,143.40501)"
-         d="m 500.02553,307.20352 c 0,48.81554 -39.57281,88.38835 -88.38835,88.38835 -48.81554,0 -88.38835,-39.57281 -88.38835,-88.38835 0,-48.81554 39.57281,-88.38835 88.38835,-88.38835 48.81554,0 88.38835,39.57281 88.38835,88.38835 z"
-         sodipodi:ry="88.388351"
-         sodipodi:rx="88.388351"
-         sodipodi:cy="307.20352"
-         sodipodi:cx="411.63718"
-         id="path4214-7"
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         sodipodi:type="arc" />
-      <path
-         transform="matrix(0.24843918,0,0,0.24843918,488.55281,-37.013775)"
-         d="m 500.02553,307.20352 c 0,48.81554 -39.57281,88.38835 -88.38835,88.38835 -48.81554,0 -88.38835,-39.57281 -88.38835,-88.38835 0,-48.81554 39.57281,-88.38835 88.38835,-88.38835 48.81554,0 88.38835,39.57281 88.38835,88.38835 z"
-         sodipodi:ry="88.388351"
-         sodipodi:rx="88.388351"
-         sodipodi:cy="307.20352"
-         sodipodi:cx="411.63718"
-         id="path4214-83"
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         sodipodi:type="arc" />
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path6468"
-         d="m 359.51829,53.226975 58.65603,17.06512"
-         style="fill:none;stroke:#000000;stroke-width:1.24206114;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" />
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path6470"
-         d="m 464.89004,86.004875 52.39192,12.21912"
-         style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" />
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path6472"
-         d="m 556.60404,83.809805 19.53251,-24.8186"
-         style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" />
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path6474"
-         d="m 445.69362,102.84921 14.18165,48.36046"
-         style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" />
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path6476"
-         d="m 525.57282,121.84134 -39.84035,38.69725"
-         style="fill:#ff5500;fill-opacity:1;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart);marker-end:none" />
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path6478"
-         d="m 374.88737,194.87693 67.1333,-14.99787"
-         style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" />
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path6480"
-         d="m 486.30009,189.26548 60.29754,24.48631"
-         style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow1Mend)" />
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path6482"
-         d="M 444.52207,163.68803 348.65451,67.514385"
-         style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart);marker-end:none" />
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path6484"
-         d="M 422.11533,93.483035 361.9259,177.87766"
-         style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart)" />
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path6486"
-         d="M 464.11309,68.739945 566.26828,42.768285"
-         style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow1Mend)" />
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path6490"
-         d="M 588.36892,64.322565 574.92548,195.46317"
-         style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart)" />
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path6492"
-         d="m 549.32693,126.45049 12.15511,70.30401"
-         style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" />
-      <path
-         sodipodi:type="arc"
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         id="path84857"
-         sodipodi:cx="411.63718"
-         sodipodi:cy="307.20352"
-         sodipodi:rx="88.388351"
-         sodipodi:ry="88.388351"
-         d="m 500.02553,307.20352 c 0,48.81554 -39.57281,88.38835 -88.38835,88.38835 -48.81554,0 -88.38835,-39.57281 -88.38835,-88.38835 0,-48.81554 39.57281,-88.38835 88.38835,-88.38835 48.81554,0 88.38835,39.57281 88.38835,88.38835 z"
-         transform="matrix(0.24843918,0,0,0.24843918,392.27053,198.4246)" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow1Mend)"
-         d="m 473.89803,200.58077 14.18165,48.36046"
-         id="path84859"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cc" />
-      <path
-         transform="matrix(0.24843918,0,0,0.24843918,528.70116,85.606945)"
-         d="m 500.02553,307.20352 c 0,48.81554 -39.57281,88.38835 -88.38835,88.38835 -48.81554,0 -88.38835,-39.57281 -88.38835,-88.38835 0,-48.81554 39.57281,-88.38835 88.38835,-88.38835 48.81554,0 88.38835,39.57281 88.38835,88.38835 z"
-         sodipodi:ry="88.388351"
-         sodipodi:rx="88.388351"
-         sodipodi:cy="307.20352"
-         sodipodi:cx="411.63718"
-         id="path84861"
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         sodipodi:type="arc" />
-      <path
-         sodipodi:type="arc"
-         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         id="path84863"
-         sodipodi:cx="411.63718"
-         sodipodi:cy="307.20352"
-         sodipodi:rx="88.388351"
-         sodipodi:ry="88.388351"
-         d="m 500.02553,307.20352 c 0,48.81554 -39.57281,88.38835 -88.38835,88.38835 -48.81554,0 -88.38835,-39.57281 -88.38835,-88.38835 0,-48.81554 39.57281,-88.38835 88.38835,-88.38835 48.81554,0 88.38835,39.57281 88.38835,88.38835 z"
-         transform="matrix(0.24843918,0,0,0.24843918,310.93688,206.95151)" />
-      <path
-         style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart)"
-         d="m 438.41818,281.7497 31.43722,-3.06217"
-         id="path84865"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="cc" />
-      <path
-         sodipodi:nodetypes="cc"
-         inkscape:connector-curvature="0"
-         id="path85635"
-         d="m 613.60825,179.59144 -25.82926,22.77972"
-         style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart);marker-end:none" />
-    </g>
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4214"
+       sodipodi:cx="411.63718"
+       sodipodi:cy="307.20352"
+       sodipodi:rx="88.388351"
+       sodipodi:ry="88.388351"
+       d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
+       transform="matrix(0.24843918,0,0,0.24843918,418.55939,420.75962)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4214-9"
+       sodipodi:cx="411.63718"
+       sodipodi:cy="307.20352"
+       sodipodi:rx="88.388351"
+       sodipodi:ry="88.388351"
+       d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
+       transform="matrix(0.24843918,0,0,0.24843918,312.89105,388.4943)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4214-1"
+       sodipodi:cx="411.63718"
+       sodipodi:cy="307.20352"
+       sodipodi:rx="88.388351"
+       sodipodi:ry="88.388351"
+       d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
+       transform="matrix(0.24843918,0,0,0.24843918,327.73781,541.93422)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4214-8"
+       sodipodi:cx="411.63718"
+       sodipodi:cy="307.20352"
+       sodipodi:rx="88.388351"
+       sodipodi:ry="88.388351"
+       d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
+       transform="matrix(0.24843918,0,0,0.24843918,519.03333,445.38644)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ff5500;stroke-width:18.11308505999999952;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4214-8-8"
+       sodipodi:cx="411.63718"
+       sodipodi:cy="307.20352"
+       sodipodi:rx="88.388351"
+       sodipodi:ry="88.388351"
+       d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
+       transform="matrix(0.24843918,0,0,0.24843918,443.27964,517.23794)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4214-7"
+       sodipodi:cx="411.63718"
+       sodipodi:cy="307.20352"
+       sodipodi:rx="88.388351"
+       sodipodi:ry="88.388351"
+       d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
+       transform="matrix(0.24843918,0,0,0.24843918,547.66514,561.82883)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path4214-83"
+       sodipodi:cx="411.63718"
+       sodipodi:cy="307.20352"
+       sodipodi:rx="88.388351"
+       sodipodi:ry="88.388351"
+       d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
+       transform="matrix(0.24843918,0,0,0.24843918,568.00037,381.41004)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.24206113999999990;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       d="m 438.96585,471.65079 58.65603,17.06512"
+       id="path6468"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       d="m 544.3376,504.42869 52.39192,12.21913"
+       id="path6470"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       d="m 636.0516,502.23362 19.53251,-24.8186"
+       id="path6472"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       d="m 525.14118,521.27303 14.18165,48.36046"
+       id="path6474"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart);marker-end:none"
+       d="m 605.02038,540.26516 -39.84035,38.69725"
+       id="path6476"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       d="m 454.33493,613.30075 67.1333,-14.99787"
+       id="path6478"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow1Mend)"
+       d="m 565.74765,607.6893 60.29754,24.48631"
+       id="path6480"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart);marker-end:none"
+       d="M 523.96963,582.11185 428.10207,485.9382"
+       id="path6482"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart)"
+       d="m 501.56289,511.90685 -60.18943,84.39463"
+       id="path6484"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow1Mend)"
+       d="M 543.56065,487.16376 645.71584,461.1921"
+       id="path6486"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart)"
+       d="M 667.81648,482.74638 654.37304,613.88699"
+       id="path6490"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       d="m 628.77449,544.87431 12.15511,70.30401"
+       id="path6492"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       transform="matrix(0.24843918,0,0,0.24843918,471.71809,616.84842)"
+       d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
+       sodipodi:ry="88.388351"
+       sodipodi:rx="88.388351"
+       sodipodi:cy="307.20352"
+       sodipodi:cx="411.63718"
+       id="path84857"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:type="arc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path84859"
+       d="m 553.34559,619.00459 14.18165,48.36046"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow1Mend)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path84861"
+       sodipodi:cx="411.63718"
+       sodipodi:cy="307.20352"
+       sodipodi:rx="88.388351"
+       sodipodi:ry="88.388351"
+       d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
+       transform="matrix(0.24843918,0,0,0.24843918,608.14872,504.03076)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       transform="matrix(0.24843918,0,0,0.24843918,390.38444,625.37533)"
+       d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
+       sodipodi:ry="88.388351"
+       sodipodi:rx="88.388351"
+       sodipodi:cy="307.20352"
+       sodipodi:cx="411.63718"
+       id="path84863"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:type="arc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path84865"
+       d="m 517.86574,700.17352 31.43722,-3.06217"
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart);marker-end:none"
+       d="m 693.05581,598.01526 -25.82926,22.77972"
+       id="path85635"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-complete.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        transform="matrix(0.24843918,0,0,0.24843918,26.25506,725.48272)"
        d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
@@ -484,8 +555,11 @@
        sodipodi:cy="307.20352"
        sodipodi:cx="411.63718"
        id="path91085"
-       style="fill:none;stroke:#b3b3b3;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       sodipodi:type="arc" />
+       style="fill:#e6e6e6;stroke:#b3b3b3;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:type="arc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        transform="matrix(0.24843918,0,0,0.24843918,-79.41328,693.2174)"
        d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
@@ -494,8 +568,11 @@
        sodipodi:cy="307.20352"
        sodipodi:cx="411.63718"
        id="path91087"
-       style="fill:none;stroke:#b3b3b3;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       sodipodi:type="arc" />
+       style="fill:#e6e6e6;stroke:#b3b3b3;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:type="arc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        transform="matrix(0.24843918,0,0,0.24843918,-64.56652,846.65732)"
        d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
@@ -504,8 +581,11 @@
        sodipodi:cy="307.20352"
        sodipodi:cx="411.63718"
        id="path91089"
-       style="fill:#ffffff;fill-opacity:1;stroke:#b3b3b3;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       sodipodi:type="arc" />
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#b3b3b3;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:type="arc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        transform="matrix(0.24843918,0,0,0.24843918,126.729,750.10954)"
        d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
@@ -514,8 +594,11 @@
        sodipodi:cy="307.20352"
        sodipodi:cx="411.63718"
        id="path91091"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4.99999952;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:9.99999956, 9.99999956;stroke-dashoffset:0"
-       sodipodi:type="arc" />
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:4.99999952000000025;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:9.99999955999999912, 9.99999955999999912;stroke-dashoffset:0"
+       sodipodi:type="arc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        transform="matrix(0.24843918,0,0,0.24843918,50.97531,821.96104)"
        d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
@@ -524,8 +607,11 @@
        sodipodi:cy="307.20352"
        sodipodi:cx="411.63718"
        id="path91093"
-       style="fill:#ffffff;fill-opacity:1;stroke:#ff5500;stroke-width:18.68465424;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       sodipodi:type="arc" />
+       style="fill:#ffffff;fill-opacity:1;stroke:#ff5500;stroke-width:18.11308505999999952;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:type="arc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        transform="matrix(0.24843918,0,0,0.24843918,155.36081,866.55193)"
        d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
@@ -534,8 +620,11 @@
        sodipodi:cy="307.20352"
        sodipodi:cx="411.63718"
        id="path91095"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       sodipodi:type="arc" />
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:4.99999975999999968;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:9.99999955999999912, 9.99999955999999912;stroke-dashoffset:0"
+       sodipodi:type="arc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        transform="matrix(0.24843918,0,0,0.24843918,175.69604,686.13314)"
        d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
@@ -544,80 +633,119 @@
        sodipodi:cy="307.20352"
        sodipodi:cx="411.63718"
        id="path91097"
-       style="fill:#ffffff;fill-opacity:1;stroke:#b3b3b3;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       sodipodi:type="arc" />
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#b3b3b3;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:type="arc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path91099"
        d="m 46.66152,776.37389 58.65603,17.06512"
-       style="fill:none;stroke:#b3b3b3;stroke-width:1.24206114;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" />
+       style="fill:none;stroke:#b3b3b3;stroke-width:1.24206113999999990;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path91101"
        d="m 152.03327,809.15179 52.39192,12.21912"
-       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" />
+       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path91103"
        d="m 243.74727,806.95672 19.53251,-24.8186"
-       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" />
+       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path91105"
        d="m 132.83685,825.99613 14.18165,48.36046"
-       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" />
+       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path91107"
        d="M 212.71605,844.98826 172.8757,883.68551"
-       style="fill:#ff5500;fill-opacity:1;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2.48439169, 2.48439169;stroke-dashoffset:0;marker-start:url(#Arrow1Mstart);marker-end:none" />
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2.48439168999999982, 2.48439168999999982;stroke-dashoffset:0;marker-start:url(#Arrow1Mstart);marker-end:none"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path91109"
        d="m 62.0306,918.02385 67.1333,-14.99787"
-       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" />
+       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path91111"
        d="m 173.44332,912.4124 60.29754,24.48631"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2.48439169, 2.48439169;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow1Mend)" />
+       style="fill:none;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2.48439168999999982, 2.48439168999999982;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow1Mend)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path91113"
        d="M 131.6653,886.83495 35.79774,790.6613"
-       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart);marker-end:none" />
+       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart);marker-end:none"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path91115"
        d="M 109.25856,816.62996 49.06913,901.02458"
-       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart)" />
+       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path91117"
        d="M 151.25632,791.88686 253.41151,765.9152"
-       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow1Mend)" />
+       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow1Mend)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path91119"
        d="M 275.51215,787.46948 262.06871,918.61009"
-       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart)" />
+       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path91121"
        d="m 236.47016,849.59741 12.15511,70.30401"
-       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)" />
+       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:type="arc"
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
@@ -627,13 +755,19 @@
        sodipodi:rx="88.388351"
        sodipodi:ry="88.388351"
        d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
-       transform="matrix(0.24843918,0,0,0.24843918,79.41376,921.57152)" />
+       transform="matrix(0.24843918,0,0,0.24843918,79.41376,921.57152)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2.48439169, 2.48439169;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow1Mend)"
+       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow1Mend)"
        d="m 161.04126,923.72769 14.18165,48.36046"
        id="path91125"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        transform="matrix(0.24843918,0,0,0.24843918,215.84439,808.75386)"
        d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
@@ -642,172 +776,241 @@
        sodipodi:cy="307.20352"
        sodipodi:cx="411.63718"
        id="path91127"
-       style="fill:#ffffff;fill-opacity:1;stroke:#b3b3b3;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       sodipodi:type="arc" />
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#b3b3b3;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:type="arc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:type="arc"
-       style="fill:#ffffff;fill-opacity:1;stroke:#cccccc;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:4.99999975999999968;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:9.99999955999999912, 9.99999955999999912;stroke-dashoffset:0"
        id="path91129"
        sodipodi:cx="411.63718"
        sodipodi:cy="307.20352"
        sodipodi:rx="88.388351"
        sodipodi:ry="88.388351"
        d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
-       transform="matrix(0.24843918,0,0,0.24843918,-1.91989,930.09843)" />
+       transform="matrix(0.24843918,0,0,0.24843918,-1.91989,930.09843)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart)"
+       style="fill:none;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart)"
        d="m 125.56141,1004.8966 31.43722,-3.0621"
        id="path91131"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path91133"
        d="m 300.75148,902.73836 -25.82926,22.77972"
-       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart);marker-end:none" />
+       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart);marker-end:none"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:type="arc"
-       style="fill:none;stroke:#b3b3b3;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:#e6e6e6;stroke:#b3b3b3;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="path91160"
        sodipodi:cx="411.63718"
        sodipodi:cy="307.20352"
        sodipodi:rx="88.388351"
        sodipodi:ry="88.388351"
        d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
-       transform="matrix(0.24843918,0,0,0.24843918,405.45594,714.24714)" />
+       transform="matrix(0.24843918,0,0,0.24843918,405.45594,714.24714)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:type="arc"
-       style="fill:none;stroke:#b3b3b3;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:#e6e6e6;stroke:#b3b3b3;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="path91162"
        sodipodi:cx="411.63718"
        sodipodi:cy="307.20352"
        sodipodi:rx="88.388351"
        sodipodi:ry="88.388351"
        d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
-       transform="matrix(0.24843918,0,0,0.24843918,299.7876,681.98182)" />
+       transform="matrix(0.24843918,0,0,0.24843918,299.7876,681.98182)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:type="arc"
-       style="fill:#ffffff;fill-opacity:1;stroke:#b3b3b3;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#b3b3b3;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="path91164"
        sodipodi:cx="411.63718"
        sodipodi:cy="307.20352"
        sodipodi:rx="88.388351"
        sodipodi:ry="88.388351"
        d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
-       transform="matrix(0.24843918,0,0,0.24843918,314.63436,835.42174)" />
+       transform="matrix(0.24843918,0,0,0.24843918,314.63436,835.42174)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:type="arc"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4.99999952;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:4.99999952000000025;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="path91166"
        sodipodi:cx="411.63718"
        sodipodi:cy="307.20352"
        sodipodi:rx="88.388351"
        sodipodi:ry="88.388351"
        d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
-       transform="matrix(0.24843918,0,0,0.24843918,505.92988,738.87396)" />
+       transform="matrix(0.24843918,0,0,0.24843918,505.92988,738.87396)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:type="arc"
-       style="fill:#ffffff;fill-opacity:1;stroke:#ff5500;stroke-width:18.68465424;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ff5500;stroke-width:18.11308505999999952;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="path91168"
        sodipodi:cx="411.63718"
        sodipodi:cy="307.20352"
        sodipodi:rx="88.388351"
        sodipodi:ry="88.388351"
        d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
-       transform="matrix(0.24843918,0,0,0.24843918,430.17619,810.72546)" />
+       transform="matrix(0.24843918,0,0,0.24843918,430.17619,810.72546)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:type="arc"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:4.99999975999999968;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:9.99999955999999912, 9.99999955999999912;stroke-dashoffset:0"
        id="path91170"
        sodipodi:cx="411.63718"
        sodipodi:cy="307.20352"
        sodipodi:rx="88.388351"
        sodipodi:ry="88.388351"
        d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
-       transform="matrix(0.24843918,0,0,0.24843918,534.56169,855.31635)" />
+       transform="matrix(0.24843918,0,0,0.24843918,534.56169,855.31635)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:type="arc"
-       style="fill:none;stroke:#000000;stroke-width:4.99999952;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:9.99999956, 9.99999956;stroke-dashoffset:0"
+       style="fill:#e6e6e6;stroke:#000000;stroke-width:4.99999952000000025;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:9.99999955999999912, 9.99999955999999912;stroke-dashoffset:0"
        id="path91172"
        sodipodi:cx="411.63718"
        sodipodi:cy="307.20352"
        sodipodi:rx="88.388351"
        sodipodi:ry="88.388351"
        d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
-       transform="matrix(0.24843918,0,0,0.24843918,554.89692,674.89756)" />
+       transform="matrix(0.24843918,0,0,0.24843918,554.89692,674.89756)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
-       style="fill:none;stroke:#b3b3b3;stroke-width:1.24206114;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       style="fill:none;stroke:#b3b3b3;stroke-width:1.24206113999999990;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
        d="m 425.8624,765.13831 58.65603,17.06512"
        id="path91174"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
-       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
        d="m 531.23415,797.91621 52.39192,12.21912"
        id="path91176"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       style="fill:none;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
        d="m 622.94815,795.72114 19.53251,-24.8186"
        id="path91178"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
-       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
        d="m 512.03773,814.76055 14.18165,48.36046"
        id="path91180"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
-       style="fill:#ff5500;fill-opacity:1;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-start:url(#Arrow1Mstart);marker-end:none"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-start:url(#Arrow1Mstart);marker-end:none"
        d="m 591.91693,833.75268 -39.84035,38.69725"
        id="path91182"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
-       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
        d="m 441.23148,906.78827 67.1333,-14.99787"
        id="path91184"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2.48439169, 2.48439169;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow1Mend)"
+       style="fill:none;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2.48439168999999982, 2.48439168999999982;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow1Mend)"
        d="m 552.6442,901.17682 60.29754,24.48631"
        id="path91186"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
-       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart);marker-end:none"
+       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart);marker-end:none"
        d="M 510.86618,875.59937 414.99862,779.42572"
        id="path91188"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
-       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart)"
+       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart)"
        d="M 488.45944,805.39438 428.27001,889.789"
        id="path91190"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
-       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow1Mend)"
+       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:none;marker-end:url(#Arrow1Mend)"
        d="M 530.4572,780.65128 632.61239,754.67962"
        id="path91192"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
-       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart)"
+       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart)"
        d="M 654.71303,776.2339 641.26959,907.37451"
        id="path91194"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
-       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Mend)"
+       style="fill:#000000;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2.48439169,2.48439169;marker-end:url(#Arrow1Mend);stroke-dashoffset:0"
        d="m 615.67104,838.36183 12.15511,70.30401"
        id="path91196"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        transform="matrix(0.24843918,0,0,0.24843918,458.61464,910.33594)"
        d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
@@ -817,23 +1020,32 @@
        sodipodi:cx="411.63718"
        id="path91198"
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       sodipodi:type="arc" />
+       sodipodi:type="arc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path91200"
        d="m 540.24214,912.49211 14.18165,48.36046"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:2.48439169, 2.48439169;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow1Mend)" />
+       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker-start:none;marker-end:url(#Arrow1Mend)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:type="arc"
-       style="fill:#ffffff;fill-opacity:1;stroke:#b3b3b3;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#b3b3b3;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        id="path91202"
        sodipodi:cx="411.63718"
        sodipodi:cy="307.20352"
        sodipodi:rx="88.388351"
        sodipodi:ry="88.388351"
        d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
-       transform="matrix(0.24843918,0,0,0.24843918,595.04527,797.51828)" />
+       transform="matrix(0.24843918,0,0,0.24843918,595.04527,797.51828)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        transform="matrix(0.24843918,0,0,0.24843918,377.28099,918.86285)"
        d="m 500.02553,307.20352 a 88.388351,88.388351 0 1 1 -176.7767,0 88.388351,88.388351 0 1 1 176.7767,0 z"
@@ -842,28 +1054,37 @@
        sodipodi:cy="307.20352"
        sodipodi:cx="411.63718"
        id="path91204"
-       style="fill:#ffffff;fill-opacity:1;stroke:#cccccc;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-       sodipodi:type="arc" />
+       style="fill:#e6e6e6;fill-opacity:1;stroke:#000000;stroke-width:4.99999975999999968;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:9.99999955999999912, 9.99999955999999912;stroke-dashoffset:0"
+       sodipodi:type="arc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path91206"
        d="m 504.76229,993.66104 31.43722,-3.06217"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart)" />
+       style="fill:none;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart)"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <path
-       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart);marker-end:none"
+       style="fill:none;stroke:#b3b3b3;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#Arrow1Mstart);marker-end:none"
        d="M 679.95236,891.50278 654.1231,914.2825"
        id="path91208"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91210"
        width="49.623817"
        height="18.725969"
        x="39.324535"
        y="13.070872"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -872,8 +1093,8 @@
        height="18.725969"
        width="49.623817"
        id="rect91212"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -882,18 +1103,18 @@
        height="48.372311"
        width="49.623817"
        id="rect91214"
-       style="fill:none;stroke:#000000;stroke-width:1.99648631;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.99648631000000010;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91216"
        width="49.623817"
        height="18.725969"
        x="132.95438"
        y="91.719948"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -902,18 +1123,18 @@
        height="18.725969"
        width="49.623817"
        id="rect91218"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91220"
        width="49.623817"
        height="18.725969"
        x="90.820938"
        y="55.204308"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -922,18 +1143,18 @@
        height="18.725969"
        width="49.623817"
        id="rect91222"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91224"
        width="49.623817"
        height="18.725969"
        x="20.598547"
        y="177.85941"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -942,48 +1163,48 @@
        height="18.725969"
        width="49.623817"
        id="rect91226"
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91228"
        width="49.623817"
        height="18.725969"
        x="115.32539"
        y="178.7957"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91232"
        width="49.623817"
        height="18.725969"
        x="115.32539"
        y="200.35442"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91236"
        width="49.623817"
        height="18.725969"
        x="207.85825"
        y="85.165871"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91238"
        width="49.623817"
        height="18.725969"
        x="207.85823"
        y="110.44593"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -992,18 +1213,18 @@
        height="18.725969"
        width="123.72401"
        id="rect91240"
-       style="fill:none;stroke:#000000;stroke-width:1.96142626;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.96142626000000009;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91242"
        width="19.267159"
        height="18.725969"
        x="84.566132"
        y="204.8907"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1012,28 +1233,28 @@
        height="18.725969"
        width="19.267159"
        id="rect91244"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91246"
        width="19.267159"
        height="18.725969"
        x="104.86542"
        y="117.00002"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91250"
        width="19.267159"
        height="18.725969"
        x="6.6814804"
        y="132.10822"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1042,18 +1263,18 @@
        height="18.725969"
        width="19.267159"
        id="rect91252"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91254"
        width="19.267159"
        height="18.725969"
        x="8.6814804"
        y="14.108223"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1062,18 +1283,18 @@
        height="18.725969"
        width="19.267159"
        id="rect91256"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91258"
        width="19.267159"
        height="18.725969"
        x="32.68148"
        y="36.108223"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1082,18 +1303,18 @@
        height="18.725969"
        width="19.267159"
        id="rect91260"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91262"
        width="19.267159"
        height="18.725969"
        x="236.86542"
        y="137.00003"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1102,8 +1323,8 @@
        height="18.725969"
        width="19.267159"
        id="rect91264"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1112,23 +1333,23 @@
        height="18.725969"
        width="19.267159"
        id="rect91266"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91268"
        width="19.267159"
        height="18.725969"
        x="146.86542"
        y="47.000031"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
        sodipodi:type="arc"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="path91270"
        sodipodi:cx="27.152657"
        sodipodi:cy="244.33659"
@@ -1136,27 +1357,27 @@
        sodipodi:ry="7.4903879"
        d="m 34.643044,244.33659 a 7.4903879,7.4903879 0 1 1 -14.980775,0 7.4903879,7.4903879 0 1 1 14.980775,0 z"
        transform="translate(-15.917074,-27.152656)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91272"
        width="14.044477"
        height="32.770447"
        x="80.521667"
        y="149.77045"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91274"
        width="16.853373"
        height="27.152657"
        x="238.75612"
        y="13.070873"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
@@ -1167,14 +1388,14 @@
        sodipodi:cy="244.33659"
        sodipodi:cx="27.152657"
        id="path91276"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        sodipodi:type="arc"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
        sodipodi:type="star"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="path91278"
        sodipodi:sides="3"
        sodipodi:cx="107.67432"
@@ -1190,7 +1411,7 @@
        inkscape:transform-center-x="3.4496124"
        inkscape:transform-center-y="-1.0504209"
        transform="matrix(0.7503315,0,0,0.7503315,-8.0693488,-6.4708465)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1199,31 +1420,31 @@
        height="18.725969"
        width="49.623817"
        id="rect91350"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91352"
        width="49.623817"
        height="18.725969"
        x="269.05234"
        y="-167.24005"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1.99648631;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.99648631000000010;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91354"
        width="49.623817"
        height="48.372311"
        x="301.82278"
        y="-136.96329"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1232,20 +1453,20 @@
        height="18.725969"
        width="49.623817"
        id="rect91356"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91358"
        width="49.623817"
        height="18.725969"
        x="427.28674"
        y="-187.83861"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1254,20 +1475,20 @@
        height="18.725969"
        width="49.623817"
        id="rect91360"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91362"
        width="49.623817"
        height="18.725969"
        x="388.8985"
        y="-101.69916"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1276,20 +1497,20 @@
        height="18.725969"
        width="49.623817"
        id="rect91364"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91366"
        width="49.623817"
        height="18.725969"
        x="284.96939"
        y="-51.139034"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1298,20 +1519,20 @@
        height="18.725969"
        width="49.623817"
        id="rect91368"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91370"
        width="49.623817"
        height="18.725969"
        x="434.77713"
        y="-55.820522"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1320,20 +1541,20 @@
        height="18.725969"
        width="49.623817"
        id="rect91372"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91374"
        width="49.623817"
        height="18.725969"
        x="434.77713"
        y="-30.540464"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1342,9 +1563,9 @@
        height="18.725969"
        width="49.623817"
        id="rect91376"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1353,20 +1574,20 @@
        height="18.725969"
        width="49.623817"
        id="rect91378"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1.96142626;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.96142626000000009;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91380"
        width="123.72401"
        height="18.725969"
        x="361.74585"
        y="-221.54536"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1375,20 +1596,20 @@
        height="18.725969"
        width="19.267159"
        id="rect91382"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91384"
        width="19.267159"
        height="18.725969"
        x="315.23022"
        y="-29.725538"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1397,9 +1618,9 @@
        height="18.725969"
        width="19.267159"
        id="rect91386"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1408,20 +1629,20 @@
        height="18.725969"
        width="19.267159"
        id="rect91388"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91390"
        width="19.267159"
        height="18.725969"
        x="263.56192"
        y="-126.50802"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1430,20 +1651,20 @@
        height="18.725969"
        width="19.267159"
        id="rect91392"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91394"
        width="19.267159"
        height="18.725969"
        x="265.56192"
        y="-198.50801"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1452,20 +1673,20 @@
        height="18.725969"
        width="19.267159"
        id="rect91396"
-       style="fill:#ff6600;stroke:#aa4400;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91398"
        width="19.267159"
        height="18.725969"
        x="463.74585"
        y="-97.616211"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1474,31 +1695,31 @@
        height="18.725969"
        width="19.267159"
        id="rect91400"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91402"
        width="19.267159"
        height="18.725969"
        x="493.74585"
        y="-71.616211"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91404"
        width="19.267159"
        height="18.725969"
        x="493.74585"
        y="-187.61621"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1507,9 +1728,9 @@
        height="18.725969"
        width="19.267159"
        id="rect91406"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
@@ -1520,9 +1741,9 @@
        sodipodi:cy="244.33659"
        sodipodi:cx="27.152657"
        id="path91408"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        sodipodi:type="arc"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1531,9 +1752,9 @@
        height="32.770447"
        width="14.044477"
        id="rect91410"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1542,14 +1763,14 @@
        height="27.152657"
        width="16.853373"
        id="rect91412"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
        sodipodi:type="arc"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="path91414"
        sodipodi:cx="27.152657"
        sodipodi:cy="244.33659"
@@ -1557,7 +1778,7 @@
        sodipodi:ry="7.4903879"
        d="m 34.643044,244.33659 a 7.4903879,7.4903879 0 1 1 -14.980775,0 7.4903879,7.4903879 0 1 1 14.980775,0 z"
        transform="matrix(1.5273015,0,0,-1.5273015,331.04302,450.06289)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
@@ -1576,20 +1797,20 @@
        sodipodi:cx="107.67432"
        sodipodi:sides="3"
        id="path91416"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        sodipodi:type="star"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
        transform="scale(1,-1)"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91418"
        width="49.623817"
        height="18.725969"
        x="36.676289"
        y="-438.70203"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1599,8 +1820,8 @@
        height="18.725969"
        width="49.623817"
        id="rect91420"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1610,19 +1831,19 @@
        height="48.372311"
        width="49.623817"
        id="rect91422"
-       style="fill:none;stroke:#000000;stroke-width:1.99648631;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.99648631000000010;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
        transform="scale(1,-1)"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91424"
        width="49.623817"
        height="18.725969"
        x="130.30611"
        y="-360.05295"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1632,19 +1853,19 @@
        height="18.725969"
        width="49.623817"
        id="rect91426"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
        transform="scale(1,-1)"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91428"
        width="49.623817"
        height="18.725969"
        x="88.172691"
        y="-396.5686"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1654,19 +1875,19 @@
        height="18.725969"
        width="49.623817"
        id="rect91430"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
        transform="scale(1,-1)"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91432"
        width="49.623817"
        height="18.725969"
        x="17.950308"
        y="-273.91348"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1676,52 +1897,52 @@
        height="18.725969"
        width="49.623817"
        id="rect91434"
-       style="fill:#ffffff;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
        transform="scale(1,-1)"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91436"
        width="49.623817"
        height="18.725969"
        x="115.32539"
        y="-262.19781"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
        transform="scale(1,-1)"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91440"
        width="49.623817"
        height="18.725969"
        x="115.32539"
        y="-240.6391"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
        transform="scale(1,-1)"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91444"
        width="49.623817"
        height="18.725969"
        x="205.20998"
        y="-366.60703"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
        transform="scale(1,-1)"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91446"
        width="49.623817"
        height="18.725969"
        x="205.20998"
        y="-341.32697"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1731,19 +1952,19 @@
        height="18.725969"
        width="123.72401"
        id="rect91448"
-       style="fill:none;stroke:#000000;stroke-width:1.96142626;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.96142626000000009;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
        transform="scale(1,-1)"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91450"
        width="19.267159"
        height="18.725969"
        x="81.91787"
        y="-246.8822"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1753,30 +1974,30 @@
        height="18.725969"
        width="19.267159"
        id="rect91452"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
        transform="scale(1,-1)"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91454"
        width="19.267159"
        height="18.725969"
        x="102.21716"
        y="-334.77289"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
        transform="scale(1,-1)"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91456"
        width="19.267159"
        height="18.725969"
        x="4.0332236"
        y="-319.6647"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1786,19 +2007,19 @@
        height="18.725969"
        width="19.267159"
        id="rect91458"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
        transform="scale(1,-1)"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91460"
        width="19.267159"
        height="18.725969"
        x="6.0332236"
        y="-437.66467"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1808,19 +2029,19 @@
        height="18.725969"
        width="19.267159"
        id="rect91462"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
        transform="scale(1,-1)"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91464"
        width="19.267159"
        height="18.725969"
        x="30.033224"
        y="-415.66467"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1830,19 +2051,19 @@
        height="18.725969"
        width="19.267159"
        id="rect91466"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
        transform="scale(1,-1)"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91468"
        width="19.267159"
        height="18.725969"
        x="234.21715"
        y="-314.77289"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1852,8 +2073,8 @@
        height="18.725969"
        width="19.267159"
        id="rect91470"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1863,24 +2084,24 @@
        height="18.725969"
        width="19.267159"
        id="rect91472"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
        transform="scale(1,-1)"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91474"
        width="19.267159"
        height="18.725969"
        x="144.21715"
        y="-404.77289"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
        sodipodi:type="arc"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="path91476"
        sodipodi:cx="27.152657"
        sodipodi:cy="244.33659"
@@ -1888,29 +2109,29 @@
        sodipodi:ry="7.4903879"
        d="m 34.643044,244.33659 a 7.4903879,7.4903879 0 1 1 -14.980775,0 7.4903879,7.4903879 0 1 1 14.980775,0 z"
        transform="matrix(1,0,0,-1,-18.565327,478.92555)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
        transform="scale(1,-1)"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91478"
        width="14.044477"
        height="32.770447"
        x="77.873405"
        y="-302.00247"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
        transform="scale(1,-1)"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91480"
        width="16.853373"
        height="27.152657"
        x="236.10786"
        y="-438.70203"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
@@ -1921,14 +2142,14 @@
        sodipodi:cy="244.33659"
        sodipodi:cx="27.152657"
        id="path91482"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        sodipodi:type="arc"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
        sodipodi:type="star"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="path91484"
        sodipodi:sides="3"
        sodipodi:cx="107.67432"
@@ -1944,7 +2165,7 @@
        inkscape:transform-center-x="3.4496124"
        inkscape:transform-center-y="1.0504174"
        transform="matrix(0.7503315,0,0,-0.7503315,-10.717597,458.24374)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1953,31 +2174,31 @@
        height="18.725969"
        width="49.623817"
        id="rect91554"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91556"
        width="49.623817"
        height="18.725969"
        x="265.75583"
        y="-251.98413"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91558"
        width="49.623817"
        height="18.725969"
        x="423.99023"
        y="-272.58267"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -1986,20 +2207,20 @@
        height="18.725969"
        width="49.623817"
        id="rect91560"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1.96142626;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.96142626000000009;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91562"
        width="123.72401"
        height="18.725969"
        x="358.44934"
        y="-306.28943"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -2008,20 +2229,20 @@
        height="18.725969"
        width="19.267159"
        id="rect91564"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91566"
        width="19.267159"
        height="18.725969"
        x="262.26541"
        y="-283.25208"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -2030,20 +2251,20 @@
        height="18.725969"
        width="19.267159"
        id="rect91568"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91570"
        width="19.267159"
        height="18.725969"
        x="490.44934"
        y="-272.36029"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -2052,9 +2273,9 @@
        height="18.725969"
        width="19.267159"
        id="rect91572"
-       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -2063,9 +2284,9 @@
        height="27.152657"
        width="16.853373"
        id="rect91574"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
@@ -2084,19 +2305,19 @@
        sodipodi:cx="107.67432"
        sodipodi:sides="3"
        id="path91576"
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        sodipodi:type="star"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:3.10773444;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:3.10773444000000021;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91578"
        width="49.623817"
        height="117.20657"
        x="178.01698"
        y="163.85925"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -2105,8 +2326,8 @@
        height="18.725969"
        width="49.623817"
        id="rect91580"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -2115,8 +2336,8 @@
        height="18.725969"
        width="49.623817"
        id="rect91582"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -2125,9 +2346,9 @@
        height="18.725969"
        width="49.623817"
        id="rect91584"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -2136,51 +2357,51 @@
        height="18.725969"
        width="49.623817"
        id="rect91586"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91588"
        width="49.623817"
        height="18.725969"
        x="317.6275"
        y="323.12543"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91590"
        width="49.623817"
        height="18.725969"
        x="317.6275"
        y="344.68414"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
        transform="scale(1,-1)"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91592"
        width="49.623817"
        height="18.725969"
        x="317.6275"
        y="-406.52756"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
        transform="scale(1,-1)"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91594"
        width="49.623817"
        height="18.725969"
        x="317.6275"
        y="-384.96884"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -2189,8 +2410,8 @@
        height="18.725969"
        width="49.623817"
        id="rect91596"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -2199,8 +2420,8 @@
        height="18.725969"
        width="49.623817"
        id="rect91598"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -2209,9 +2430,9 @@
        height="18.725969"
        width="49.623817"
        id="rect91600"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
@@ -2220,51 +2441,51 @@
        height="18.725969"
        width="49.623817"
        id="rect91602"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        transform="scale(1,-1)"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91604"
        width="49.623817"
        height="18.725969"
        x="429.6275"
        y="323.12543"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91606"
        width="49.623817"
        height="18.725969"
        x="429.6275"
        y="344.68414"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
        transform="scale(1,-1)"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91608"
        width="49.623817"
        height="18.725969"
        x="429.6275"
        y="-406.52756"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <rect
        transform="scale(1,-1)"
-       style="fill:none;stroke:#000000;stroke-width:1.24219584;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#cccccc;stroke:#000000;stroke-width:1.24219583999999994;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        id="rect91610"
        width="49.623817"
        height="18.725969"
        x="429.6275"
        y="-384.96884"
-       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI-sub.png"
+       inkscape:export-filename="/Users/arnauld/Projects/reveal.js/2012-07-03-beforeWork-bdd/Schema-SI.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
   </g>

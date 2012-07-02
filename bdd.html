@@ -34,7 +34,7 @@
       <div class="slides">
         <section>
           <h1>beforework BDD</h1>
-          <h3 class="kw">Du concrets!</h3>
+          <h3 class="kw">Du concret!</h3>
           <script>
             // Delicously hacky. Look away.
             if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ) document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
@@ -72,7 +72,7 @@
             </section>
 
             <section>
-              <h2>Quelles seraient les critères d'acceptances?</h2>
+              <h2>Quelles seraient les critères d'acceptance?</h2>
               <h3 class="fragment">Comment définir les fonctionnalités attendues?</h3>
               <br/>
               <h3 class="fragment kw">Les scénarios</h3>
@@ -280,12 +280,8 @@
             -->
           <section>
             <h2 class="kw">Le lien avec le code</h2>
-            <img src="2012-07-03-beforeWork-bdd/Schema-Module-complete.png"/>
-          </section>
-
-          <section>
-            <h2 class="kw">Le lien avec le code</h2>
-            <img src="2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"/>
+            <img class="part hidden" style="background: rgba(255,255,255,1.0);" src="2012-07-03-beforeWork-bdd/Schema-Module-complete.png"/>
+            <img class="part hidden" style="background: rgba(255,255,255,1.0);" src="2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"/>
           </section>
 
           <section>
@@ -293,8 +289,6 @@
             <span class="fragment extra">Promis y en aura pas d'autre</span>
             <img class="fragment" width="850px" src="2012-07-03-beforeWork-bdd/PMU-Steps-PariFormulation.png" />
           </section>
-
-
 
           <section>
               <p class="story scenario">
@@ -368,6 +362,23 @@
                   <br/>
                 </span>
               </p>
+          </section>
+
+
+          <section>
+            <h2 class="kw">Infrastructure de code nécessaire</h2>
+            <ul>
+                <li class="part hidden" order="1">Environ <b class="kw">150</b> lignes (en tout) pour <span class="kw">un</span> test de type “service” sur une prise de pari</li>
+                <li class="part hidden" order="4"><em>En extrapolant:</em> 196 * 150 = <b class="kw">29400</b> lignes pour les 196 scénarios</li>
+            </ul>
+            &nbsp;<br/>
+            <ul>
+                <li class="part hidden" order="2">Environ <b class="kw">1505</b> lignes pour l'infrastructure d'exécution des scénarios<br/>
+                  <small>(130+15+65+80 utilitaires) + (100 JBehave) + (80+45+215+120+465+120+40+30 Steps/Context)</small>
+                </li>
+                <li class="part hidden" order="3"><b class="kw">196</b> scénarios compréhensibles par tous</li>
+            </ul>
+            <span class="part hidden kw" order="5">Ces chiffres sont à prendre avec précaution et ne doivent pas être généralisés!</span>
           </section>
 
         </section>
@@ -462,9 +473,9 @@
           <section>
             <h3>Une infrastructure évolutive</h3>
             <p class="part hidden">Les Traces Arjel</p>
-            <img class="part hidden" src="2012-07-03-beforeWork-bdd/Schema-Module-complete.png"/>
-            <img class="part hidden" src="2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"/>
-            <img class="part hidden" style="position: fixed; z-index:5; left:250px; top:250px; background: rgba(105,105,105,1.0);" src="2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"/>
+            <img class="part hidden" style="background: rgba(255,255,255,1.0);" src="2012-07-03-beforeWork-bdd/Schema-Module-complete.png"/>
+            <img class="part hidden" style="background: rgba(255,255,255,1.0);" src="2012-07-03-beforeWork-bdd/Schema-Module-mock1.png"/>
+            <img class="part hidden" style="position: fixed; z-index:5; left:100px; top:250px; background: rgba(255,255,255,1.0);" src="2012-07-03-beforeWork-bdd/Schema-Module-mock2.png"/>
           </section>
 
           <section>
